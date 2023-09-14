@@ -189,3 +189,105 @@ let day = new Date().getDay();
 //         console.log('Nghi lam');
 //         break;
 // }
+
+
+// === Buổi 2: Class ===
+
+
+// == Định nghĩa: 1 tập hợp các phần tử có cùng thuộc tính
+
+/** Khởi tạo Class = contructor
+ class Human {
+     constructor() { //Hàm khởi tạo
+         this.name = 'Kien'; //this trỏ vào Human
+         this.height = 170;
+         this.single = false;
+         this.work = function () {
+             console.log('Im working');
+         }
+     }
+     sleep() {
+         console.log('Im sleeping');
+     }
+     introduce() {
+         console.log('Toi la' + this.name + 'Toi cao' + this.height + 'cm');
+     }
+ } 
+
+ console.log(Human.introduce);
+
+ */
+
+
+
+/** 
+ class Human {
+     constructor(genderParam, animalParam, smartParam, ageParam, pronouceParam) { //Có các tham số
+         this.gender = genderParam;
+         this.isAnimal = animalParam;
+         this.isSmart = smartParam;
+         this.age = ageParam;
+         this.pronouce = pronouceParam
+     }
+     introduce() {
+         console.log(`Has gender:${this.gender}, isAnimal is ${this.isAnimal}, has avarage age is ${this.age}`);
+     }
+ }
+ 
+ const me = new Human('Male', true, false, 20, 'he/him');
+ 
+ me.introduce() //Log ra 
+ */
+
+/**
+ const ori = {
+     name: 'Vuong',
+     age: 20
+ }
+ 
+ 
+ const cloneOri = JSON.parse(JSON.stringify(ori))
+ console.log("cloneOri: ", cloneOri);
+ */
+
+// ===function===
+
+/** 
+ * Function Declaration
+
+ function myFunction() {
+ } 
+
+ * Function expression
+
+ const myFunction2 = myFunction3(){
+ 
+ }
+ */
+
+
+// function sum(a, b) { //default a = 1, b = 2 khi k truyền đối số vào a, b
+//     var result = a + b;
+//     return result
+// }
+// console.log(sum(1,2));
+
+//Arrow function
+const sum = (a, b) => a + b 
+// console.log(sum(3, 4));
+
+//IIFE chạy 1 lần, k thể gọi lại
+
+(function (a, b) {
+    console.log(a + b);
+})(1, 2);
+
+((a, b) => {
+    console.log(a + b);
+})(5, 7);
+
+
+//Callback fn
+
+
+
