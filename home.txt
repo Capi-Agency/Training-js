@@ -1,0 +1,2 @@
+-Bài tập buổi 2
+Tạo 1 class Human có thuộc tính tên tuổi chiều cao số đo ba vòng =>tạo hàm kiểm tra tuổi nếu trên >18 tuổi đủ tuổi đi chơi <18 k đủ tuổi
