@@ -289,5 +289,31 @@ const sum = (a, b) => a + b
 
 //Callback fn
 
+//Tạo 1 class Human có thuộc tính tên tuổi chiều cao số đo ba vòng
+// =>tạo hàm kiểm tra tuổi nếu trên > 18 tuổi đủ tuổi đi chơi < 18 k đủ tuổi
+
+class Human {
+    constructor(ageParam) {
+        this.name = 'Woman'
+        this.age = ageParam
+        this.height = 160
+        this.bust = 90
+        this.waist = 60
+        this.hip = 90
+    }
+}
+
+const myGirl = new Human(16)
+console.log(myGirl.ageParam);
+
+// function ageCheck(myGirl) {
+//     var result = myGirl.ageParam > 18 ? 'Đủ tuổi' : 'Cúc'
+//     console.log(result);
+// }
+
+// ageCheck()
+
+
+
 
 
