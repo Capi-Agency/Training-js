@@ -262,8 +262,37 @@ toan.checkage();
 
 //Viết một hàm tính giai thừa của một số nguyên dương và sử dụng callback để in kết quả.
 
+function timgiaithua (x,callback){
+  	if (x<0) {
+      console.log("ko phai nguyen duong");
+    }
+    else if (x === 0){
+      console.log("giai thua = 1 ");
+    }
+    else {
+      let factorial = 1;
+      for (let i = 1; i <= Number; i++){
+        factorial *=i;
+      }
+      console.log(factorial);
+    }
+  }
+   
 
-
+  //function calculateFactorial(number, callback) {
+  // if (number < 0) {
+  //   // Nếu số nhập vào là số âm, không tính được giai thừa
+  //   callback("Invalid input: Number must be a positive integer.");
+  // } else if (number === 0) {
+  //   // Giai thừa của 0 là 1
+  //   callback(null, 1);
+  // } else {
+  //   let factorial = 1;
+  //   for (let i = 1; i <= number; i++) {
+  //     factorial *= i;
+  //   }
+  //   callback(null, factorial);
+  // }}
 
 
 
