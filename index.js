@@ -1,99 +1,233 @@
 // let const - block scoped variables
 // not hoisting
 // camelCase
+let name; // Không bắt buộc gán giá trị khởi tạo | Có thể gán lại giá trị
+const name2 = ""; //Bắt buộc gán giá trị khởi tạo | Không thể gán lại giá trị
+// console.log(name);
 
 // Kieu du lieu (primitive/non-primitive)(value types/ reference types)
 // string, number, boolean(true/false), null, undefined, object, array, function
 // primitive: string, number, boolean, null, undefined
 // non-primitive: object, array, function
-// let name = 'tung';
-// let age = 20;
-// let address = 'hanoi';
-// let sex = true
-// console.log()
 
+//======================Toán tử======================
 
+// * / + - % += -= *= /= ++a a++ --a a--
+// Phép cộng >> convert kiểu number về string sau đó sẽ nối như 2 string
+// Các phép tính khác sẽ ép kiểu string về number rồi tính toán
 
-// let diemTb = 8;
-// let diemDatduoc = 5;
-// let x = diemDatduoc > diemTb ? 'pass' : 'not pass';
-// console.log(x);
+// Các cách ép kiểu string về number: parseInt(a), parseFloat(a), Number(a)
 
-// for (let i = 0; i < 10; i++) {
-//     console.log('abb');
-// }
-// const array = ["movie", "book", "music", "football"]
-// array.forEach(function (item, index){
-// console.log("forEach item", item);
-// console.log("forEach index", index);});
-// console.log("============");
-// for (let item in array) {
-//     console.log("forIn result", item );
-// }
-// console.log("============");
-// for (let item of array) {
-//     console.log("forOf result", item );
-// }
+// console.log(a / b); //2
+// console.log(a * b); //8
+// console.log(a + b); //6
+// console.log(a - b); //2
+// console.log(a % b); //0
+let a1 = 1;
 
-// const diemKtra = 4.2;
-// if ( diemKtra >=9 && diemKtra <= 10) {
-//     console.log("xuat sac");
-// }
-// else if ( diemKtra >= 7.5 && diemKtra <= 9) {
-//     console.log("gioi");
-// }
-// else if ( diemKtra >= 5 && diemKtra <= 7.5) {
-//     console.log("kha");
-// }
-// else {
-//     console.log("dot");
-// }
+// a++ trả về giá trị của a, sau đó gán lại cho a = a + 1
+// ++a trả về trực tiếp a + 1
+console.log("a1: ", ++a1);
 
-// const day = new Date().getDay();
-// let result;
-// switch (day) {
-//     case 0:
-//     result = "chủ nhật";
-//     break;
-//     case 1:
-//     result = "thu 2" ;
-//     break;
-//     case 2:
-//     result = "thu 3";
-//     break;
-//     case 3:
-//     result = "thu 4";
-//     break;
-//     case 4:
-//     result = "thu5";
-//     break;
-//     case 5:
-//     result = "thu6";
-//     break;
-//     case 6:
-//     result = "thu7";
-//     break;
-//     default :
-//     result = "not"
-//     break;
-    
+// ================Toán tử logic====================
+
+// >, <, <=, >=, ==, ===
+// == so sánh giá trị
+// === so sánh giá trị và kiểu
+
+// Boolean logic :  ||(OR)  &&(AND)    !(NOT)
+
+let a = 1 > 2 && 2 > 1;
+console.log(typeof a);
+if (1 > 2 || 2 > 1 || 3 > 4) {
+	console.log("Hello world");
+}
+// typeof a =>> kiểu dữ liệu của biến a
+
+// toán tử 3 ngôi (ternary operators)
+// Nếu điều kiện đúng, trả về giá trị thứ nhất, ngược lại trả về giá trị thứ 2
+
+let diemTB = 8;
+let diemDatDuoc = 5;
+let isLogin = true;
+
+let result = diemDatDuoc > diemTB ? "Pass roi" : "chua Pass";
+
+// ================Vòng lặp (Loop)====================
+// //For
+// for (let i = 2; i < 10; i++) {
+// 	for (let j = 2; j < 10; j++) {
+// 		console.log(`${i}*${j}=${i * j}`);
+// 	}
 // }
-// console.log(result);
+// forEach,for of trả về từng phần tử của mảng sau mỗi vòng lặp
+// for in: trả về index của phần tử
+const array = ["Duc", "Tung", "Nguyen", "Vuong", "Toan"];
 
+array.forEach(function (item, index) {
 
+});
+console.log("==========");
+for (let item in array) {
+
+}
+console.log("==========");
+for (let item of array) {
+
+}
+
+// if/else statement
+const diemKtra = 8;
+// 5, 5-7.5 kha, 7.5 - 9 gioi, 9 - 10 xuat sac;
+
+// if (diemKtra == 1) {
+// 	console.log("step 1");
+// } else if (dieuKien2 && dieu 5) {
+// 	console.log("step 2");
+// } else if (dieuKien3) {
+// 	console.log("step 3");
+// } else {
+// 	console.log("final step");
+// }
+let name3 = "Tung";
 
 const day = new Date().getDay();
-let result;
-switch (day) {
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-        console.log("ngay lam viec");
-        break;
-    case 6:
-    case 0:    
-        console.log("ngay nghi");
-        break; 
+if (day == 1 || day == 2 || day == 3) {
+	console.log("dau tuan`");
 }
+
+switch (day) {
+	case 1:
+	case 2:
+	case 3:
+		console.log("ngay lv");
+		break;
+}
+// tao 1 vong lap for lap lai 10 lan, trong moi lan thi` bien status (boolean) se thay doi nguoc lai voi chinh no, console.log ra
+
+
+// Buoi 2:
+
+// ======================Object======================
+// Cach khai bao object
+// Cach 1: su dung  new Object()
+
+// const employee = new Object();
+
+// console.log("employee: ",employee);
+
+class Human{
+	constructor(nameParam, heightParam, isSingleParam){
+		this.name = nameParam;
+		this.height = heightParam,
+		this.isSingle = isSingleParam;
+		this.work = function(){
+			console.log("I'm working");
+		}
+	}
+	sleep(){
+		console.log("I'm sleeping");
+	}
+	introduce(){
+		console.log("Toi la "+this.name+", toi cao "+this.height+" cm");
+	}
+}
+
+const toan = new Human("Toan","300",true);
+
+toan.introduce();
+// Cach2: dung cu phap new Object()
+const newPlainObject = new Object();
+newPlainObject.age = 24;
+
+// Cach 3:
+const oldObject = {
+	name: "toan",
+	age: 21 
+};
+  //Shallow copy: khi thay doi gia tri cua object moi thi object cu cung bi thay doi
+
+// immutable ===> Deep copy
+// c1: dung Object.assign()
+
+const clone1 = Object.assign({}, oldObject);
+clone1.name = "Tung";
+
+console.log("clone 1: ",clone1);
+console.log("old object: ", oldObject);
+
+// c2: 
+
+const clone2 = JSON.parse(JSON.stringify(oldObject));
+console.log("clone 2: ", clone2);
+
+// ======================Function======================
+
+// function declaration | default params
+
+function fnName(param1 = 1, param2 = 2){
+	return param1 + param2;
+}
+console.log(fnName());
+// function fn1 () {
+// 	return "Hello"
+// }
+// function fn2 (fnameParam, lnameParam) {
+// 	return "ten toi la: "+ fnameParam + lnameParam;
+// }
+
+// function fn3 () {
+	
+// }
+// function fn4 (fname, lname) {
+// 	console.log(fname + lname);
+// }
+
+// function expression
+
+// const fnName2 = function(){
+
+// }
+
+// arrow function | ECMA Script 6
+
+// const fn3 = (param1, param2) => {
+
+// }
+
+// const sum = (a,b) => {
+// 	return a+b
+// }
+
+// goi ham: fnName(param1, param2)
+
+// IIFE | chi chay dung 1 lan, k the goi lai
+
+// (function(a,b){
+// 	console.log(a+b)
+// })(1,2);
+
+// ((a,b)=>{
+// 	console.log(a+b)
+// })(3,4);
+
+// ******Callback fn: mot ham` truyen vao mot ham` khac nhu mot param,  
+
+// ["Toan","Vuong","Nguyen","Tung"].forEach(function(item, index){
+// 	console.log("Toi ten la: ", item);
+// 	console.log("Index: ", index);
+// })
+
+// turn 1: (Toan, 0) ==> callback(Toan,0)
+function sum (a,b){
+	return console.log(a+b);
+}
+function div (a,b){
+	return console.log(a-b);
+
+}
+function abc(a,b,callback){
+	return callback(a,b)
+}
+abc(1,2,sum);
+abc(1,2,div);
