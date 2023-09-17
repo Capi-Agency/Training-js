@@ -235,7 +235,7 @@
 
 
 //========BTVN=========
-//Tạo 1 class Human có thuộc tính tên tuổi chiều cao số đo ba vòng =>tạo hàm kiểm tra tuổi nếu trên >18 tuổi đủ tuổi đi chơi <18 k đủ tuổi
+//Tạo 1 class Human có thuộc tính tên tuổi chiều cao số đo ba vòng 
 class Human{
 	constructor(nameParam, heightParam, ageParam, v1Param, v2Param, v3Param ){
 		this.name = nameParam;
@@ -248,6 +248,7 @@ class Human{
 	introduce() {
 		console.log("Toi la "+this.name+", toi cao "+this.height+"cm "+this.age+"tuoi "+this.v1+"cm "+this.v2+"cm "+this.v3+"cm ");
 	}
+//tạo hàm kiểm tra tuổi nếu trên >18 tuổi đủ tuổi đi chơi <18 k đủ tuổi
   checkage() {
         if (this.age > 18) {
           console.log("Du tuoi");
@@ -266,33 +267,18 @@ function timgiaithua (x,callback){
   	if (x<0) {
       console.log("ko phai nguyen duong");
     }
-    else if (x === 0){
+    else if (x===0) {
       console.log("giai thua = 1 ");
     }
     else {
       let factorial = 1;
-      for (let i = 1; i <= Number; i++){
+      for (let i = 1; i <= x; i++){
         factorial *=i;
       }
       console.log(factorial);
     }
   }
-   
-
-  //function calculateFactorial(number, callback) {
-  // if (number < 0) {
-  //   // Nếu số nhập vào là số âm, không tính được giai thừa
-  //   callback("Invalid input: Number must be a positive integer.");
-  // } else if (number === 0) {
-  //   // Giai thừa của 0 là 1
-  //   callback(null, 1);
-  // } else {
-  //   let factorial = 1;
-  //   for (let i = 1; i <= number; i++) {
-  //     factorial *= i;
-  //   }
-  //   callback(null, factorial);
-  // }}
+   timgiaithua(5);
 
 
 
