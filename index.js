@@ -248,7 +248,7 @@ class Human{
 	introduce() {
 		console.log("Toi la "+this.name+", toi cao "+this.height+"cm "+this.age+"tuoi "+this.v1+"cm "+this.v2+"cm "+this.v3+"cm ");
 	}
-    checkage() {
+  checkage() {
         if (this.age > 18) {
           console.log("Du tuoi");
         } else {
@@ -261,3 +261,9 @@ toan.introduce();
 toan.checkage();
 
 //Viết một hàm tính giai thừa của một số nguyên dương và sử dụng callback để in kết quả.
+
+
+
+
+
+
