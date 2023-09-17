@@ -90,7 +90,6 @@ for (let i = 0; i < 10; i++) {
     }
 }
 
-
 //forEach và for of trả về từng phần tử của mảng
 //for in trả về index của phần tử
 
@@ -273,18 +272,18 @@ let day = new Date().getDay();
 // console.log(sum(1,2));
 
 //Arrow function
-const sum = (a, b) => a + b 
+// const sum = (a, b) => a + b 
 // console.log(sum(3, 4));
 
 //IIFE chạy 1 lần, k thể gọi lại
 
-(function (a, b) {
-    console.log(a + b);
-})(1, 2);
+// (function (a, b) {
+//     console.log(a + b);
+// })(1, 2);
 
-((a, b) => {
-    console.log(a + b);
-})(5, 7);
+// ((a, b) => {
+//     console.log(a + b);
+// })(5, 7);
 
 
 //Callback fn
@@ -292,10 +291,13 @@ const sum = (a, b) => a + b
 //Tạo 1 class Human có thuộc tính tên tuổi chiều cao số đo ba vòng
 // =>tạo hàm kiểm tra tuổi nếu trên > 18 tuổi đủ tuổi đi chơi < 18 k đủ tuổi
 
+
+
+// Tạo 1 class Human có thuộc tính tên tuổi chiều cao số đo ba vòng 
 class Human {
-    constructor(ageParam) {
+    constructor() {
         this.name = 'Woman'
-        this.age = ageParam
+        this.age = 20
         this.height = 160
         this.bust = 90
         this.waist = 60
@@ -303,17 +305,30 @@ class Human {
     }
 }
 
-const myGirl = new Human(16)
-console.log(myGirl.ageParam);
+// Tạo hàm kiểm tra tuổi nếu trên >18 tuổi đủ tuổi đi chơi <18 k đủ tuổi
 
-// function ageCheck(myGirl) {
-//     var result = myGirl.ageParam > 18 ? 'Đủ tuổi' : 'Cúc'
-//     console.log(result);
-// }
+function ageCheck() {
+    var girl = new Human();
+    var result = girl.age > 18 ? 'Đủ tuổi' : 'Cúc';
+    console.log(result);
+}
 
-// ageCheck()
-
-
+ageCheck()
 
 
+// Bài tập: Tính giai thừa của một số
+// Viết một hàm tính giai thừa của một số nguyên dương và sử dụng callback để in kết quả.
 
+function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    }
+    for (let i = n - 1; i >= 1; i--) {
+        n *= i;
+    }
+    return console.log(n);
+}
+function abc(n,callback) {
+    return callback(n);
+}
+abc(5, factorial);

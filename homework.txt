@@ -1,0 +1,4 @@
+-Bài tập buổi 2
+Tạo 1 class Human có thuộc tính tên tuổi chiều cao số đo ba vòng =>tạo hàm kiểm tra tuổi nếu trên >18 tuổi đủ tuổi đi chơi <18 k đủ tuổi
+Bài tập: Tính giai thừa của một số
+Viết một hàm tính giai thừa của một số nguyên dương và sử dụng callback để in kết quả.
