@@ -1,8 +1,8 @@
 // let const - block scoped variables
 // not hoisting
 // camelCase
-let name; // Không bắt buộc gán giá trị khởi tạo | Có thể gán lại giá trị
-const name2 = ""; //Bắt buộc gán giá trị khởi tạo | Không thể gán lại giá trị
+// let name; // Không bắt buộc gán giá trị khởi tạo | Có thể gán lại giá trị
+// const name2 = ""; //Bắt buộc gán giá trị khởi tạo | Không thể gán lại giá trị
 // console.log(name);
 
 // Kieu du lieu (primitive/non-primitive)(value types/ reference types)
@@ -23,11 +23,11 @@ const name2 = ""; //Bắt buộc gán giá trị khởi tạo | Không thể gá
 // console.log(a + b); //6
 // console.log(a - b); //2
 // console.log(a % b); //0
-let a1 = 1;
+// let a1 = 1;
 
 // a++ trả về giá trị của a, sau đó gán lại cho a = a + 1
 // ++a trả về trực tiếp a + 1
-console.log("a1: ", ++a1);
+// console.log("a1: ", ++a1);
 
 // ================Toán tử logic====================
 
@@ -37,21 +37,21 @@ console.log("a1: ", ++a1);
 
 // Boolean logic :  ||(OR)  &&(AND)    !(NOT)
 
-let a = 1 > 2 && 2 > 1;
-console.log(typeof a);
-if (1 > 2 || 2 > 1 || 3 > 4) {
-	console.log("Hello world");
-}
+// let a = 1 > 2 && 2 > 1;
+// console.log(typeof a);
+// if (1 > 2 || 2 > 1 || 3 > 4) {
+// 	console.log("Hello world");
+// }
 // typeof a =>> kiểu dữ liệu của biến a
 
 // toán tử 3 ngôi (ternary operators)
 // Nếu điều kiện đúng, trả về giá trị thứ nhất, ngược lại trả về giá trị thứ 2
 
-let diemTB = 8;
-let diemDatDuoc = 5;
-let isLogin = true;
+// let diemTB = 8;
+// let diemDatDuoc = 5;
+// let isLogin = true;
 
-let result = diemDatDuoc > diemTB ? "Pass roi" : "chua Pass";
+// let result = diemDatDuoc > diemTB ? "Pass roi" : "chua Pass";
 
 // ================Vòng lặp (Loop)====================
 // //For
@@ -62,22 +62,22 @@ let result = diemDatDuoc > diemTB ? "Pass roi" : "chua Pass";
 // }
 // forEach,for of trả về từng phần tử của mảng sau mỗi vòng lặp
 // for in: trả về index của phần tử
-const array = ["Duc", "Tung", "Nguyen", "Vuong", "Toan"];
+// const array = ["Duc", "Tung", "Nguyen", "Vuong", "Toan"];
 
-array.forEach(function (item, index) {
+// array.forEach(function (item, index) {
 
-});
-console.log("==========");
-for (let item in array) {
+// });
+// console.log("==========");
+// for (let item in array) {
 
-}
-console.log("==========");
-for (let item of array) {
+// }
+// console.log("==========");
+// for (let item of array) {
 
-}
+// }
 
-// if/else statement
-const diemKtra = 8;
+// // if/else statement
+// const diemKtra = 8;
 // 5, 5-7.5 kha, 7.5 - 9 gioi, 9 - 10 xuat sac;
 
 // if (diemKtra == 1) {
@@ -89,20 +89,20 @@ const diemKtra = 8;
 // } else {
 // 	console.log("final step");
 // }
-let name3 = "Tung";
+// let name3 = "Tung";
 
-const day = new Date().getDay();
-if (day == 1 || day == 2 || day == 3) {
-	console.log("dau tuan`");
-}
+// const day = new Date().getDay();
+// if (day == 1 || day == 2 || day == 3) {
+// 	console.log("dau tuan`");
+// }
 
-switch (day) {
-	case 1:
-	case 2:
-	case 3:
-		console.log("ngay lv");
-		break;
-}
+// switch (day) {
+// 	case 1:
+// 	case 2:
+// 	case 3:
+// 		console.log("ngay lv");
+// 		break;
+// }
 // tao 1 vong lap for lap lai 10 lan, trong moi lan thi` bien status (boolean) se thay doi nguoc lai voi chinh no, console.log ra
 
 
@@ -116,59 +116,59 @@ switch (day) {
 
 // console.log("employee: ",employee);
 
-class Human{
-	constructor(nameParam, heightParam, isSingleParam){
-		this.name = nameParam;
-		this.height = heightParam,
-		this.isSingle = isSingleParam;
-		this.work = function(){
-			console.log("I'm working");
-		}
-	}
-	sleep(){
-		console.log("I'm sleeping");
-	}
-	introduce(){
-		console.log("Toi la "+this.name+", toi cao "+this.height+" cm");
-	}
-}
+// class Human{
+// 	constructor(nameParam, heightParam, isSingleParam){
+// 		this.name = nameParam;
+// 		this.height = heightParam,
+// 		this.isSingle = isSingleParam;
+// 		this.work = function(){
+// 			console.log("I'm working");
+// 		}
+// 	}
+// 	sleep(){
+// 		console.log("I'm sleeping");
+// 	}
+// 	introduce(){
+// 		console.log("Toi la "+this.name+", toi cao "+this.height+" cm");
+// 	}
+// }
 
-const toan = new Human("Toan","300",true);
+// const toan = new Human("Toan","300",true);
 
-toan.introduce();
-// Cach2: dung cu phap new Object()
-const newPlainObject = new Object();
-newPlainObject.age = 24;
+// toan.introduce();
+// // Cach2: dung cu phap new Object()
+// const newPlainObject = new Object();
+// newPlainObject.age = 24;
 
-// Cach 3:
-const oldObject = {
-	name: "toan",
-	age: 21 
-};
+// // Cach 3:
+// const oldObject = {
+// 	name: "toan",
+// 	age: 21 
+// };
   //Shallow copy: khi thay doi gia tri cua object moi thi object cu cung bi thay doi
 
 // immutable ===> Deep copy
 // c1: dung Object.assign()
 
-const clone1 = Object.assign({}, oldObject);
-clone1.name = "Tung";
+// const clone1 = Object.assign({}, oldObject);
+// clone1.name = "Tung";
 
-console.log("clone 1: ",clone1);
-console.log("old object: ", oldObject);
+// console.log("clone 1: ",clone1);
+// console.log("old object: ", oldObject);
 
 // c2: 
 
-const clone2 = JSON.parse(JSON.stringify(oldObject));
-console.log("clone 2: ", clone2);
+// const clone2 = JSON.parse(JSON.stringify(oldObject));
+// console.log("clone 2: ", clone2);
 
 // ======================Function======================
 
 // function declaration | default params
 
-function fnName(param1 = 1, param2 = 2){
-	return param1 + param2;
-}
-console.log(fnName());
+// function fnName(param1 = 1, param2 = 2){
+// 	return param1 + param2;
+// }
+// console.log(fnName());
 // function fn1 () {
 // 	return "Hello"
 // }
@@ -219,15 +219,45 @@ console.log(fnName());
 // })
 
 // turn 1: (Toan, 0) ==> callback(Toan,0)
-function sum (a,b){
-	return console.log(a+b);
-}
-function div (a,b){
-	return console.log(a-b);
+// function sum (a,b){
+// 	return console.log(a+b);
+// }
+// function div (a,b){
+// 	return console.log(a-b);
 
+// }
+// function abc(a,b,callback){
+// 	return callback(a,b)
+// }
+// abc(1,2,sum);
+// abc(1,2,div);
+
+
+
+//========BTVN=========
+//Tạo 1 class Human có thuộc tính tên tuổi chiều cao số đo ba vòng =>tạo hàm kiểm tra tuổi nếu trên >18 tuổi đủ tuổi đi chơi <18 k đủ tuổi
+class Human{
+	constructor(nameParam, heightParam, ageParam, v1Param, v2Param, v3Param ){
+		this.name = nameParam;
+		this.height = heightParam,
+		this.age = ageParam;
+        this.v1 = v1Param;
+        this.v2 = v2Param;
+        this.v3 = v3Param;
+		 }
+	introduce() {
+		console.log("Toi la "+this.name+", toi cao "+this.height+"cm "+this.age+"tuoi "+this.v1+"cm "+this.v2+"cm "+this.v3+"cm ");
+	}
+    checkage() {
+        if (this.age > 18) {
+          console.log("Du tuoi");
+        } else {
+          console.log("Khong du tuoi");
+        }
+    }
 }
-function abc(a,b,callback){
-	return callback(a,b)
-}
-abc(1,2,sum);
-abc(1,2,div);
+const toan = new Human("Toan","300","20","90","50","80");
+toan.introduce();
+toan.checkage();
+
+//Viết một hàm tính giai thừa của một số nguyên dương và sử dụng callback để in kết quả.
