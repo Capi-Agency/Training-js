@@ -34,5 +34,23 @@ function checkVar () {
 }
 
 
-checkVar();
+
 dz.introduce();
+checkVar();
+
+//tinh giai thua
+function giaiThua(n){
+    if (n <= 1){
+        return 1;
+    }
+    for (let i = n-1 ; i >= 1; i--) {
+        n *= i;
+    }
+    return console.log(n);
+}
+
+function cb(n,callback){
+    return callback(n);
+}
+
+cb(5, giaiThua);
