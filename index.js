@@ -80,12 +80,52 @@
 // console.log("ten", fullName.toLowerCase());
 // console.log("ten", fullName.split(""));
 
-const namThang = ["Toan", "Duc", "Nguyen", "Tung", "Vuong"]
-const nameThang1 = new Array ("Toan", "Duc", "Nguyen", "Tung", "Vuong")
+// const namThang = ["Toan", "Duc", "Nguyen", "Tung", "Vuong"]
+// const nameThang1 = new Array ("Toan", "Duc", "Nguyen", "Tung", "Vuong")
 
-console.log(namThang);
-console.log(nameThang1);
+// console.log(namThang);
+// console.log(nameThang1);
 
-namThang.forEach(function(name, index){
-    console.log(`name: ${name}, at index ${index +1 }`)
+// namThang.forEach(function(name, index){
+//     console.log(`name: ${name}, at index ${index +1 }`)
+// })
+
+
+const num = [1,2,3,4,5,6,7,8,9]
+let sum = 0;
+for (let i = 0; i < num.length;i++){
+    sum += num[i];
+}
+let max = num.reduce(function(accumulator, element){
+  return (accumulator > element) ? accumulator : element
+});
+let min = num.reduce(function(accumulator, element){
+	return (accumulator < element) ? accumulator : element
+  });
+
+num.sort(function(){
+	return -1
 })
+console.log("Tong:",sum);
+console.log("max= ",max );
+console.log("min= ",min );
+console.log(num);
+
+// const numLv = [1,1,3,4,5,5,7,8,9]
+// const filternumLv = numLv.filter(function(repeat){
+// 	return repeat = 
+// })
+
+// console.log("cac so bi lap: ", filternumLv)
+console.log(sum /= num.length)
+
+////bai 2
+const newNum = num.sort(function(a,b){
+	return a - b
+})
+
+
+console.log(newNum);
+
+
+
