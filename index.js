@@ -1,8 +1,8 @@
 // let const - block scoped variables
 // not hoisting
 // camelCase
-let name; // Không bắt buộc gán giá trị khởi tạo | Có thể gán lại giá trị
-const name2 = ""; //Bắt buộc gán giá trị khởi tạo | Không thể gán lại giá trị
+// let name; // Không bắt buộc gán giá trị khởi tạo | Có thể gán lại giá trị
+// const name2 = ""; //Bắt buộc gán giá trị khởi tạo | Không thể gán lại giá trị
 // console.log(name);
 
 // Kieu du lieu (primitive/non-primitive)(value types/ reference types)
@@ -23,11 +23,11 @@ const name2 = ""; //Bắt buộc gán giá trị khởi tạo | Không thể gá
 // console.log(a + b); //6
 // console.log(a - b); //2
 // console.log(a % b); //0
-let a1 = 1;
+// let a1 = 1;
 
 // a++ trả về giá trị của a, sau đó gán lại cho a = a + 1
 // ++a trả về trực tiếp a + 1
-console.log("a1: ", ++a1);
+// console.log("a1: ", ++a1);
 
 // ================Toán tử logic====================
 
@@ -37,21 +37,21 @@ console.log("a1: ", ++a1);
 
 // Boolean logic :  ||(OR)  &&(AND)    !(NOT)
 
-let a = 1 > 2 && 2 > 1;
-console.log(typeof a);
-if (1 > 2 || 2 > 1 || 3 > 4) {
-	console.log("Hello world");
-}
+// let a = 1 > 2 && 2 > 1;
+// console.log(typeof a);
+// if (1 > 2 || 2 > 1 || 3 > 4) {
+// 	console.log("Hello world");
+// }
 // typeof a =>> kiểu dữ liệu của biến a
 
 // toán tử 3 ngôi (ternary operators)
 // Nếu điều kiện đúng, trả về giá trị thứ nhất, ngược lại trả về giá trị thứ 2
 
-let diemTB = 8;
-let diemDatDuoc = 5;
-let isLogin = true;
+// let diemTB = 8;
+// let diemDatDuoc = 5;
+// let isLogin = true;
 
-let result = diemDatDuoc > diemTB ? "Pass roi" : "chua Pass";
+// let result = diemDatDuoc > diemTB ? "Pass roi" : "chua Pass";
 
 // ================Vòng lặp (Loop)====================
 // //For
@@ -62,22 +62,22 @@ let result = diemDatDuoc > diemTB ? "Pass roi" : "chua Pass";
 // }
 // forEach,for of trả về từng phần tử của mảng sau mỗi vòng lặp
 // for in: trả về index của phần tử
-const array = ["Duc", "Tung", "Nguyen", "Vuong", "Toan"];
+// const array = ["Duc", "Tung", "Nguyen", "Vuong", "Toan"];
 
-array.forEach(function (item, index) {
+// array.forEach(function (item, index) {
 
-});
-console.log("==========");
-for (let item in array) {
+// });
+// console.log("==========");
+// for (let item in array) {
 
-}
-console.log("==========");
-for (let item of array) {
+// }
+// console.log("==========");
+// for (let item of array) {
 
-}
+// }
 
 // if/else statement
-const diemKtra = 8;
+// const diemKtra = 8;
 // 5, 5-7.5 kha, 7.5 - 9 gioi, 9 - 10 xuat sac;
 
 // if (diemKtra == 1) {
@@ -89,21 +89,21 @@ const diemKtra = 8;
 // } else {
 // 	console.log("final step");
 // }
-let name3 = "Tung";
+// let name3 = "Tung";
 
-const day = new Date().getDay();
-if (day == 1 || day == 2 || day == 3) {
-	console.log("dau tuan`");
-}
+// const day = new Date().getDay();
+// if (day == 1 || day == 2 || day == 3) {
+// 	console.log("dau tuan`");
+// }
 
-switch (day) {
-	case 1:
-	case 2:
-	case 3:
-		console.log("ngay lv");
-		break;
-}
-// tao 1 vong lap for lap lai 10 lan, trong moi lan thi` bien status (boolean) se thay doi nguoc lai voi chinh no, console.log ra
+// switch (day) {
+// 	case 1:
+// 	case 2:
+// 	case 3:
+// 		console.log("ngay lv");
+// 		break;
+// }
+// // tao 1 vong lap for lap lai 10 lan, trong moi lan thi` bien status (boolean) se thay doi nguoc lai voi chinh no, console.log ra
 
 
 // Buoi 2:
@@ -116,59 +116,59 @@ switch (day) {
 
 // console.log("employee: ",employee);
 
-class Human{
-	constructor(nameParam, heightParam, isSingleParam){
-		this.name = nameParam;
-		this.height = heightParam,
-		this.isSingle = isSingleParam;
-		this.work = function(){
-			console.log("I'm working");
-		}
-	}
-	sleep(){
-		console.log("I'm sleeping");
-	}
-	introduce(){
-		console.log("Toi la "+this.name+", toi cao "+this.height+" cm");
-	}
-}
+// class Human{
+// 	constructor(nameParam, heightParam, isSingleParam){
+// 		this.name = nameParam;
+// 		this.height = heightParam,
+// 		this.isSingle = isSingleParam;
+// 		this.work = function(){
+// 			console.log("I'm working");
+// 		}
+// 	}
+// 	sleep(){
+// 		console.log("I'm sleeping");
+// 	}
+// 	introduce(){
+// 		console.log("Toi la "+this.name+", toi cao "+this.height+" cm");
+// 	}
+// }
 
-const toan = new Human("Toan","300",true);
+// const toan = new Human("Toan","300",true);
 
-toan.introduce();
+// toan.introduce();
 // Cach2: dung cu phap new Object()
-const newPlainObject = new Object();
-newPlainObject.age = 24;
+// const newPlainObject = new Object();
+// newPlainObject.age = 24;
 
 // Cach 3:
-const oldObject = {
-	name: "toan",
-	age: 21 
-};
+// const oldObject = {
+// 	name: "toan",
+// 	age: 21 
+// };
   //Shallow copy: khi thay doi gia tri cua object moi thi object cu cung bi thay doi
 
 // immutable ===> Deep copy
 // c1: dung Object.assign()
 
-const clone1 = Object.assign({}, oldObject);
-clone1.name = "Tung";
+// const clone1 = Object.assign({}, oldObject);
+// clone1.name = "Tung";
 
-console.log("clone 1: ",clone1);
-console.log("old object: ", oldObject);
+// console.log("clone 1: ",clone1);
+// console.log("old object: ", oldObject);
 
-// c2: 
+// // c2: 
 
-const clone2 = JSON.parse(JSON.stringify(oldObject));
-console.log("clone 2: ", clone2);
+// const clone2 = JSON.parse(JSON.stringify(oldObject));
+// console.log("clone 2: ", clone2);
 
 // ======================Function======================
 
 // function declaration | default params
 
-function fnName(param1 = 1, param2 = 2){
-	return param1 + param2;
-}
-console.log(fnName());
+// function fnName(param1 = 1, param2 = 2){
+// 	return param1 + param2;
+// }
+// console.log(fnName());
 // function fn1 () {
 // 	return "Hello"
 // }
@@ -185,9 +185,9 @@ console.log(fnName());
 
 // function expression
 
-const fnName2 = function(){
+// const fnName2 = function(){
 
-}
+// }
 
 // arrow function | ECMA Script 6
 
@@ -219,15 +219,217 @@ const fnName2 = function(){
 // })
 
 // turn 1: (Toan, 0) ==> callback(Toan,0)
-function sum (a,b){
-	return console.log(a+b);
-}
-function div (a,b){
-	return console.log(a-b);
+// function sum (a,b){
+// 	return console.log(a+b);
+// }
+// function div (a,b){
+// 	return console.log(a-b);
 
+// }
+// function abc(a,b,callback){
+// 	return callback(a,b)
+// }
+// abc(1,2,sum);
+// abc(1,2,div);
+
+// === On tap Object va function ===
+// const today = new Date();
+// const currentDate = today.getDate();
+// const currentHour = today.getHours();
+
+
+// const appointment = {
+// 	date: 19,
+// 	time: 9,
+// 	location: "35 TVD",
+// 	showDetail: function(){
+// 		console.log(`Cuoc hop dien ra luc ${this.time}, ngay ${this.date}, dia diem: ${this.location} `);
+// 	},
+// 	check: function(){
+// 		if(currentDate < this.date || (currentDate == this.date && currentHour < this.time)){
+// 			console.log('Cuoc hop chua dien ra');
+// 		}else if(currentDate > this.date || (currentDate == this.date && currentHour > this.time)){
+// 			console.log('Cuoc hop da dien ra');
+// 		}else{
+// 			console.log('Cuoc hop dang dien ra');
+// 		}
+// 	}
+// }
+// appointment.showDetail();
+
+// Buoi 3:
+
+// ======================String======================
+
+const a = "abcd  13232";
+const b = new String("abcd 12121");
+
+
+// Phuong thuc cua String
+
+///////////////// Cắt ///////////////////////////
+/////// slice(startIndex, endIndex) | substring(startIndex, endIndex)
+// console.log("a.slice():", a.slice(0, 3));
+// console.log("a.substring():", a.substring(0, 3));
+//////  substr(startIndex, length)
+// console.log("a.substr():", a.substr(0, 4));
+
+
+///////////////// Thay thế ///////////////////////////
+/////// replace(searchVal, replaceVal) thay thế giá trị searchVal đầu tiên nó tìm thấy
+
+////// replaceAll(search, replace) thay thế tất cả giá trị searchVal nó tìm thấy
+
+//////////////// Biến đổi style của text ////////////////
+
+/////// toUpperCase() >< toLowerCase()
+//  const fullName = "Nguyen Van A";
+//  console.log("name: ", fullName.toLowerCase())
+
+ ///////////////// Nối ///////////////////////////
+
+const firstName = "  Nguyen   ";
+const lastName = "  Duc   ";
+
+const fullName = firstName.concat(" ",lastName, " sieu cap vjppro");
+
+
+ ///////////////// Xoá khoảng trắng ///////////////////////////
+
+/////// trim(), trimStart(), trimEnd()
+// console.log("trimmed fullName: ",fullName.trim());
+
+////////////////// Chia tách /////////////////////
+////// split(splitter, limit) | splitter: các kí tự dùng để chia tách, limit: giới hạn độ dài của mảng kết quả trả về
+
+const subjects = "HTML, CSS, Javascript, PHP";
+
+const subjectArray = subjects.split('');
+
+// console.log("subject array: ", subjectArray);
+
+// ====================== Array ======================
+// ///// index của mảng bắt đầu từ 0 đến vị trí thứ length - 1
+// const exampleArray1 = [1, "a", {}];
+// const exampleArray2 = new Array(1, "a", {});
+
+// console.table(exampleArray1);
+// console.log("example array 2: ", exampleArray2);
+
+// ====================== Array methods ======================
+////// array[index]: truy cập phần tử có index trong array
+////// array.length
+////// array.toString() && array.join() | khi mà array này bao gồm các string number
+
+
+// console.log("array.join(): ",example.join());
+
+///// array.pop() | lấy phần tử cuối cùng ra khỏi 1 array và trả về "phần tử" đấy
+
+// console.log("array.pop(): ",example.pop());
+// console.log("popped array: ", example);
+
+///// array.push() | thêm một phần từ vào cuối mảng và trả về "độ dài mới của mảng"
+
+// console.log("array.push(): ",example.push("PHP"));
+
+///// array.shift() >< array.unshift()
+// console.log("array.shift(): ",example.shift());
+// console.log("shifted array: ", example);
+
+/////// delete | không khuyến khích
+
+// delete example[2];
+// console.log("array: ", example);
+
+ ///////////////// Nối ///////////////////////////
+/////// array.concat()
+
+
+///////////////// Cắt ///////////////////////////
+////// array.splice(startIndex, deletedLength, items[]), trả về các phần tử đã xóa
+const example = ["HTML", "CSS", "JS", "PHP", "Golang", "C++", "Java"];
+
+////// array.slice(startIndex, endIndex) | trả về mảng mới được cắt từ mảng cũ bắt đầu từ vị trí startIndex, kết thúc ở vị trí endIndex
+
+const newArray = example.slice(1);
+
+console.log('====================================');
+console.log("array: ", example);
+console.log("new array: ", newArray);
+console.log('====================================');
+
+///////////// Sắp xếp //////////
+// array.sort(callbackFn(a,b){
+	// return a - b; ==> trả về array giá trị tăng dần
+// })
+// array.sort(callbackFn(a,b){
+	// return b - a; ==> trả về array giá trị giảm dần
+// })
+
+const points = [3,1,5,4,3,6,8,9];
+
+// const newPoints = points.sort(function(a,b){
+// 	return b - a;
+// })
+// console.log('====================================');
+// console.log("points: ", points);
+// console.log("sorted points: ", newPoints);
+// console.log('====================================');
+
+/////////// Array iteration || phương thức lquan đến vòng lặp /////////////
+
+////// array.forEach(callbackFn(element, index){ code xu li ele, index })
+
+const callbackFn = function(point, index){
+	console.log(`point: ${point}, at index ${index}`);
 }
-function abc(a,b,callback){
-	return callback(a,b)
+
+points.forEach(callbackFn)
+
+////// array.map(callbackFn)
+
+const triplePoints = points.map(function(point, index){
+	return point * 3
+})
+
+
+
+////// array.filter(callbackFn) ===> Trả về 1 MẢNG mới mà thỏa mãn các điều kiện trong callbackFn y/cầu
+
+const filteredPoints = points.filter(function(point){
+	return point >= 5;
+})
+
+
+////// array.reduce(callbackFn, initVal)
+const callbackFn2 = function(prevPoint, currentPoint){
+	return prevPoint + currentPoint;
 }
-abc(1,2,sum);
-abc(1,2,div);
+const reducedPoints = points.reduce(callbackFn2,0);
+
+// 1st turn
+// prevPoint = initVal ===> prevPoint += currentPoint ===> 9
+
+// 2nd
+// 
+
+console.log('====================================');
+console.table(points);
+console.table(reducedPoints);
+console.log('====================================');
+
+/////// array.find(callbackFn) ===> Trả về 1 PHẦN TỬ đầu tiên mà thỏa mãn các điều kiện trong callbackFn y/cầu
+
+const foundPoint = points.find(function(point){
+	return point == 3;
+})
+console.table("found: ",foundPoint);
+
+/////// array.indexOf(searchVal) ==> sẽ trả về -1 nếu phần tử không thuộc mảng, ngược lại, trả về index của phần tử trong mảng
+
+const index = points.indexOf(10);
+console.log("index: ", index);
+
+////// array.findIndex(callbackFn)
+
