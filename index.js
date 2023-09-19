@@ -236,51 +236,95 @@
 
 //========BTVN=========
 //Tạo 1 class Human có thuộc tính tên tuổi chiều cao số đo ba vòng 
-class Human {
-  constructor(nameParam, heightParam, ageParam, v1Param, v2Param, v3Param) {
+// class Human {
+//   constructor(nameParam, heightParam, ageParam, v1Param, v2Param, v3Param) {
+//     this.name = nameParam;
+//     this.height = heightParam;
+//     this.age = ageParam;
+//     this.v1 = v1Param;
+//     this.v2 = v2Param;
+//     this.v3 = v3Param;
+//   }
+//   introduce() {
+//     console.log("Toi la " + this.name + ", toi cao " + this.height + "cm " + this.age + "tuoi " + this.v1 + "cm " + this.v2 + "cm " + this.v3 + "cm ");
+//   }
+//   //tạo hàm kiểm tra tuổi nếu trên >18 tuổi đủ tuổi đi chơi <18 k đủ tuổi
+//   checkAge() {
+//     if (this.age > 18) {
+//       console.log("Du tuoi");
+//     } else {
+//       console.log("Khong du tuoi");
+//     }
+//   }
+// }
+// const toan = new Human("Toan", "300", "20", "90", "50", "80");
+// toan.introduce();
+// toan.checkAge();
+
+// //Viết một hàm tính giai thừa của một số nguyên dương và sử dụng callback để in kết quả.
+// function div(x) {
+//   console.log(x)
+// }
+// function timgiaithua(x, callback) {
+//   if (x < 0) {
+//     console.log("ko phai nguyen duong");
+//   }
+//   else if (x === 0) {
+//     console.log("giai thua = 1 ");
+//   }
+//   else {
+//     let factorial = 1;
+//     for (let i = 1; i <= x; i++) {
+//       factorial *= i;
+//     }
+//     callback(factorial);
+//   }
+// }
+// timgiaithua(1, div);
+
+//=============buoi3===========
+//bai tap ve doi tuong (Object)
+// bai 3
+class Animal {
+  constructor(nameParam, speciesParam, ageParam) {
     this.name = nameParam;
-    this.height = heightParam;
+    this.species = speciesParam;
     this.age = ageParam;
-    this.v1 = v1Param;
-    this.v2 = v2Param;
-    this.v3 = v3Param;
   }
   introduce() {
-    console.log("Toi la " + this.name + ", toi cao " + this.height + "cm " + this.age + "tuoi " + this.v1 + "cm " + this.v2 + "cm " + this.v3 + "cm ");
-  }
-  //tạo hàm kiểm tra tuổi nếu trên >18 tuổi đủ tuổi đi chơi <18 k đủ tuổi
-  checkAge() {
-    if (this.age > 18) {
-      console.log("Du tuoi");
-    } else {
-      console.log("Khong du tuoi");
-    }
+    console.log("Day la con " + this.name + ", la loai " + this.species + "tuoi" + this.age);
   }
 }
-const toan = new Human("Toan", "300", "20", "90", "50", "80");
-toan.introduce();
-toan.checkAge();
 
-//Viết một hàm tính giai thừa của một số nguyên dương và sử dụng callback để in kết quả.
-function div(x) {
-  console.log(x)
-}
-function timgiaithua(x, callback) {
-  if (x < 0) {
-    console.log("ko phai nguyen duong");
-  }
-  else if (x === 0) {
-    console.log("giai thua = 1 ");
-  }
-  else {
-    let factorial = 1;
-    for (let i = 1; i <= x; i++) {
-      factorial *= i;
-    }
-    callback(factorial);
-  }
-}
-timgiaithua(1, div);
+  const Cat = new Animal("meo anh long ngan", "meo" , 4);
+ Cat.introduce();
+//bai 4 ve nha xem 
+//=================String=======================
+
+const fullname = "tran huu tung";
+// console.log("length of fullname: " , fullname.length);
+console.log("fullname.slice(): " , fullname.slice(0, 5));
+// bien doi style cua text 
+console.log("name: ", fullname.toUpperCase());
+console.log("name: ", fullname.toLocaleLowerCase());
+const fullnameArray = fullname.split(" ", 2);
+console.log("fullname arrray: ", fullnameArray );
+
+//===================Array===========
+const memberArray = ["duc", "tung", "vuong", "toan"];
+console.table(memberArray);
+//
+memberArray.forEach(function(memberArray, index){
+  console.log(`memberArray: ${memberArray}, at index ${index}`);
+})
+
+
+
+
+
+
+
+
 
 
 
