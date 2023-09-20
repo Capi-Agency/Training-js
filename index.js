@@ -85,7 +85,7 @@ for (let i = 0; i < 10; i++) {
 }
 
 for (let i = 0; i < 10; i++) {
-    for (let j = 0; j < 5; j++){
+    for (let j = 0; j < 5; j++) {
         // console.log(`Anh yeu em ${i} lần, với ${j} em`)
     }
 }
@@ -118,7 +118,7 @@ let diemKT = 7
 
 if (typeof diemKT != "number") {
     // console.log('Diem khong hop le');
-} else if (diemKT>=0 && diemKT<=3) {
+} else if (diemKT >= 0 && diemKT <= 3) {
     // console.log('Thi lai');
 } else if (diemKT > 3 && diemKT <= 7) {
     // console.log('Kha');
@@ -320,7 +320,7 @@ function ageCheck() {
     console.log(result);
 }
 
-ageCheck()
+// ageCheck()
 
  */
 
@@ -338,11 +338,51 @@ function factorial(n) {
         n *= i;
     }
     return console.log(n);
-}
-function abc(n,callback) {
+ }
+ function abc(n,callback) {
     return callback(n);
+ }
+ abc(5, factorial);
+ */
+
+// Ôn Object
+
+/**
+
+class Animal {
+    constructor(namePara, speciesPara, agePara) {
+        this.name = namePara
+        this.species = speciesPara
+        this.age = agePara
+    }
+    overview() {
+        console.log(`This is ${this.name}, belongs to ${this.species} and about ${this.age} years old.`);
+    }
 }
-abc(5, factorial);
+
+let Cat = new Animal('Cat', 'Mammal', 13)
+
+
+let date = new Date()
+let currentDate = date.getDate()
+let currentHour = date.getHours()
+
+let appoinments = {
+    date: currentDate,
+    time: currentHour,
+    location: '35 To Vinh Dien',
+    getInformation: function () {
+        console.log(`The appoint start at ${this.date} of September, specific in ${this.time} AM, and the location is ${this.location}`);
+    }
+}
+
+console.log(appoinments.getInformation());
+
+if (appoinments.date == 19) {
+    console.log('The appointment is on schedule');
+} else {
+    console.warn('Delayed');
+}
 
  */
 
