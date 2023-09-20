@@ -272,7 +272,7 @@ let day = new Date().getDay();
 // console.log(sum(1,2));
 
 //Arrow function
-// const sum = (a, b) => a + b 
+// const sum = (a, b) => a + b
 // console.log(sum(3, 4));
 
 //IIFE chạy 1 lần, k thể gọi lại
@@ -293,7 +293,10 @@ let day = new Date().getDay();
 
 
 
-// Tạo 1 class Human có thuộc tính tên tuổi chiều cao số đo ba vòng 
+// Tạo 1 class Human có thuộc tính tên tuổi chiều cao số đo ba vòng
+
+/**
+
 class Human {
     constructor() {
         this.name = 'Woman'
@@ -305,8 +308,12 @@ class Human {
     }
 }
 
+ */
+
 // Tạo hàm kiểm tra tuổi nếu trên >18 tuổi đủ tuổi đi chơi <18 k đủ tuổi
 
+/**
+ 
 function ageCheck() {
     var girl = new Human();
     var result = girl.age > 18 ? 'Đủ tuổi' : 'Cúc';
@@ -315,10 +322,14 @@ function ageCheck() {
 
 ageCheck()
 
+ */
+
 
 // Bài tập: Tính giai thừa của một số
 // Viết một hàm tính giai thừa của một số nguyên dương và sử dụng callback để in kết quả.
 
+/**
+ 
 function factorial(n) {
     if (n === 0 || n === 1) {
         return 1;
@@ -332,3 +343,33 @@ function abc(n,callback) {
     return callback(n);
 }
 abc(5, factorial);
+
+ */
+
+
+/**
+ * bài1
+Tính tổng các phần tử trong mảng: Viết một hàm nhận vào một mảng số nguyên và trả về tổng của các phần tử.
+
+Tìm số lớn nhất và nhỏ nhất: Viết một hàm nhận vào một mảng số nguyên và trả về số lớn nhất và nhỏ nhất.
+
+Đảo ngược mảng: Viết một hàm nhận vào một mảng và trả về mảng đảo ngược.
+
+Tìm các phần tử lặp lại: Viết một hàm nhận vào một mảng và trả về một mảng chứa các phần tử lặp lại.
+
+Tính trung bình cộng: Viết một hàm nhận vào một mảng số nguyên và trả về giá trị trung bình cộng.
+
+bài2
+Sắp xếp mảng: Viết một hàm nhận vào một mảng số nguyên và trả về một mảng đã được sắp xếp từ thấp đến cao.
+
+Loại bỏ các phần tử trùng lặp: Viết một hàm nhận vào một mảng và trả về một mảng mới chỉ chứa các phần tử duy nhất.
+
+Tìm số lớn thứ hai: Viết một hàm nhận vào một mảng số nguyên và trả về số lớn thứ hai trong mảng.
+
+Tách mảng thành các mảng con nhỏ: Viết một hàm nhận vào một mảng và một số nguyên n, trả về một mảng gồm n mảng con có kích thước bằng nhau.
+
+Kiểm tra mảng có số nguyên tố hay không: Viết một hàm nhận vào một mảng số nguyên và trả về true nếu mảng chứa ít nhất một số nguyên tố, ngược lại trả về false.
+ */
+
+// Bài 3.1: Tính tổng các phần tử trong mảng: Viết một hàm nhận vào một mảng số nguyên và trả về tổng của các phần tử.
+
