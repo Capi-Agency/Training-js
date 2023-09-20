@@ -285,55 +285,261 @@
 //=============buoi3===========
 //bai tap ve doi tuong (Object)
 // bai 3
-class Animal {
-	constructor(nameParam, speciesParam, ageParam) {
-		this.name = nameParam;
-		this.species = speciesParam;
-		this.age = ageParam;
-	}
-	introduce() {
-		console.log("Day la con " + this.name + ", la loai " + this.species + "tuoi" + this.age);
-	}
-}
+// class Animal {
+// 	constructor(nameParam, speciesParam, ageParam) {
+// 		this.name = nameParam;
+// 		this.species = speciesParam;
+// 		this.age = ageParam;
+// 	}
+// 	introduce() {
+// 		console.log("Day la con " + this.name + ", la loai " + this.species + "tuoi" + this.age);
+// 	}
+// }
 
-const Cat = new Animal("meo anh long ngan", "meo", 4);
-Cat.introduce();
-//bai 4 ve nha xem 
-//=================String=======================
+// const Cat = new Animal("meo anh long ngan", "meo", 4);
+// Cat.introduce();
+// //bai 4 ve nha xem 
+// //=================String=======================
 
-const fullname = "tran huu tung";
-// console.log("length of fullname: " , fullname.length);
-console.log("fullname.slice(): ", fullname.slice(0, 5));
-// bien doi style cua text 
-console.log("name: ", fullname.toUpperCase());
-console.log("name: ", fullname.toLocaleLowerCase());
-const fullnameArray = fullname.split(" ", 2);
-console.log("fullname arrray: ", fullnameArray);
+// const fullname = "tran huu tung";
+// // console.log("length of fullname: " , fullname.length);
+// console.log("fullname.slice(): ", fullname.slice(0, 5));
+// // bien doi style cua text 
+// console.log("name: ", fullname.toUpperCase());
+// console.log("name: ", fullname.toLocaleLowerCase());
+// const fullnameArray = fullname.split(" ", 2);
+// console.log("fullname arrray: ", fullnameArray);
 
-//===================Array===========
-const memberArray = ["duc", "tung", "vuong", "toan"];
-console.table(memberArray);
-//
-memberArray.forEach(function (memberArray, index) {
-	console.log(`memberArray: ${memberArray}, at index ${index}`);
-})
+// //===================Array===========
+// const memberArray = ["duc", "tung", "vuong", "toan"];
+// console.table(memberArray);
+// //
+// memberArray.forEach(function (memberArray, index) {
+// 	console.log(`memberArray: ${memberArray}, at index ${index}`);
+// })
 
+// ============buoi 3============
+
+// Phuong thuc cua String
+
+/////// slice(startIndex, endIndex) | substring(startIndex, endIndex)
+///////////////// Cắt ///////////////////////////
+// console.log("a.slice():", a.slice(0, 3));
+// console.log("a.substring():", a.substring(0, 3));
+//////  substr(startIndex, length)
+// console.log("a.substr():", a.substr(0, 4));
+
+
+///////////////// Thay thế ///////////////////////////
+/////// replace(searchVal, replaceVal) thay thế giá trị searchVal đầu tiên nó tìm thấy
+
+////// replaceAll(search, replace) thay thế tất cả giá trị searchVal nó tìm thấy
+
+//////////////// Biến đổi style của text ////////////////
+
+/////// toUpperCase() >< toLowerCase()
+//  const fullName = "Nguyen Van A";
+//  console.log("name: ", fullName.toLowerCase())
+
+///////////////// Nối ///////////////////////////
+
+//  const firstName = "  Nguyen   ";
+//  const lastName = "  Duc   ";
+
+//  const fullName = firstName.concat(" ",lastName, " sieu cap vjppro");
+
+///////////////// Xoá khoảng trắng ///////////////////////////
+
+/////// trim(), trimStart(), trimEnd()
+// console.log("trimmed fullName: ",fullName.trim());
+
+////////////////// Chia tách /////////////////////
+////// split(splitter, limit) | splitter: các kí tự dùng để chia tách, limit: giới hạn độ dài của mảng kết quả trả về
+
+//  const subjects = "HTML, CSS, Javascript, PHP";
+
+//  const subjectArray = subjects.split('');
+
+// console.log("subject array: ", subjectArray);
+
+// ====================== Array ======================
+// ///// index của mảng bắt đầu từ 0 đến vị trí thứ length - 1
+// const exampleArray1 = [1, "a", {}];
+// const exampleArray2 = new Array(1, "a", {});
+
+// console.table(exampleArray1);
+// console.log("example array 2: ", exampleArray2);
+
+// ====================== Array methods ======================
+////// array[index]: truy cập phần tử có index trong array
+////// array.length
+////// array.toString() && array.join() | khi mà array này bao gồm các string number
+
+
+// console.log("array.join(): ",example.join());
+
+///// array.pop() | lấy phần tử cuối cùng ra khỏi 1 array và trả về "phần tử" đấy
+
+// console.log("array.pop(): ",example.pop());
+// console.log("popped array: ", example);
+
+///// array.push() | thêm một phần từ vào cuối mảng và trả về "độ dài mới của mảng"
+
+// console.log("array.push(): ",example.push("PHP"));
+
+///// array.shift() >< array.unshift()
+// console.log("array.shift(): ",example.shift());
+// console.log("shifted array: ", example);
+
+/////// delete | không khuyến khích
+
+// delete example[2];
+// console.log("array: ", example);
+
+///////////////// Nối ///////////////////////////
+/////// array.concat()
+
+
+///////////////// Cắt ///////////////////////////
+////// array.splice(startIndex, deletedLength, items[]), trả về các phần tử đã xóa
+//  const example = ["HTML", "CSS", "JS", "PHP", "Golang", "C++", "Java"];
+
+//  ////// array.slice(startIndex, endIndex) | trả về mảng mới được cắt từ mảng cũ bắt đầu từ vị trí startIndex, kết thúc ở vị trí endIndex
+
+//  const newArray = example.slice(1);
+
+//  console.log('====================================');
+//  console.log("array: ", example);
+//  console.log("new array: ", newArray);
+//  console.log('====================================');
+
+///////////// Sắp xếp //////////
+// array.sort(callbackFn(a,b){
+// return a - b; ==> trả về array giá trị tăng dần
+// })
+// array.sort(callbackFn(a,b){
+// return b - a; ==> trả về array giá trị giảm dần
+// })
+
+//  const points = [3,1,5,4,3,6,8,9];
+
+// const newPoints = points.sort(function(a,b){
+// 	return b - a;
+// })
+// console.log('====================================');
+// console.log("points: ", points);
+// console.log("sorted points: ", newPoints);
+// console.log('====================================');
+
+/////////// Array iteration || phương thức lquan đến vòng lặp /////////////
+
+////// array.forEach(callbackFn(element, index){ code xu li ele, index })
+
+//  const callbackFn = function(point, index){
+// 	 console.log(`point: ${point}, at index ${index}`);
+//  }
+
+//  points.forEach(callbackFn)
+
+//  ////// array.map(callbackFn)
+
+//  const triplePoints = points.map(function(point, index){
+// 	 return point * 3
+//  })
+
+
+
+//  ////// array.filter(callbackFn) ===> Trả về 1 MẢNG mới mà thỏa mãn các điều kiện trong callbackFn y/cầu
+
+//  const filteredPoints = points.filter(function(point){
+// 	 return point >= 5;
+//  })
+
+
+//  ////// array.reduce(callbackFn, initVal)
+//  const callbackFn2 = function(prevPoint, currentPoint){
+// 	 return prevPoint + currentPoint;
+//  }
+//  const reducedPoints = points.reduce(callbackFn2,0);
+
+//  // 1st turn
+//  // prevPoint = initVal ===> prevPoint += currentPoint ===> 9
+
+//  // 2nd
+//  // 
+
+//  console.log('====================================');
+//  console.table(points);
+//  console.table(reducedPoints);
+//  console.log('====================================');
+
+//  /////// array.find(callbackFn) ===> Trả về 1 PHẦN TỬ đầu tiên mà thỏa mãn các điều kiện trong callbackFn y/cầu
+
+//  const foundPoint = points.find(function(point){
+// 	 return point == 3;
+//  })
+//  console.table("found: ",foundPoint);
+
+//  /////// array.indexOf(searchVal) ==> sẽ trả về -1 nếu phần tử không thuộc mảng, ngược lại, trả về index của phần tử trong mảng
+
+//  const index = points.indexOf(10);
+//  console.log("index: ", index);
+
+////// array.findIndex(callbackFn)
 
 //===============BTVN============\
 // bai 1
 // Tính tổng các phần tử trong mảng: Viết một hàm nhận vào một mảng số nguyên và trả về tổng của các phần tử.
 
-let a = 4;
-let b = 5;
-console.log(a + b);
-
-function sum(a, b) {
-    return a + b;
+function tinhTong(arr) {
+	let sum = 0;
+	for (let i = 0; i < arr.length; i++) {
+		sum += arr[i];
+	}
+	return sum;
 }
-var result = sum(20, 10);
-console.log(result)
+var arr = [3, 4, 5, 6, 7];
+var sum = tinhTong(arr);
+console.log(sum);
+//Tìm số lớn nhất và nhỏ nhất: Viết một hàm nhận vào một mảng số nguyên và trả về số lớn nhất và nhỏ nhất.
 
+function timMinMax(arr) {
+	if (arr.length === 0) {
+		return null; // Trả về null nếu mảng rỗng
+	}
 
+	let min = arr[0]; // Giả sử phần tử đầu tiên là số nhỏ nhất
+	let max = arr[0]; // Giả sử phần tử đầu tiên là số lớn nhất
+
+	for (let i = 1; i < arr.length; i++) {
+		if (arr[i] < min) {
+			min = arr[i]; // Cập nhật số nhỏ nhất nếu tìm thấy số nhỏ hơn
+		}
+		if (arr[i] > max) {
+			max = arr[i]; // Cập nhật số lớn nhất nếu tìm thấy số lớn hơn
+		}
+	}
+
+	return { min, max };
+}
+var arr = [5, 3, 9, 1, 7];
+var result = timMinMax(arr);
+console.log(result.min); // Kết quả: 1
+console.log(result.max); // Kết quả: 9
+
+//Đảo ngược mảng: Viết một hàm nhận vào một mảng và trả về mảng đảo ngược.
+function daoNguocMang(arr) {
+	let reversedArr = [];
+	for (let i = arr.length - 1; i >= 0; i--) {
+		reversedArr.push(arr[i]);
+	}
+	return reversedArr;
+}
+var arr = [1, 2, 3, 4, 5];
+var reversedArr = daoNguocMang(arr);
+console.log(reversedArr); // Kết quả: [5, 4, 3, 2, 1]
+
+//Tìm các phần tử lặp lại: Viết một hàm nhận vào một mảng và trả về một mảng chứa các phần tử lặp lại.
 
 
 
