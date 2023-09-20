@@ -537,14 +537,51 @@ function daoNguocMang(arr) {
 }
 var arr = [1, 2, 3, 4, 5];
 var reversedArr = daoNguocMang(arr);
-console.log(reversedArr); // Kết quả: [5, 4, 3, 2, 1]
+console.log(reversedArr); 
 
 //Tìm các phần tử lặp lại: Viết một hàm nhận vào một mảng và trả về một mảng chứa các phần tử lặp lại.
+function timPhanTuLap(arr) {
+	let duplicateElements = [];
+	let count = {};
 
+	for (let i = 0; i < arr.length; i++) {
+		let element = arr[i];
+		count[element] = (count[element] || 0) + 1;
+	}
 
+	for (let key in count) {
+		if (count[key] > 1) {
+			duplicateElements.push(parseInt(key));
+		}
+	}
 
+	return duplicateElements;
+}
+var arr = [2, 2, 2, 2, 4, 5, 4];
+var duplicates = timPhanTuLap(arr);
+console.log(duplicates);
 
+//Tính trung bình cộng: Viết một hàm nhận vào một mảng số nguyên và trả về giá trị trung bình cộng.
+function tinhTrungBinhCong(arr) {
+	if (arr.length === 0) {
+		return 0;
+	}
 
+	let sum = 0;
+	for (let i = 0; i < arr.length; i++) {
+		sum += arr[i];
+	}
+
+	return sum / arr.length;
+}
+var arr = [1, 2, 3, 4, 5];
+var average = tinhTrungBinhCong(arr);
+console.log(average); 
+//Sắp xếp mảng: Viết một hàm nhận vào một mảng số nguyên và trả về một mảng đã được sắp xếp từ thấp đến cao.
+
+array.sort(callbackFn(a,b){
+	return a - b; 
+})
 
 
 
