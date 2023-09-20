@@ -192,7 +192,6 @@ let day = new Date().getDay();
 
 // === Buổi 2: Class ===
 
-
 // == Định nghĩa: 1 tập hợp các phần tử có cùng thuộc tính
 
 /** Khởi tạo Class = contructor
@@ -389,7 +388,7 @@ if (appoinments.date == 19) {
 
 /**
  * bài1
-Tính tổng các phần tử trong mảng: Viết một hàm nhận vào một mảng số nguyên và trả về tổng của các phần tử.
+Tính tổng các phần tử trong mảng: Viết một hàm nhận vào một mảng số nguyên và trả về tổng của các phần tử. 
 
 Tìm số lớn nhất và nhỏ nhất: Viết một hàm nhận vào một mảng số nguyên và trả về số lớn nhất và nhỏ nhất.
 
@@ -411,5 +410,156 @@ Tách mảng thành các mảng con nhỏ: Viết một hàm nhận vào một m
 Kiểm tra mảng có số nguyên tố hay không: Viết một hàm nhận vào một mảng số nguyên và trả về true nếu mảng chứa ít nhất một số nguyên tố, ngược lại trả về false.
  */
 
-// Bài 3.1: Tính tổng các phần tử trong mảng: Viết một hàm nhận vào một mảng số nguyên và trả về tổng của các phần tử.
+let arr = [2, 4, 8, 1, 6, 5, 6, 7, 3, 8, 9]
+let sum = 0
 
+// 3.1: Tính tổng các phần tử trong mảng: Viết một hàm nhận vào một mảng số nguyên và trả về tổng của các phần tử.
+
+console.group('Bài 3');
+function total(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    console.log('Tổng các phần tử', sum);
+}
+
+total(arr)
+
+// 3.2: Tìm số lớn nhất và nhỏ nhất: Viết một hàm nhận vào một mảng số nguyên và trả về số lớn nhất và nhỏ nhất.
+
+function resultHighAndLow(arr) {
+    let highestNumber = arr[0]
+    let lowestNumber = arr[0]
+
+    for (let i = 1; i < arr.length; i++) {
+        if (highestNumber < arr[i]) {
+            highestNumber = arr[i]
+        }
+        if (lowestNumber > arr[i]) {
+            lowestNumber = arr[i]
+        }
+    }
+
+    console.log('Số lớn nhất:', highestNumber);
+    console.log('Số nhỏ nhất:', lowestNumber);
+}
+
+resultHighAndLow(arr)
+
+//3.3: Đảo ngược mảng: Viết một hàm nhận vào một mảng và trả về mảng đảo ngược.
+
+function reverseArr(arr) {
+    let result = arr.reverse() 
+    console.log('Array đảo ngược', result); 
+}
+
+reverseArr(arr)
+
+//3.4: Tìm các phần tử lặp lại: Viết một hàm nhận vào một mảng và trả về một mảng chứa các phần tử lặp lại.
+let repeatedNum = []
+
+function findRepeat(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] === arr[j] && !repeatedNum.includes(arr[i])) {
+                repeatedNum.push(arr[i])
+            }
+        }
+    }
+    console.log('Tìm phần tử lặp:',repeatedNum);
+}
+
+findRepeat(arr)
+
+
+//3.5: Tính trung bình cộng: Viết một hàm nhận vào một mảng số nguyên và trả về giá trị trung bình cộng.
+
+function arithmeticMean(arr) {
+    let sum = 0;
+    for (const number of arr) {
+        sum += number;
+    }
+    let avarageResult = Math.floor(sum / arr.length)
+
+    console.log('Trung bình cộng:', avarageResult);
+}
+arithmeticMean(arr)
+
+console.groupEnd()
+
+
+console.group('Bài 4')
+
+//4.1: Sắp xếp mảng: Viết một hàm nhận vào một mảng số nguyên và trả về một mảng đã được sắp xếp từ thấp đến cao.
+let arr2 = [3, 6, 5, 1, 2, 7, 9, 8, 9, 4, 5]
+function increaseArr(arr) {
+    let result = arr.toSorted()
+    console.log('Sắp xếp mảng:', result);
+}
+
+increaseArr(arr2)
+
+
+//4.2: Loại bỏ các phần tử trùng lặp: Viết một hàm nhận vào một mảng và trả về một mảng mới chỉ chứa các phần tử duy nhất.
+let nonRepeatedNum = []
+
+function removeRepeat(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let isRepeated = false;
+        for (let j = 0; j < arr.length; j++) {
+            if (i !== j && arr[i] === arr[j]) {
+                isRepeated = true;
+                break;
+            }
+        }
+        if (!isRepeated) {
+            nonRepeatedNum.push(arr[i]);
+        }
+    }
+    console.log('Mảng không phần tử lặp:', nonRepeatedNum.toSorted())
+}
+
+removeRepeat(arr2)
+
+
+//4.3: Tìm số lớn thứ hai: Viết một hàm nhận vào một mảng số nguyên và trả về số lớn thứ hai trong mảng.
+
+function findHighAndHighest(arr2) {
+    let highestNumber = arr2[0]
+    let secondHighNumber = arr2[0]
+
+    for (let i = 1; i < arr2.length; i++) {
+        if (highestNumber < arr2[i]) {
+            secondHighNumber = highestNumber
+            highestNumber = arr2[i]
+        } else if (arr2[i] > secondHighNumber && arr2[i] !== highestNumber) {
+            secondHighNumber = arr2[i]
+        }
+    }
+
+    console.log('Số lớn nhất:', highestNumber);
+    console.log('Số lớn thứ 2:', secondHighNumber);
+}
+
+findHighAndHighest(arr2)
+
+
+//4.4: Tách mảng thành các mảng con nhỏ: Viết một hàm nhận vào một mảng và một số nguyên n, trả về một mảng gồm n mảng con có kích thước bằng nhau.
+
+function splitArr(arr2) {
+    let n = 4
+
+}
+
+//4.5: Kiểm tra mảng có số nguyên tố hay không: Viết một hàm nhận vào một mảng số nguyên và trả về true nếu mảng chứa ít nhất một số nguyên tố, ngược lại trả về false.
+
+function checkPrimeNumber(arr2) {
+    let result = arr2.filter(function (number) {
+        return number > 1
+    })
+    console.log(result);
+}
+
+checkPrimeNumber(arr2)
+
+console.groupEnd()
