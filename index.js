@@ -257,7 +257,7 @@
 // }
 // appointment.showDetail();
 
-// Buoi 3:
+// Buoi 3: 
 
 // ======================String======================
 
@@ -267,8 +267,8 @@ const b = new String("abcd 12121");
 
 // Phuong thuc cua String
 
-///////////////// Cắt ///////////////////////////
 /////// slice(startIndex, endIndex) | substring(startIndex, endIndex)
+///////////////// Cắt ///////////////////////////
 // console.log("a.slice():", a.slice(0, 3));
 // console.log("a.substring():", a.substring(0, 3));
 //////  substr(startIndex, length)
