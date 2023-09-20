@@ -491,13 +491,16 @@
 // bai 1
 // Tính tổng các phần tử trong mảng: Viết một hàm nhận vào một mảng số nguyên và trả về tổng của các phần tử.
 
-function tinhTong(arr) {
-	let sum = 0;
-	for (let i = 0; i < arr.length; i++) {
-		sum += arr[i];
-	}
-	return sum;
-}
+// function tinhTong(arr) {
+// 	let sum = 0;
+// 	for (let i = 0; i < arr.length; i++) {
+// 		sum += arr[i];
+// 	}
+// 	return sum;
+// }
+// var arr = [3, 4, 5, 6, 7];
+// var sum = tinhTong(arr);
+// console.log(sum);
 
 //Tìm số lớn nhất và nhỏ nhất: Viết một hàm nhận vào một mảng số nguyên và trả về số lớn nhất và nhỏ nhất.
 
@@ -598,11 +601,10 @@ console.log(average);
 
 // bai 1 
 
-const arr = [2, 4, 5, 6];
-
-let sum = 0;
- for (let i = 0; i < arr.length; i++) {
-	 sum += arr[i];
+const num = [2, 4, 5, 6];
+let sum = 0 ;
+ for (let i = 0; i < num.length; i++) {
+	 sum += num[i];
  }
  console.log("tong: " , sum);
 
