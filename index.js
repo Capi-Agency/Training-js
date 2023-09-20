@@ -498,9 +498,7 @@ function tinhTong(arr) {
 	}
 	return sum;
 }
-var arr = [3, 4, 5, 6, 7];
-var sum = tinhTong(arr);
-console.log(sum);
+
 //Tìm số lớn nhất và nhỏ nhất: Viết một hàm nhận vào một mảng số nguyên và trả về số lớn nhất và nhỏ nhất.
 
 function timMinMax(arr) {
@@ -522,11 +520,6 @@ function timMinMax(arr) {
 
 	return { min, max };
 }
-var arr = [5, 3, 9, 1, 7];
-var result = timMinMax(arr);
-console.log(result.min); // Kết quả: 1
-console.log(result.max); // Kết quả: 9
-
 //Đảo ngược mảng: Viết một hàm nhận vào một mảng và trả về mảng đảo ngược.
 function daoNguocMang(arr) {
 	let reversedArr = [];
@@ -535,9 +528,6 @@ function daoNguocMang(arr) {
 	}
 	return reversedArr;
 }
-var arr = [1, 2, 3, 4, 5];
-var reversedArr = daoNguocMang(arr);
-console.log(reversedArr); 
 
 //Tìm các phần tử lặp lại: Viết một hàm nhận vào một mảng và trả về một mảng chứa các phần tử lặp lại.
 function timPhanTuLap(arr) {
@@ -557,9 +547,6 @@ function timPhanTuLap(arr) {
 
 	return duplicateElements;
 }
-var arr = [2, 2, 2, 2, 4, 5, 4];
-var duplicates = timPhanTuLap(arr);
-console.log(duplicates);
 
 //Tính trung bình cộng: Viết một hàm nhận vào một mảng số nguyên và trả về giá trị trung bình cộng.
 function tinhTrungBinhCong(arr) {
@@ -574,30 +561,53 @@ function tinhTrungBinhCong(arr) {
 
 	return sum / arr.length;
 }
-var arr = [1, 2, 3, 4, 5];
+var arr = [3, 4, 5, 6, 7];
+var sum = tinhTong(arr);
+console.log(sum);
+var result = timMinMax(arr);
+console.log(result.min); 
+console.log(result.max);
+var reversedArr = daoNguocMang(arr);
+console.log(reversedArr);
+var duplicates = timPhanTuLap(arr);
+console.log(duplicates);
 var average = tinhTrungBinhCong(arr);
 console.log(average); 
+
+
 //Sắp xếp mảng: Viết một hàm nhận vào một mảng số nguyên và trả về một mảng đã được sắp xếp từ thấp đến cao.
-let arr = [5, 2, 9, 1, 3];
-arr.sort(function(a,b) {
-	return a - b ; 
- });
- console.log(arr);
+// let arr = [5, 2, 9, 1, 3];
+// arr.sort(function(a,b) {
+// 	return a - b ; 
+//  });
+//  console.log(arr);
 
 
-//Loại bỏ các phần tử trùng lặp: Viết một hàm nhận vào một mảng và trả về một mảng mới chỉ chứa các phần tử duy nhất.
+// //Loại bỏ các phần tử trùng lặp: Viết một hàm nhận vào một mảng và trả về một mảng mới chỉ chứa các phần tử duy nhất.
 
-function removeDuplicates(arr) {
-  let uniqueArray = arr.filter((value, index) => {
-    return arr.indexOf(value) === index;
-  });
-  return uniqueArray;
-}
+// function removeDuplicates(arr) {
+//   let uniqueArray = arr.filter((value, index) => {
+//     return arr.indexOf(value) === index;
+//   });
+//   return uniqueArray;
+// }
 
-let array = [1, 2, 3, 3, 4, 5, 5];
-let result = removeDuplicates(array);
-console.log(result); 
+// let array = [1, 2, 3, 3, 4, 5, 5];
+// let result = removeDuplicates(array);
+// console.log(result); 
 
+// bai 1 
 
+const arr = [2, 4, 5, 6];
 
+let sum = 0;
+ for (let i = 0; i < arr.length; i++) {
+	 sum += arr[i];
+ }
+ console.log("tong: " , sum);
 
+ 
+
+//  var arr = [3, 4, 5, 6, 7];
+// var sum = tinhTong(arr);
+// console.log(sum);
