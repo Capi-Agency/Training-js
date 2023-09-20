@@ -115,17 +115,39 @@ console.log(num);
 // const filternumLv = numLv.filter(function(repeat){
 // 	return repeat = 
 // })
-
+["A","A","b","x","b"]
+["A","b"]
 // console.log("cac so bi lap: ", filternumLv)
 console.log(sum /= num.length)
 
 ////bai 2
-const newNum = num.sort(function(a,b){
-	return a - b
+const numB = [1,2,3,4,5,6,7,8,9]
+const newNum = numB.sort(function(a,b){
+	return a- b
 })
 
-
 console.log(newNum);
+console.log(newNum[7]);
+
+const newNumB = numB.slice(0,4)
+const newNumC = numB.slice(4,7);
+console.log(newNumB, newNumC);
+
+
+const numL = [1,1,2,3,4,4,5,6,7,7]
+const checkLap = numL.reduce(function(checkLap, item ){
+      return checkLap.includes(item)? checkLap: [...checkLap, item];
+}, []);
+console.log(checkLap);
+
+
+const numN = [1,2,3,4,5,7,8]
+function checkN(){
+      
+}
+
+
+
 
 
 
