@@ -578,14 +578,25 @@ var arr = [1, 2, 3, 4, 5];
 var average = tinhTrungBinhCong(arr);
 console.log(average); 
 //Sắp xếp mảng: Viết một hàm nhận vào một mảng số nguyên và trả về một mảng đã được sắp xếp từ thấp đến cao.
-// let arr = [5, 2, 9, 1, 3];
-// arr.sort(function(a,b) {
-// 	return a - b ; 
-//  });
-//  console.log(arr);
+let arr = [5, 2, 9, 1, 3];
+arr.sort(function(a,b) {
+	return a - b ; 
+ });
+ console.log(arr);
 
 
+//Loại bỏ các phần tử trùng lặp: Viết một hàm nhận vào một mảng và trả về một mảng mới chỉ chứa các phần tử duy nhất.
 
+function removeDuplicates(arr) {
+  let uniqueArray = arr.filter((value, index) => {
+    return arr.indexOf(value) === index;
+  });
+  return uniqueArray;
+}
+
+let array = [1, 2, 3, 3, 4, 5, 5];
+let result = removeDuplicates(array);
+console.log(result); 
 
 
 
