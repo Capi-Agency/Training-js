@@ -1,0 +1,20 @@
+bài1
+Tính tổng các phần tử trong mảng: Viết một hàm nhận vào một mảng số nguyên và trả về tổng của các phần tử.
+
+Tìm số lớn nhất và nhỏ nhất: Viết một hàm nhận vào một mảng số nguyên và trả về số lớn nhất và nhỏ nhất.
+
+Đảo ngược mảng: Viết một hàm nhận vào một mảng và trả về mảng đảo ngược.
+
+Tìm các phần tử lặp lại: Viết một hàm nhận vào một mảng và trả về một mảng chứa các phần tử lặp lại.
+
+Tính trung bình cộng: Viết một hàm nhận vào một mảng số nguyên và trả về giá trị trung bình cộng.
+bài2
+Sắp xếp mảng: Viết một hàm nhận vào một mảng số nguyên và trả về một mảng đã được sắp xếp từ thấp đến cao.
+
+Loại bỏ các phần tử trùng lặp: Viết một hàm nhận vào một mảng và trả về một mảng mới chỉ chứa các phần tử duy nhất.
+
+Tìm số lớn thứ hai: Viết một hàm nhận vào một mảng số nguyên và trả về số lớn thứ hai trong mảng.
+
+Tách mảng thành các mảng con nhỏ: Viết một hàm nhận vào một mảng và một số nguyên n, trả về một mảng gồm n mảng con có kích thước bằng nhau.
+
+Kiểm tra mảng có số nguyên tố hay không: Viết một hàm nhận vào một mảng số nguyên và trả về true nếu mảng chứa ít nhất một số nguyên tố, ngược lại trả về false.

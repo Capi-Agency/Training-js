@@ -286,37 +286,52 @@
 //bai tap ve doi tuong (Object)
 // bai 3
 class Animal {
-  constructor(nameParam, speciesParam, ageParam) {
-    this.name = nameParam;
-    this.species = speciesParam;
-    this.age = ageParam;
-  }
-  introduce() {
-    console.log("Day la con " + this.name + ", la loai " + this.species + "tuoi" + this.age);
-  }
+	constructor(nameParam, speciesParam, ageParam) {
+		this.name = nameParam;
+		this.species = speciesParam;
+		this.age = ageParam;
+	}
+	introduce() {
+		console.log("Day la con " + this.name + ", la loai " + this.species + "tuoi" + this.age);
+	}
 }
 
-  const Cat = new Animal("meo anh long ngan", "meo" , 4);
- Cat.introduce();
+const Cat = new Animal("meo anh long ngan", "meo", 4);
+Cat.introduce();
 //bai 4 ve nha xem 
 //=================String=======================
 
 const fullname = "tran huu tung";
 // console.log("length of fullname: " , fullname.length);
-console.log("fullname.slice(): " , fullname.slice(0, 5));
+console.log("fullname.slice(): ", fullname.slice(0, 5));
 // bien doi style cua text 
 console.log("name: ", fullname.toUpperCase());
 console.log("name: ", fullname.toLocaleLowerCase());
 const fullnameArray = fullname.split(" ", 2);
-console.log("fullname arrray: ", fullnameArray );
+console.log("fullname arrray: ", fullnameArray);
 
 //===================Array===========
 const memberArray = ["duc", "tung", "vuong", "toan"];
 console.table(memberArray);
 //
-memberArray.forEach(function(memberArray, index){
-  console.log(`memberArray: ${memberArray}, at index ${index}`);
+memberArray.forEach(function (memberArray, index) {
+	console.log(`memberArray: ${memberArray}, at index ${index}`);
 })
+
+
+//===============BTVN============\
+// bai 1
+// Tính tổng các phần tử trong mảng: Viết một hàm nhận vào một mảng số nguyên và trả về tổng của các phần tử.
+
+let a = 4;
+let b = 5;
+console.log(a + b);
+
+function sum(a, b) {
+    return a + b;
+}
+var result = sum(20, 10);
+console.log(result)
 
 
 
