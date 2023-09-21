@@ -4,7 +4,7 @@ Bài tập: Tính giai thừa của một số
 Viết một hàm tính giai thừa của một số nguyên dương và sử dụng callback để in kết quả.
 - bài tập buổi 3
 
-bài1
++bài1
 Tính tổng các phần tử trong mảng: Viết một hàm nhận vào một mảng số nguyên và trả về tổng của các phần tử.
 
 Tìm số lớn nhất và nhỏ nhất: Viết một hàm nhận vào một mảng số nguyên và trả về số lớn nhất và nhỏ nhất.
@@ -14,7 +14,7 @@ Tìm số lớn nhất và nhỏ nhất: Viết một hàm nhận vào một m�
 Tìm các phần tử lặp lại: Viết một hàm nhận vào một mảng và trả về một mảng chứa các phần tử lặp lại.
 
 Tính trung bình cộng: Viết một hàm nhận vào một mảng số nguyên và trả về giá trị trung bình cộng.
-bài2
++bài2
 Sắp xếp mảng: Viết một hàm nhận vào một mảng số nguyên và trả về một mảng đã được sắp xếp từ thấp đến cao.
 
 Loại bỏ các phần tử trùng lặp: Viết một hàm nhận vào một mảng và trả về một mảng mới chỉ chứa các phần tử duy nhất.

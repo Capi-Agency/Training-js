@@ -105,7 +105,6 @@
 // }
 // // tao 1 vong lap for lap lai 10 lan, trong moi lan thi` bien status (boolean) se thay doi nguoc lai voi chinh no, console.log ra
 
-
 // Buoi 2:
 
 // ======================Object======================
@@ -143,9 +142,9 @@
 // Cach 3:
 // const oldObject = {
 // 	name: "toan",
-// 	age: 21 
+// 	age: 21
 // };
-  //Shallow copy: khi thay doi gia tri cua object moi thi object cu cung bi thay doi
+//Shallow copy: khi thay doi gia tri cua object moi thi object cu cung bi thay doi
 
 // immutable ===> Deep copy
 // c1: dung Object.assign()
@@ -156,7 +155,7 @@
 // console.log("clone 1: ",clone1);
 // console.log("old object: ", oldObject);
 
-// // c2: 
+// // c2:
 
 // const clone2 = JSON.parse(JSON.stringify(oldObject));
 // console.log("clone 2: ", clone2);
@@ -177,7 +176,7 @@
 // }
 
 // function fn3 () {
-	
+
 // }
 // function fn4 (fname, lname) {
 // 	console.log(fname + lname);
@@ -211,7 +210,7 @@
 // 	console.log(a+b)
 // })(3,4);
 
-// ******Callback fn: mot ham` truyen vao mot ham` khac nhu mot param,  
+// ******Callback fn: mot ham` truyen vao mot ham` khac nhu mot param,
 
 // ["Toan","Vuong","Nguyen","Tung"].forEach(function(item, index){
 // 	console.log("Toi ten la: ", item);
@@ -237,7 +236,6 @@
 // const currentDate = today.getDate();
 // const currentHour = today.getHours();
 
-
 // const appointment = {
 // 	date: 19,
 // 	time: 9,
@@ -261,9 +259,8 @@
 
 // ======================String======================
 
-const a = "abcd  13232";
-const b = new String("abcd 12121");
-
+// const a = "abcd  13232";
+// const b = new String("abcd 12121");
 
 // Phuong thuc cua String
 
@@ -273,7 +270,6 @@ const b = new String("abcd 12121");
 // console.log("a.substring():", a.substring(0, 3));
 //////  substr(startIndex, length)
 // console.log("a.substr():", a.substr(0, 4));
-
 
 ///////////////// Thay thế ///////////////////////////
 /////// replace(searchVal, replaceVal) thay thế giá trị searchVal đầu tiên nó tìm thấy
@@ -286,15 +282,14 @@ const b = new String("abcd 12121");
 //  const fullName = "Nguyen Van A";
 //  console.log("name: ", fullName.toLowerCase())
 
- ///////////////// Nối ///////////////////////////
+///////////////// Nối ///////////////////////////
 
-const firstName = "  Nguyen   ";
-const lastName = "  Duc   ";
+// const firstName = "  Nguyen   ";
+// const lastName = "  Duc   ";
 
-const fullName = firstName.concat(" ",lastName, " sieu cap vjppro");
+// const fullName = firstName.concat(" ",lastName, " sieu cap vjppro");
 
-
- ///////////////// Xoá khoảng trắng ///////////////////////////
+///////////////// Xoá khoảng trắng ///////////////////////////
 
 /////// trim(), trimStart(), trimEnd()
 // console.log("trimmed fullName: ",fullName.trim());
@@ -302,9 +297,9 @@ const fullName = firstName.concat(" ",lastName, " sieu cap vjppro");
 ////////////////// Chia tách /////////////////////
 ////// split(splitter, limit) | splitter: các kí tự dùng để chia tách, limit: giới hạn độ dài của mảng kết quả trả về
 
-const subjects = "HTML, CSS, Javascript, PHP";
+// const subjects = "HTML, CSS, Javascript, PHP";
 
-const subjectArray = subjects.split('');
+// const subjectArray = subjects.split('');
 
 // console.log("subject array: ", subjectArray);
 
@@ -320,7 +315,6 @@ const subjectArray = subjects.split('');
 ////// array[index]: truy cập phần tử có index trong array
 ////// array.length
 ////// array.toString() && array.join() | khi mà array này bao gồm các string number
-
 
 // console.log("array.join(): ",example.join());
 
@@ -342,32 +336,31 @@ const subjectArray = subjects.split('');
 // delete example[2];
 // console.log("array: ", example);
 
- ///////////////// Nối ///////////////////////////
+///////////////// Nối ///////////////////////////
 /////// array.concat()
-
 
 ///////////////// Cắt ///////////////////////////
 ////// array.splice(startIndex, deletedLength, items[]), trả về các phần tử đã xóa
-const example = ["HTML", "CSS", "JS", "PHP", "Golang", "C++", "Java"];
+// const example = ["HTML", "CSS", "JS", "PHP", "Golang", "C++", "Java"];
 
 ////// array.slice(startIndex, endIndex) | trả về mảng mới được cắt từ mảng cũ bắt đầu từ vị trí startIndex, kết thúc ở vị trí endIndex
 
-const newArray = example.slice(1);
+// const newArray = example.slice(1);
 
-console.log('====================================');
-console.log("array: ", example);
-console.log("new array: ", newArray);
-console.log('====================================');
+// console.log('====================================');
+// console.log("array: ", example);
+// console.log("new array: ", newArray);
+// console.log('====================================');
 
 ///////////// Sắp xếp //////////
 // array.sort(callbackFn(a,b){
-	// return a - b; ==> trả về array giá trị tăng dần
+// return a - b; ==> trả về array giá trị tăng dần
 // })
 // array.sort(callbackFn(a,b){
-	// return b - a; ==> trả về array giá trị giảm dần
+// return b - a; ==> trả về array giá trị giảm dần
 // })
 
-const points = [3,1,5,4,3,6,8,9];
+// const points = [3,1,5,4,3,6,8,9];
 
 // const newPoints = points.sort(function(a,b){
 // 	return b - a;
@@ -381,55 +374,106 @@ const points = [3,1,5,4,3,6,8,9];
 
 ////// array.forEach(callbackFn(element, index){ code xu li ele, index })
 
-const callbackFn = function(point, index){
-	console.log(`point: ${point}, at index ${index}`);
-}
+// const callbackFn = function(point, index){
+// 	console.log(`point: ${point}, at index ${index}`);
+// }
 
-points.forEach(callbackFn)
+// points.forEach(callbackFn)
 
 ////// array.map(callbackFn)
 
-const triplePoints = points.map(function(point, index){
-	return point * 3
-})
-
-
+// const triplePoints = points.map(function(point, index){
+// 	return point * 3
+// })
 
 ////// array.filter(callbackFn) ===> Trả về 1 MẢNG mới mà thỏa mãn các điều kiện trong callbackFn y/cầu
 
-const filteredPoints = points.filter(function(point){
-	return point >= 5;
-})
-
+// const filteredPoints = points.filter(function(point){
+// 	return point >= 5;
+// })
 
 ////// array.reduce(callbackFn, initVal)
-const callbackFn2 = function(prevPoint, currentPoint){
-	return prevPoint + currentPoint;
-}
-const reducedPoints = points.reduce(callbackFn2,0);
+// const callbackFn2 = function(prevPoint, currentPoint){
+// 	return prevPoint + currentPoint;
+// }
+// const reducedPoints = points.reduce(callbackFn2,0);
 
 // 1st turn
 // prevPoint = initVal ===> prevPoint += currentPoint ===> 9
 
 // 2nd
-// 
+//
 
-console.log('====================================');
-console.table(points);
-console.table(reducedPoints);
-console.log('====================================');
+// console.log('====================================');
+// console.table(points);
+// console.table(reducedPoints);
+// console.log('====================================');
 
 /////// array.find(callbackFn) ===> Trả về 1 PHẦN TỬ đầu tiên mà thỏa mãn các điều kiện trong callbackFn y/cầu
 
-const foundPoint = points.find(function(point){
-	return point == 3;
-})
-console.table("found: ",foundPoint);
+// const foundPoint = points.find(function(point){
+// 	return point == 3;
+// })
+// console.table("found: ",foundPoint);
 
 /////// array.indexOf(searchVal) ==> sẽ trả về -1 nếu phần tử không thuộc mảng, ngược lại, trả về index của phần tử trong mảng
 
-const index = points.indexOf(10);
-console.log("index: ", index);
+// const index = points.indexOf(10);
+// console.log("index: ", index);
 
 ////// array.findIndex(callbackFn)
+// function splitArray(arr, n) {
+// 	const result = [];
+// 	const chunkSize = Math.ceil(arr.length / n);
 
+// 	for (let i = 0; i < arr.length; i += chunkSize) {
+// 		const chunk = arr.slice(i, i + chunkSize);
+// 		result.push(chunk);
+// 	}
+
+// 	return result;
+// }
+// const originalArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const numberOfArrays = 3;
+
+// const result = splitArray(originalArray, numberOfArrays);
+// console.log(Math.ceil(2.2));
+// b2.5
+
+// const checkPrime = function (num) {
+// 	if (num < 2) {
+// 		return false;
+// 	}
+// 	for (let i = 2; i <= Math.sqrt(num); i++) {
+// 		if (num % i == 0) {
+// 			return false;
+// 		}
+// 		return true;
+// 	}
+// };
+// const result = originalArray.every(checkPrime);
+// console.log(result);
+const title = document.querySelector(".title");
+const hideEl = document.querySelector("#hide");
+const showEl = document.querySelector("#show");
+const toggleEl = document.querySelector("#toggle");
+const emailEl = document.querySelector("#email");
+const parentBox = document.querySelector("#box");
+
+// createElement && append/ remove vao 1 parent node
+
+const childDiv = document.createElement("div");
+childDiv.innerText = "this is a new div";
+
+const attribute = emailEl.getAttribute("value");
+
+hideEl.addEventListener("click", function () {
+	parentBox.removeChild(childDiv);
+});
+showEl.addEventListener("click", function () {
+	parentBox.append(childDiv);
+});
+// toggleEl.addEventListener("click", function () {
+// 	title.classList.toggle("isHidden");
+// 	console.log("classList: ", title.classList);
+// });
