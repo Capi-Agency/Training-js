@@ -615,30 +615,47 @@ console.log(average);
 //  const title = document.querySelectorAll(".title");
 //  console.log(title);
 
-const input = document.getElementById("search");
-const usernameValue = document.getElementById("usernameValue");
-const button2 = document.getElementById("bt-menu");
-input.onchange = function () {
-	usernameValue.innerText = input.value
-}
-console.log(input);
+// const input = document.getElementById("search");
+// const usernameValue = document.getElementById("usernameValue");
+// const button2 = document.getElementById("bt-menu");
+// input.onchange = function () {
+// 	usernameValue.innerText = input.value
+// }
+// console.log(input);
 
-const button = document.getElementById("switch");
+// const button = document.getElementById("switch");
+// button.onclick = function () {
+// 	button.style.color = "red"
+// 	button.style.background = "red"
+// }
+
+// const menu = document.querySelector(".menu");
+// console.log(menu.classList);
+// button.addEventListener("click", function() {
+// 	menu.classList.add("isshow");
+// 	console.log("classList: ", menu.classList);
+// });
+
+// button2.addEventListener("click", function() {
+// 	menu.classList.remove("isshow");
+// 	console.log("classList: ", menu.classList);
+// });
+
+
+// thay doi mau nen
+
+const button = document.getElementById("button");
+const menu = document.getElementById("menu");
 button.onclick = function () {
-	button.style.color = "red"
-	button.style.background = "red"
+	menu.style.background = "blue"
 }
 
-const menu = document.querySelector(".menu");
-console.log(menu.classList);
-button.addEventListener("click", function() {
-	menu.classList.add("isshow");
-	console.log("classList: ", menu.classList);
-});
+const countBtn = document.getElementById("countBtn");
+const number = document.getElementById("number");
 
-button2.addEventListener("click", function() {
-	menu.classList.remove("isshow");
-	console.log("classList: ", menu.classList);
-});
-
+let i =0;
+countBtn.onclick = function () {
+	i += 1;
+	number.innerHTML = i;
+}
 
