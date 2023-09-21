@@ -506,18 +506,18 @@
 
 function timMinMax(arr) {
 	if (arr.length === 0) {
-		return null; // Trả về null nếu mảng rỗng
+		return null;
 	}
 
-	let min = arr[0]; // Giả sử phần tử đầu tiên là số nhỏ nhất
-	let max = arr[0]; // Giả sử phần tử đầu tiên là số lớn nhất
+	let min = arr[0];
+	let max = arr[0];
 
 	for (let i = 1; i < arr.length; i++) {
 		if (arr[i] < min) {
-			min = arr[i]; // Cập nhật số nhỏ nhất nếu tìm thấy số nhỏ hơn
+			min = arr[i];
 		}
 		if (arr[i] > max) {
-			max = arr[i]; // Cập nhật số lớn nhất nếu tìm thấy số lớn hơn
+			max = arr[i];
 		}
 	}
 
@@ -565,20 +565,20 @@ function tinhTrungBinhCong(arr) {
 	return sum / arr.length;
 }
 var arr = [3, 4, 5, 6, 7];
-var sum = tinhTong(arr);
-console.log(sum);
+// var sum = tinhTong(arr);
+// console.log(sum);
 var result = timMinMax(arr);
-console.log(result.min); 
+console.log(result.min);
 console.log(result.max);
 var reversedArr = daoNguocMang(arr);
 console.log(reversedArr);
 var duplicates = timPhanTuLap(arr);
 console.log(duplicates);
 var average = tinhTrungBinhCong(arr);
-console.log(average); 
+console.log(average);
 
 
-//Sắp xếp mảng: Viết một hàm nhận vào một mảng số nguyên và trả về một mảng đã được sắp xếp từ thấp đến cao.
+// bai2Sắp xếp mảng: Viết một hàm nhận vào một mảng số nguyên và trả về một mảng đã được sắp xếp từ thấp đến cao.
 // let arr = [5, 2, 9, 1, 3];
 // arr.sort(function(a,b) {
 // 	return a - b ; 
@@ -586,7 +586,7 @@ console.log(average);
 //  console.log(arr);
 
 
-// //Loại bỏ các phần tử trùng lặp: Viết một hàm nhận vào một mảng và trả về một mảng mới chỉ chứa các phần tử duy nhất.
+//bai2.2Loại bỏ các phần tử trùng lặp: Viết một hàm nhận vào một mảng và trả về một mảng mới chỉ chứa các phần tử duy nhất.
 
 // function removeDuplicates(arr) {
 //   let uniqueArray = arr.filter((value, index) => {
@@ -599,17 +599,46 @@ console.log(average);
 // let result = removeDuplicates(array);
 // console.log(result); 
 
-// bai 1 
+// // bai 1 
+// const x = [2, 4, 5, 6];
+// let z = 0 ;
+//  for (let i = 0; i < x.length; i++) {
+// 	 z += x[i];
+//  }
+//  console.log("tong: " , z);
 
-const num = [2, 4, 5, 6];
-let sum = 0 ;
- for (let i = 0; i < num.length; i++) {
-	 sum += num[i];
- }
- console.log("tong: " , sum);
 
- 
 
-//  var arr = [3, 4, 5, 6, 7];
-// var sum = tinhTong(arr);
-// console.log(sum);
+//  Kiểm tra mảng có số nguyên tố hay không: Viết một hàm nhận vào một mảng số nguyên và trả về true nếu mảng chứa ít nhất một số nguyên tố, ngược lại trả về false.
+
+//=====================bai4========================
+//  const title = document.querySelectorAll(".title");
+//  console.log(title);
+
+const input = document.getElementById("search");
+const usernameValue = document.getElementById("usernameValue");
+const button2 = document.getElementById("bt-menu");
+input.onchange = function () {
+	usernameValue.innerText = input.value
+}
+console.log(input);
+
+const button = document.getElementById("switch");
+button.onclick = function () {
+	button.style.color = "red"
+	button.style.background = "red"
+}
+
+const menu = document.querySelector(".menu");
+console.log(menu.classList);
+button.addEventListener("click", function() {
+	menu.classList.add("isshow");
+	console.log("classList: ", menu.classList);
+});
+
+button2.addEventListener("click", function() {
+	menu.classList.remove("isshow");
+	console.log("classList: ", menu.classList);
+});
+
+
