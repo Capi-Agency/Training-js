@@ -24,3 +24,14 @@ Tìm số lớn thứ hai: Viết một hàm nhận vào một mảng số nguy�
 Tách mảng thành các mảng con nhỏ: Viết một hàm nhận vào một mảng và một số nguyên n, trả về một mảng gồm n mảng con có kích thước bằng nhau.
 
 Kiểm tra mảng có số nguyên tố hay không: Viết một hàm nhận vào một mảng số nguyên và trả về true nếu mảng chứa ít nhất một số nguyên tố, ngược lại trả về false.
+Bài tập dom
+Tạo danh sách:
+
+Tạo một danh sách <ul> trong HTML với một ID như "myList".
+Tạo một nút button với ID "addItemButton".
+Khi người dùng nhấn vào nút "addItemButton", thêm một mục mới vào danh sách.
+Xử lý sự kiện:
+
+Tạo một ô input với một ID như "myInput".
+Tạo một nút button với ID "submitButton".
+Khi người dùng nhập thông tin vào input và nhấn nút "submitButton", hiển thị thông báo "Đã nhấn submit" trên trang.
