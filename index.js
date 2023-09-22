@@ -91,60 +91,100 @@
 // })
 
 
-const num = [1,2,3,4,5,6,7,8,9]
-let sum = 0;
-for (let i = 0; i < num.length;i++){
-    sum += num[i];
-}
-let max = num.reduce(function(accumulator, element){
-  return (accumulator > element) ? accumulator : element
-});
-let min = num.reduce(function(accumulator, element){
-	return (accumulator < element) ? accumulator : element
-  });
+// const num = [1,2,3,4,5,6,7,8,9]
+// let sum = 0;
+// for (let i = 0; i < num.length;i++){
+//     sum += num[i];
+// }
+// let max = num.reduce(function(accumulator, element){
+//   return (accumulator > element) ? accumulator : element
+// });
+// let min = num.reduce(function(accumulator, element){
+// 	return (accumulator < element) ? accumulator : element
+//   });
 
-num.sort(function(){
-	return -1
-})
-console.log("Tong:",sum);
-console.log("max= ",max );
-console.log("min= ",min );
-console.log(num);
+// num.sort(function(){
+// 	return -1
+// })
+// console.log("Tong:",sum);
+// console.log("max= ",max );
+// console.log("min= ",min );
+// console.log(num);
 
 // const numLv = [1,1,3,4,5,5,7,8,9]
 // const filternumLv = numLv.filter(function(repeat){
 // 	return repeat = 
 // })
-["A","A","b","x","b"]
-["A","b"]
 // console.log("cac so bi lap: ", filternumLv)
-console.log(sum /= num.length)
+// console.log(sum /= num.length)
 
-////bai 2
-const numB = [1,2,3,4,5,6,7,8,9]
-const newNum = numB.sort(function(a,b){
-	return a- b
+// ////bai 2
+// const numB = [1,2,3,4,5,6,7,8,9]
+// const newNum = numB.sort(function(a,b){
+// 	return a- b
+// })
+// //1
+// console.log(newNum);
+// //3
+// console.log(newNum[7]);
+// //4
+// const newNumB = numB.slice(0,3)
+// const newNumC = numB.slice(4,7);
+// console.log(newNumB, newNumC);
+
+// //2
+// const numL = [1,1,2,3,4,4,5,6,7,7]
+// const checkLap = numL.reduce(function(checkLap, item ){
+//       return checkLap.includes(item)? checkLap: [...checkLap, item];
+// }, []);
+// console.log(checkLap);
+
+// //5
+// const numN = [1,2,3,4,5,7,8]
+
+// const fname = document.getElementById("username");
+// const myName = document.getElementById("myName");
+
+// fname.onchange = function(){ 
+//     myName.innerHTML= fname.value 
+// }
+
+// fname.addEventListener("change", function(){ 
+//   myName.innerHTML= fname.value 
+// } )
+
+// const switchEL = document.getElementById("Switch");
+// switchEL.addEventListener("click", function(){ 
+//   myName.innerHTML= fname.value 
+//   switchEL.style.backgroundColor = "blue"
+// } )
+
+// const menu = document.getElementById("menu");
+// const ul =document.getElementById("ul1");
+
+// menu.addEventListener("click", function(){
+
+
+//   ul.classList.toggle('none')
+//  2// ul.style.display = "block";
+//   2// .classList.add("isShow");
+// })
+// console.log(menu);
+//b1
+const changeColor = document.getElementById("btn");
+// const backGround = document.getElementById("back-ground")
+// changeColor.addEventListener("click", function(){
+//   backGround.style.backgroundColor = "red"
+// })
+//b2
+const num =document.getElementById("num")
+let count =0; 
+changeColor.addEventListener("click", function(){
+    count= count +1
+    num.innerHTML= count
 })
 
-console.log(newNum);
-console.log(newNum[7]);
 
-const newNumB = numB.slice(0,4)
-const newNumC = numB.slice(4,7);
-console.log(newNumB, newNumC);
-
-
-const numL = [1,1,2,3,4,4,5,6,7,7]
-const checkLap = numL.reduce(function(checkLap, item ){
-      return checkLap.includes(item)? checkLap: [...checkLap, item];
-}, []);
-console.log(checkLap);
-
-
-const numN = [1,2,3,4,5,7,8]
-function checkN(){
-      
-}
 
 
 
