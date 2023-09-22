@@ -416,6 +416,7 @@ let sum = 0
 // 3.1: Tính tổng các phần tử trong mảng: Viết một hàm nhận vào một mảng số nguyên và trả về tổng của các phần tử.
 
 console.group('Bài 3');
+
 function total(arr) {
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i]
@@ -563,3 +564,7 @@ function checkPrimeNumber(arr2) {
 checkPrimeNumber(arr2)
 
 console.groupEnd()
+
+
+
+
