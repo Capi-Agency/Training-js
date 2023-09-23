@@ -5,22 +5,20 @@
 // let menuTab = document.querySelector('.menuTab')
 // let menuNav = document.querySelector('.menuNav')
 
-let colorBtn = document.getElementById('changeColor')
-let bodyBg = document.querySelector('body')
-let clickBtn = document.querySelector('#clickBtn')
-let clickNumber = document.querySelector('.clickNumber')
+// let colorBtn = document.getElementById('changeColor')
+// let bodyBg = document.querySelector('body')
+// let clickBtn = document.querySelector('#clickBtn')
+// let clickNumber = document.querySelector('.clickNumber')
 
-colorBtn.addEventListener('click', function () {
-    bodyBg.style.backgroundColor = 'red'
-    colorBtn.style.backgroundColor = 'yellow'
-})
-let clickNum = 0
+// colorBtn.addEventListener('click', function () {
+//     bodyBg.style.backgroundColor = 'red'
+//     colorBtn.style.backgroundColor = 'yellow'
+// })
+// let clickNum = 0
 
-clickBtn.addEventListener('click', function () {
-    clickNumber.innerHTML = clickNum +=1
-})
-
-
+// clickBtn.addEventListener('click', function () {
+//     clickNumber.innerHTML = clickNum +=1
+// })
 
 // inputEle.onchange = function() {
 //     usernameValue.innerText = inputEle.value
@@ -31,5 +29,46 @@ clickBtn.addEventListener('click', function () {
 // })
 
 
- 
+/** Tạo danh sách:
 
+Tạo một danh sách <ul> trong HTML với một ID như "myList".
+Tạo một nút button với ID "addItemButton".
+Khi người dùng nhấn vào nút "addItemButton", thêm một mục mới vào danh sách.
+
+Xử lý sự kiện:
+
+Tạo một ô input với một ID như "myInput".
+Tạo một nút button với ID "submitButton".
+Khi người dùng nhập thông tin vào input và nhấn nút "submitButton", hiển thị thông báo "Đã nhấn submit" trên trang.
+ */
+
+
+
+
+/** Tạo danh sách:
+Tạo một danh sách <ul> trong HTML với một ID như "myList".
+Tạo một nút button với ID "addItemButton".
+Khi người dùng nhấn vào nút "addItemButton", thêm một mục mới vào danh sách.
+ */
+
+let addBtn = document.querySelector('#addItemButton')
+let itemValue = document.querySelector('#myList')
+
+addBtn.addEventListener('click', function () {
+    itemValue.innerHTML += '<li>item</li>'
+})
+
+/** Xử lý sự kiện:
+Tạo một ô input với một ID như "myInput".
+Tạo một nút button với ID "submitButton".
+Khi người dùng nhập thông tin vào input và nhấn nút "submitButton", hiển thị thông báo "Đã nhấn submit" trên trang.
+ */
+
+let inputValue = document.querySelector('#myInput')
+let submitBtn = document.querySelector('#submitButton')
+
+submitBtn.addEventListener('click', function () {
+    if (inputValue.value.trim()) {
+        alert(`Đã submit với nội dung: ${inputValue.value}`)
+    }
+})

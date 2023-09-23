@@ -1,6 +1,7 @@
 body {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 16px;
     justify-content: center;
     align-items: center;
 }
@@ -16,4 +17,15 @@ button {
 
 .hide {
     display: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+li {
+    list-style-type: '👉';
+    padding-inline-start: 1ch;
 }
