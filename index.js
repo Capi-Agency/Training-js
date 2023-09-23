@@ -612,6 +612,7 @@ console.log(average);
 //  Kiểm tra mảng có số nguyên tố hay không: Viết một hàm nhận vào một mảng số nguyên và trả về true nếu mảng chứa ít nhất một số nguyên tố, ngược lại trả về false.
 
 //=====================bai4========================
+
 //  const title = document.querySelectorAll(".title");
 //  console.log(title);
 
@@ -644,18 +645,19 @@ console.log(average);
 
 // thay doi mau nen
 
-const button = document.getElementById("button");
-const menu = document.getElementById("menu");
-button.onclick = function () {
-	menu.style.background = "blue"
-}
+// const button = document.getElementById("button");
+// const menu = document.getElementById("menu");
+// button.onclick = function () {
+// 	menu.style.background = "blue"
+// }
 
-const countBtn = document.getElementById("countBtn");
-const number = document.getElementById("number");
+// const countBtn = document.getElementById("countBtn");
+// const number = document.getElementById("number");
 
-let i =0;
-countBtn.onclick = function () {
-	i += 1;
-	number.innerHTML = i;
-}
+// let i =0;
+// countBtn.onclick = function () {
+// 	i += 1;
+// 	number.innerHTML = i;
+// }
 
+//===========btvn dom================
