@@ -1,18 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+
 body {
     display: flex;
     flex-direction: column;
     gap: 16px;
     justify-content: center;
     align-items: center;
+    margin: 24px 0;
 }
 
 button {
     all: unset;
     cursor: pointer;
-    background-color: lightblue;
-    color: aliceblue;
+    background-color: black;
+    color: white;
     padding: 8px 16px;
-    color: black;
 }
 
 .hide {
