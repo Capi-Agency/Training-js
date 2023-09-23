@@ -171,18 +171,41 @@
 // })
 // console.log(menu);
 //b1
-const changeColor = document.getElementById("btn");
+// const changeColor = document.getElementById("btn");
 // const backGround = document.getElementById("back-ground")
 // changeColor.addEventListener("click", function(){
 //   backGround.style.backgroundColor = "red"
 // })
 //b2
-const num =document.getElementById("num")
-let count =0; 
-changeColor.addEventListener("click", function(){
-    count= count +1
-    num.innerHTML= count
+// const num =document.getElementById("num")
+// let count =0; 
+// changeColor.addEventListener("click", function(){
+//     count= count +1
+//     num.innerHTML= count
+// })
+
+const add = document.getElementById("addItemButton")
+const myList = document.getElementById("myList")
+let value = 5
+add.addEventListener("click", function(){
+    value +=1
+    myList.innerHTML += '<li>'+ value +'</li>'
 })
+
+
+const submit = document.getElementById("submitButton")
+const input = document.getElementById("myInput")
+
+submit.addEventListener('click', function(){
+    if(input.value = ' '){
+        alert("ai o si ma")
+    }
+    else{
+        alert(`Da nhan noi dung: ${input.value}`)
+    }
+    
+})
+
 
 
 
