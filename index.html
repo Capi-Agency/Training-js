@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      /* #menu {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* #menu {
         height: 200px;
         width: 200px;
-        border: 5px solid red;
-      } */
-    </style>
+        border: 5px solid red; */
+    .message {
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
-<body>
-    <ul id="myList">
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-    <button id="addItemButton"></button>
 
-    <!-- <button id="button">menu</button>
+<body>
+  <!-- b1 -->
+  <ul id="myList">
+  </ul>
+  <button id="addItemButton">button</button>
+
+  <!-- b2 -->
+  <input type="text" id="myInput">
+  <!-- <button id="submitButton">submit</button> -->
+
+  <button onclick="showMessage()">Hiển thị thông báo</button>
+  <div id="messageContainer"></div>
+
+  </div>
+
+  <!-- <button id="button">menu</button>
     <div id="menu">
  
     </div>
@@ -28,4 +42,5 @@
     <div id="number"></div> -->
 </body>
 <script src="/index.js"></script>
+
 </html>
