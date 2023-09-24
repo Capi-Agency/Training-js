@@ -661,7 +661,6 @@ console.log(average);
 // }
 
 //===========btvn dom================
-// Lấy tham chiếu tới danh sách và nút button
 const myList = document.getElementById("myList");
 const addItemButton = document.getElementById("addItemButton");
 function addItemToList() {
@@ -681,19 +680,14 @@ addItemButton.addEventListener("click", addItemToList);
 // 	console.log("classList: ", menu.classList);
 // });
 
-//bai c2
-function showMessage() {
-	// Tạo phần tử div mới
-	const messageDiv = document.createElement("div");
-	messageDiv.className = "message";
-	messageDiv.textContent = "Đã nhấn submit";
-
-	// Thêm phần tử div vào container
-	const messageContainer = document.getElementById("messageContainer");
-	messageContainer.appendChild(messageDiv);
+//bai2
+const myInput =document.getElementById("myInput");
+const submitButton = document.getElementById("submitButton");
+ function handleSubmit(event) {
+	if (inputText !== "") {
+	  alert("da nhap " + inputText);
+	} else {
+	  alert("moi nhap!");
+	}
   }
-
-
-
-
-
+  submitButton.addEventListener("click", handleSubmit);
