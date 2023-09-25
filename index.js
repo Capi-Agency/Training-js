@@ -683,9 +683,10 @@ addItemButton.addEventListener("click", addItemToList);
 //bai2
 const myInput =document.getElementById("myInput");
 const submitButton = document.getElementById("submitButton");
- function handleSubmit(event) {
-	if (inputText !== "") {
-	  alert("da nhap " + inputText);
+// let textInput = myInput.value.trim()
+ function handleSubmit() {
+	if (myInput.value.trim()) {
+	  alert(`da nhap: ${myInput.value.trim()}`);
 	} else {
 	  alert("moi nhap!");
 	}
