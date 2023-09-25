@@ -58,8 +58,10 @@ Khi người dùng nhập thông tin vào input và nhấn nút "submitButton", 
 let inputValue = document.querySelector('#myInput')
 let submitBtn = document.querySelector('#submitButton')
 
-submitBtn.addEventListener('click', function () {
+function checkInput() {
     if (inputValue.value.trim()) {
         alert(`Đã submit với nội dung: ${inputValue.value}`)
     }
-})
+}
+
+submitBtn.addEventListener('click', checkInput)
