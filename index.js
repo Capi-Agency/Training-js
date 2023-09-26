@@ -184,33 +184,109 @@
 //     num.innerHTML= count
 // })
 
-const add = document.getElementById("addItemButton")
-const myList = document.getElementById("myList")
-let value = 5
-add.addEventListener("click", function(){
-    value +=1
-    myList.innerHTML += '<li>'+ value +'</li>'
-})
+// const add = document.getElementById("addItemButton")
+// const myList = document.getElementById("myList")
+// let value = 5
+// add.addEventListener("click", function(){
+//     value +=1
+//     myList.innerHTML += '<li>'+ value +'</li>'
+// })
 
 
-const submit = document.getElementById("submitButton")
-const input = document.getElementById("myInput")
+// const submit = document.getElementById("submitButton")
+// const input = document.getElementById("myInput")
 
-submit.addEventListener('click', function(){
-    if(input.value = ' '){
-        alert("ai o si ma")
-    }
-    else{
-        alert(`Da nhan noi dung: ${input.value}`)
-    }
+// submit.addEventListener('click', function(){
+//     if(input.value = ' '){
+//         alert("ai o si ma")
+//     }
+//     else{
+//         alert(`Da nhan noi dung: ${input.value}`)
+//     }
     
+// })
+
+
+const dataFake = [
+	{
+		id: 1,
+		name: "product A",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 2,
+		name: "product B",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 3,
+		name: "product C",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 4,
+		name: "product D",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 5,
+		name: "product E",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 6,
+		name: "product F",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+];
+
+var data = '<tbody>'
+for(i = 0;i < dataFake.length; i++){
+   data+= '<tr>';
+   data+= '<td>' + dataFake[i].id + '</td>';
+   data+= '<td>' + dataFake[i].name + '</td>';
+   data+= '<td>' + dataFake[i].price + '</td>';
+   data+= '<td>' + dataFake[i].description + '</td>';
+   data+= '<td>' +`<img src="${dataFake[i].image}">` + '</td>';
+   data+= `<td> <button id="update">Update</button>   <button id="delete" onclick='deleteProduct(${dataFake[i].id})'>Delete</button> </td>`;
+   data+= '</tr>';
+}
+data+='</tbody>';
+document.getElementById('tableData').innerHTML = data;
+
+
+
+ 
+const updateTb = document.getElementById("update");
+const deleteTb = document.getElementById("delete");
+const createTb = document.getElementById("create")
+updateTb.addEventListener("click", function(){
+   
 })
 
-
-
-
-
-
-
+function deleteProduct(id){
+  let newArray =dataFake.filter(function(product){
+    return product.id !== id;
+  })
+  console.log(newArray);
+}
 
 
