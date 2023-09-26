@@ -504,78 +504,78 @@
 
 //Tìm số lớn nhất và nhỏ nhất: Viết một hàm nhận vào một mảng số nguyên và trả về số lớn nhất và nhỏ nhất.
 
-function timMinMax(arr) {
-	if (arr.length === 0) {
-		return null;
-	}
+// function timMinMax(arr) {
+// 	if (arr.length === 0) {
+// 		return null;
+// 	}
 
-	let min = arr[0];
-	let max = arr[0];
+// 	let min = arr[0];
+// 	let max = arr[0];
 
-	for (let i = 1; i < arr.length; i++) {
-		if (arr[i] < min) {
-			min = arr[i];
-		}
-		if (arr[i] > max) {
-			max = arr[i];
-		}
-	}
+// 	for (let i = 1; i < arr.length; i++) {
+// 		if (arr[i] < min) {
+// 			min = arr[i];
+// 		}
+// 		if (arr[i] > max) {
+// 			max = arr[i];
+// 		}
+// 	}
 
-	return { min, max };
-}
-//Đảo ngược mảng: Viết một hàm nhận vào một mảng và trả về mảng đảo ngược.
-function daoNguocMang(arr) {
-	let reversedArr = [];
-	for (let i = arr.length - 1; i >= 0; i--) {
-		reversedArr.push(arr[i]);
-	}
-	return reversedArr;
-}
+// 	return { min, max };
+// }
+// //Đảo ngược mảng: Viết một hàm nhận vào một mảng và trả về mảng đảo ngược.
+// function daoNguocMang(arr) {
+// 	let reversedArr = [];
+// 	for (let i = arr.length - 1; i >= 0; i--) {
+// 		reversedArr.push(arr[i]);
+// 	}
+// 	return reversedArr;
+// }
 
-//Tìm các phần tử lặp lại: Viết một hàm nhận vào một mảng và trả về một mảng chứa các phần tử lặp lại.
-function timPhanTuLap(arr) {
-	let duplicateElements = [];
-	let count = {};
+// //Tìm các phần tử lặp lại: Viết một hàm nhận vào một mảng và trả về một mảng chứa các phần tử lặp lại.
+// function timPhanTuLap(arr) {
+// 	let duplicateElements = [];
+// 	let count = {};
 
-	for (let i = 0; i < arr.length; i++) {
-		let element = arr[i];
-		count[element] = (count[element] || 0) + 1;
-	}
+// 	for (let i = 0; i < arr.length; i++) {
+// 		let element = arr[i];
+// 		count[element] = (count[element] || 0) + 1;
+// 	}
 
-	for (let key in count) {
-		if (count[key] > 1) {
-			duplicateElements.push(parseInt(key));
-		}
-	}
+// 	for (let key in count) {
+// 		if (count[key] > 1) {
+// 			duplicateElements.push(parseInt(key));
+// 		}
+// 	}
 
-	return duplicateElements;
-}
+// 	return duplicateElements;
+// }
 
-//Tính trung bình cộng: Viết một hàm nhận vào một mảng số nguyên và trả về giá trị trung bình cộng.
-function tinhTrungBinhCong(arr) {
-	if (arr.length === 0) {
-		return 0;
-	}
+// //Tính trung bình cộng: Viết một hàm nhận vào một mảng số nguyên và trả về giá trị trung bình cộng.
+// function tinhTrungBinhCong(arr) {
+// 	if (arr.length === 0) {
+// 		return 0;
+// 	}
 
-	let sum = 0;
-	for (let i = 0; i < arr.length; i++) {
-		sum += arr[i];
-	}
+// 	let sum = 0;
+// 	for (let i = 0; i < arr.length; i++) {
+// 		sum += arr[i];
+// 	}
 
-	return sum / arr.length;
-}
-var arr = [3, 4, 5, 6, 7];
-// var sum = tinhTong(arr);
-// console.log(sum);
-var result = timMinMax(arr);
-console.log(result.min);
-console.log(result.max);
-var reversedArr = daoNguocMang(arr);
-console.log(reversedArr);
-var duplicates = timPhanTuLap(arr);
-console.log(duplicates);
-var average = tinhTrungBinhCong(arr);
-console.log(average);
+// 	return sum / arr.length;
+// }
+// var arr = [3, 4, 5, 6, 7];
+// // var sum = tinhTong(arr);
+// // console.log(sum);
+// var result = timMinMax(arr);
+// console.log(result.min);
+// console.log(result.max);
+// var reversedArr = daoNguocMang(arr);
+// console.log(reversedArr);
+// var duplicates = timPhanTuLap(arr);
+// console.log(duplicates);
+// var average = tinhTrungBinhCong(arr);
+// console.log(average);
 
 
 // bai2Sắp xếp mảng: Viết một hàm nhận vào một mảng số nguyên và trả về một mảng đã được sắp xếp từ thấp đến cao.
@@ -661,34 +661,150 @@ console.log(average);
 // }
 
 //===========btvn dom================
-const myList = document.getElementById("myList");
-const addItemButton = document.getElementById("addItemButton");
-function addItemToList() {
-	const newItem = document.createElement("li");
-	newItem.textContent = "Mục mới";
-	myList.appendChild(newItem);
+// const myList = document.getElementById("myList");
+// const addItemButton = document.getElementById("addItemButton");
+// function addItemToList() {
+// 	const newItem = document.createElement("li");
+// 	newItem.textContent = "Mục mới";
+// 	myList.appendChild(newItem);
+// }
+// addItemButton.addEventListener("click", addItemToList);
+
+
+
+
+//bai2
+// const myInput =document.getElementById("myInput");
+// const submitButton = document.getElementById("submitButton");
+// // let textInput = myInput.value.trim()
+//  function handleSubmit() {
+// 	if (myInput.value.trim()) {
+// 	  alert(`da nhap: ${myInput.value.trim()}`);
+// 	} else {
+// 	  alert("moi nhap!");
+// 	}
+//   }
+//   submitButton.addEventListener("click", handleSubmit);
+
+  // ====================== Buổi 5 ======================
+// Hiển thỉ list sản phẩm ra table
+const dataFake = [
+	{
+		id: 1,
+		name: "product A",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 2,
+		name: "product B",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 3,
+		name: "product C",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 4,
+		name: "product D",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 5,
+		name: "product E",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 6,
+		name: "product F",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+];
+
+var k = '<tbody>'
+for(i = 0;i < dataFake.length; i++){
+	k+= '<tr>';
+	k+= '<td>' + dataFake[i].id + '</td>';
+
+	k+= '<td>' + dataFake[i].name + '</td>';
+	k+= '<td>' + dataFake[i].price + '</td>';
+	k+= '<td>' + dataFake[i].description + '</td>';
+	k+= '<td>' + `<img src="${dataFake[i].image}"> `+ '</td>';
+	k+= `<td> <button id="delete" onclick="deleteProduct(${dataFake[i].id})">delete</button> <button id="update">update</button>  </td>`;
+	
+	k+= '</tr>';
 }
-addItemButton.addEventListener("click", addItemToList);
+k+='</tbody>';
+document.getElementById('tableData').innerHTML = k;
+
+// ===========button delete
+function deleteProduct(id) {
+	let newArray = dataFake.filter(function(product) {
+		return product.id !== id;
+	})
+	console.log(newArray);
+}
+
+// ===========buttton update
+const btn_update = document.getElementById("btn-update")
+const update =document.getElementById("update");
+update.addEventListener("click", function() {
+	const newTablet = document.getElementById("btn-update");
+	newTablet.textContent = "Update"
+
+})
+
+//===========button create
+// const create = document.getElementById("create");
+//  k =document.getElementsByTagName("tbody")
+// function addProduct () {
+
+// 	// var x = ['a'];
+// 	// x.push('b', 'c');
+// 	k+= '<td>' + dataFake[i].name + '</td>';
+	
+	
+	// const newProduct = document.createElement("td");
+	// newProduct.textContent = "sản phẩm mới";
+	// tbody.appendChild(newProduct);
+// }
+// create.addEventListener("click" , addProduct);
+// const myList = document.getElementById("myList");
+// const addItemButton = document.getElementById("addItemButton");
+// function addItemToList() {
+// 	const newItem = document.createElement("li");
+// 	newItem.textContent = "Mục mới";
+// 	myList.appendChild(newItem);
+// }
+// addItemButton.addEventListener("click", addItemToList);
 
 
-//bai2
-// const button3 = document.getElementById("submitButton")
-// const menu = document.querySelector(".menu")
-// console.log(menu.classList);
-// button3.addEventListener("click", function () {
-// 	menu.classList.add("isshow");
-// 	console.log("classList: ", menu.classList);
-// });
+// const myList = document.getElementById("myList");
+// // const addItemButton = document.getElementById("addItemButton");
+// // function addItemToList() {
+// // 	const newItem = document.createElement("li");
+// // 	newItem.textContent = "Mục mới";
+// // 	myList.appendChild(newItem);
+// // }
+// // addItemButton.addEventListener("click", addItemToList);
 
-//bai2
-const myInput =document.getElementById("myInput");
-const submitButton = document.getElementById("submitButton");
-// let textInput = myInput.value.trim()
- function handleSubmit() {
-	if (myInput.value.trim()) {
-	  alert(`da nhap: ${myInput.value.trim()}`);
-	} else {
-	  alert("moi nhap!");
-	}
-  }
-  submitButton.addEventListener("click", handleSubmit);
+// trong table có 2 nút xóa và update ấn xóa thì xóa phần tử đó ra khỏi mảng ấn vào cập nhật thì thêm chữ update vào sau phroduct
+// và 1 nút create ấn vào sẽ thêm 1 phần tử vào mảng với tên sản phẩn mới
