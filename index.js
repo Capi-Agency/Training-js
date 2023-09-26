@@ -480,7 +480,7 @@
 
 // ====================== Buổi 5 ======================
 // Hiển thỉ list sản phẩm ra table
-const dataFake = [
+let dataFake = [
 	{
 		id: 1,
 		name: "product A",
@@ -532,3 +532,43 @@ const dataFake = [
 ];
 // trong table có 2 nút xóa và update ấn xóa thì xóa phần tử đó ra khỏi mảng ấn vào cập nhật thì thêm chữ update vào sau phroduct
 // và 1 nút create ấn vào sẽ thêm 1 phần tử vào mảng với tên sản phẩn mới
+
+function render (data){
+	const html =document.getElementById('tbody');
+	html.innerHTML=""
+	data.forEach((data,index)=>{
+		html.innerHTML+= `
+			<tr>       
+			<td>${index+1}</td>
+			<td>${data.name}</td>
+			<td><img src=${data.image}/></td>
+			<td>${data.description}</td>
+			<td>
+				<button onClick='updateProduct(${data.id})'>Update</button>
+				<button onClick='deleteProduct(${data.id})'>Delete</button>
+			</td>
+			  </tr>
+			`
+		})
+}
+render(dataFake)
+const deleteProduct= (id)=>{
+	dataFake=dataFake.filter((data)=>data.id!=id)
+	render(dataFake)
+}
+const updateProduct= (id)=>{
+	dataFake.find((data)=>data.id==id).name="Product updated"
+	render(dataFake)
+}
+const createProduct= ()=>{
+	const newProduct = {
+		id:Math.random(),
+		name:"Product created",
+		price:Math.random(),
+		image:"https://picsum.photos/200/300.jpg",
+		description:"oke"
+	}
+	dataFake.push(newProduct)
+	render(dataFake)
+}
+

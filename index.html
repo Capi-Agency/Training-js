@@ -24,7 +24,7 @@
     }
 </style>
 <body>
-    <h1 onclick="this.innerHTML='hi'" class="title isHidden" data-id="abc">Hello</h1>
+    <!-- <h1 onclick="this.innerHTML='hi'" class="title isHidden" data-id="abc">Hello</h1>
 
     <button id="hide" class="">HIDE h1</button>
     <button id="show" class="">SHOW h1</button>
@@ -32,7 +32,28 @@
 
     <input type="email" name="emailName" id="email" value="capi@design.com" placeholder="Enter your email...." >
 
-    <div id="box"></div>
+    <div id="box"></div> -->
+    <button onclick="createProduct()">Create</button>
+        <table border="1px solid">
+            <thead>
+            <tr>
+                <th>STT</th>
+                <th>Name</th>
+                <th>Image</th>
+                <th>desc</th>
+                <th>action</th>
+            <tr>
+            </thead>  
+           <tbody id="tbody">
+            <tr>       
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+                <td>Alfreds Futterkiste</td>
+                <td>Alfreds Futterkiste</td>
+              </tr>
+           </tbody>
+          </table>
     <script src="./index.js"></script>
 </body>
 </html>
