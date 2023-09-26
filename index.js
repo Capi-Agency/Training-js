@@ -255,7 +255,7 @@
 // }
 // appointment.showDetail();
 
-// Buoi 3: 
+// Buoi 3:
 
 // ======================String======================
 
@@ -453,27 +453,82 @@
 // };
 // const result = originalArray.every(checkPrime);
 // console.log(result);
-const title = document.querySelector(".title");
-const hideEl = document.querySelector("#hide");
-const showEl = document.querySelector("#show");
-const toggleEl = document.querySelector("#toggle");
-const emailEl = document.querySelector("#email");
-const parentBox = document.querySelector("#box");
+// const title = document.querySelector(".title");
+// const hideEl = document.querySelector("#hide");
+// const showEl = document.querySelector("#show");
+// const toggleEl = document.querySelector("#toggle");
+// const emailEl = document.querySelector("#email");
+// const parentBox = document.querySelector("#box");
 
 // createElement && append/ remove vao 1 parent node
 
-const childDiv = document.createElement("div");
-childDiv.innerText = "this is a new div";
+// const childDiv = document.createElement("div");
+// childDiv.innerText = "this is a new div";
 
-const attribute = emailEl.getAttribute("value");
+// const attribute = emailEl.getAttribute("value");
 
-hideEl.addEventListener("click", function () {
-	parentBox.removeChild(childDiv);
-});
-showEl.addEventListener("click", function () {
-	parentBox.append(childDiv);
-});
+// hideEl.addEventListener("click", function () {
+// 	parentBox.removeChild(childDiv);
+// });
+// showEl.addEventListener("click", function () {
+// 	parentBox.append(childDiv);
+// });
 // toggleEl.addEventListener("click", function () {
 // 	title.classList.toggle("isHidden");
 // 	console.log("classList: ", title.classList);
 // });
+
+// ====================== Buổi 5 ======================
+// Hiển thỉ list sản phẩm ra table
+const dataFake = [
+	{
+		id: 1,
+		name: "product A",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 2,
+		name: "product B",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 3,
+		name: "product C",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 4,
+		name: "product D",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 5,
+		name: "product E",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+	{
+		id: 6,
+		name: "product F",
+		price: 200,
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+		image: "https://picsum.photos/200/300.jpg",
+	},
+];
+// trong table có 2 nút xóa và update ấn xóa thì xóa phần tử đó ra khỏi mảng ấn vào cập nhật thì thêm chữ update vào sau phroduct
+// và 1 nút create ấn vào sẽ thêm 1 phần tử vào mảng với tên sản phẩn mới
