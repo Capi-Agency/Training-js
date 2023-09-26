@@ -571,4 +571,5 @@ const createProduct= ()=>{
 	dataFake.push(newProduct)
 	render(dataFake)
 }
+///bài tập về nhà tưởng tự như bài trên thay vì ấn nút create thêm sản phẩm mới thì mình có 4 ô input nhập trường dữ liệu và 1 nút tạo sau đó thêm phần tử mới vào trong dataFake phải check value k bỏ trống
 
