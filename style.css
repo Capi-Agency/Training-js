@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Fira Code', monospace;
+
+    /* outline: 1px dotted red; */
 }
 
 body {
@@ -11,18 +13,26 @@ body {
     gap: 16px;
     justify-content: center;
     align-items: center;
-    margin: 24px 0;
+    margin: 24px 24px;
 }
 
 button {
     all: unset;
     cursor: pointer;
-    background-color: black;
+    padding: 4px 12px;
+    text-align: center;
     color: white;
-    padding: 8px 16px;
 }
 
-.hide {
+.button-update {
+    background-color: rgb(30, 178, 0);
+}
+
+.button-delete {
+    background-color: rgb(167, 0, 0);
+}
+
+/* .hide {
     display: none;
 }
 
@@ -35,4 +45,22 @@ ul {
 li {
     list-style-type: '👉';
     padding-inline-start: 1ch;
+} */
+
+.descriptionCol {
+    max-width: 200px;
+}
+
+.imageCol {
+    width: 400px;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 24vh;
+    }
+}
+
+.buttonCol {
+    width: 200px;
 }
