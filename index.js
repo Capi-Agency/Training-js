@@ -404,7 +404,7 @@
 ////// array.splice(startIndex, deletedLength, items[]), trả về các phần tử đã xóa
 //  const example = ["HTML", "CSS", "JS", "PHP", "Golang", "C++", "Java"];
 
-//  ////// array.slice(startIndex, endIndex) | trả về mảng mới được cắt từ mảng cũ bắt đầu từ vị trí startIndex, kết thúc ở vị trí endIndex
+// array.slice(startIndex, endIndex) | trả về mảng mới được cắt từ mảng cũ bắt đầu từ vị trí startIndex, kết thúc ở vị trí endIndex
 
 //  const newArray = example.slice(1);
 
@@ -413,7 +413,7 @@
 //  console.log("new array: ", newArray);
 //  console.log('====================================');
 
-///////////// Sắp xếp //////////
+/////////// Sắp xếp //////////
 // array.sort(callbackFn(a,b){
 // return a - b; ==> trả về array giá trị tăng dần
 // })
@@ -599,7 +599,7 @@ console.log(average);
 // let result = removeDuplicates(array);
 // console.log(result); 
 
-// // bai 1 
+// bai 1 
 // const x = [2, 4, 5, 6];
 // let z = 0 ;
 //  for (let i = 0; i < x.length; i++) {
