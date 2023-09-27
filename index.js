@@ -76,7 +76,7 @@
 
 // }
 
-// // if/else statement
+// if/else statement
 // const diemKtra = 8;
 // 5, 5-7.5 kha, 7.5 - 9 gioi, 9 - 10 xuat sac;
 
@@ -103,8 +103,7 @@
 // 		console.log("ngay lv");
 // 		break;
 // }
-// tao 1 vong lap for lap lai 10 lan, trong moi lan thi` bien status (boolean) se thay doi nguoc lai voi chinh no, console.log ra
-
+// // tao 1 vong lap for lap lai 10 lan, trong moi lan thi` bien status (boolean) se thay doi nguoc lai voi chinh no, console.log ra
 
 // Buoi 2:
 
@@ -136,14 +135,14 @@
 // const toan = new Human("Toan","300",true);
 
 // toan.introduce();
-// // Cach2: dung cu phap new Object()
+// Cach2: dung cu phap new Object()
 // const newPlainObject = new Object();
 // newPlainObject.age = 24;
 
-// // Cach 3:
+// Cach 3:
 // const oldObject = {
 // 	name: "toan",
-// 	age: 21 
+// 	age: 21
 // };
 //Shallow copy: khi thay doi gia tri cua object moi thi object cu cung bi thay doi
 
@@ -156,7 +155,7 @@
 // console.log("clone 1: ",clone1);
 // console.log("old object: ", oldObject);
 
-// c2: 
+// // c2:
 
 // const clone2 = JSON.parse(JSON.stringify(oldObject));
 // console.log("clone 2: ", clone2);
@@ -211,7 +210,7 @@
 // 	console.log(a+b)
 // })(3,4);
 
-// ******Callback fn: mot ham` truyen vao mot ham` khac nhu mot param,  
+// ******Callback fn: mot ham` truyen vao mot ham` khac nhu mot param,
 
 // ["Toan","Vuong","Nguyen","Tung"].forEach(function(item, index){
 // 	console.log("Toi ten la: ", item);
@@ -232,93 +231,36 @@
 // abc(1,2,sum);
 // abc(1,2,div);
 
+// === On tap Object va function ===
+// const today = new Date();
+// const currentDate = today.getDate();
+// const currentHour = today.getHours();
 
-
-//========BTVN=========
-//Tạo 1 class Human có thuộc tính tên tuổi chiều cao số đo ba vòng 
-// class Human {
-//   constructor(nameParam, heightParam, ageParam, v1Param, v2Param, v3Param) {
-//     this.name = nameParam;
-//     this.height = heightParam;
-//     this.age = ageParam;
-//     this.v1 = v1Param;
-//     this.v2 = v2Param;
-//     this.v3 = v3Param;
-//   }
-//   introduce() {
-//     console.log("Toi la " + this.name + ", toi cao " + this.height + "cm " + this.age + "tuoi " + this.v1 + "cm " + this.v2 + "cm " + this.v3 + "cm ");
-//   }
-//   //tạo hàm kiểm tra tuổi nếu trên >18 tuổi đủ tuổi đi chơi <18 k đủ tuổi
-//   checkAge() {
-//     if (this.age > 18) {
-//       console.log("Du tuoi");
-//     } else {
-//       console.log("Khong du tuoi");
-//     }
-//   }
-// }
-// const toan = new Human("Toan", "300", "20", "90", "50", "80");
-// toan.introduce();
-// toan.checkAge();
-
-// //Viết một hàm tính giai thừa của một số nguyên dương và sử dụng callback để in kết quả.
-// function div(x) {
-//   console.log(x)
-// }
-// function timgiaithua(x, callback) {
-//   if (x < 0) {
-//     console.log("ko phai nguyen duong");
-//   }
-//   else if (x === 0) {
-//     console.log("giai thua = 1 ");
-//   }
-//   else {
-//     let factorial = 1;
-//     for (let i = 1; i <= x; i++) {
-//       factorial *= i;
-//     }
-//     callback(factorial);
-//   }
-// }
-// timgiaithua(1, div);
-
-//=============buoi3===========
-//bai tap ve doi tuong (Object)
-// bai 3
-// class Animal {
-// 	constructor(nameParam, speciesParam, ageParam) {
-// 		this.name = nameParam;
-// 		this.species = speciesParam;
-// 		this.age = ageParam;
-// 	}
-// 	introduce() {
-// 		console.log("Day la con " + this.name + ", la loai " + this.species + "tuoi" + this.age);
+// const appointment = {
+// 	date: 19,
+// 	time: 9,
+// 	location: "35 TVD",
+// 	showDetail: function(){
+// 		console.log(`Cuoc hop dien ra luc ${this.time}, ngay ${this.date}, dia diem: ${this.location} `);
+// 	},
+// 	check: function(){
+// 		if(currentDate < this.date || (currentDate == this.date && currentHour < this.time)){
+// 			console.log('Cuoc hop chua dien ra');
+// 		}else if(currentDate > this.date || (currentDate == this.date && currentHour > this.time)){
+// 			console.log('Cuoc hop da dien ra');
+// 		}else{
+// 			console.log('Cuoc hop dang dien ra');
+// 		}
 // 	}
 // }
+// appointment.showDetail();
 
-// const Cat = new Animal("meo anh long ngan", "meo", 4);
-// Cat.introduce();
-// //bai 4 ve nha xem 
-// //=================String=======================
+// Buoi 3:
 
-// const fullname = "tran huu tung";
-// // console.log("length of fullname: " , fullname.length);
-// console.log("fullname.slice(): ", fullname.slice(0, 5));
-// // bien doi style cua text 
-// console.log("name: ", fullname.toUpperCase());
-// console.log("name: ", fullname.toLocaleLowerCase());
-// const fullnameArray = fullname.split(" ", 2);
-// console.log("fullname arrray: ", fullnameArray);
+// ======================String======================
 
-// //===================Array===========
-// const memberArray = ["duc", "tung", "vuong", "toan"];
-// console.table(memberArray);
-// //
-// memberArray.forEach(function (memberArray, index) {
-// 	console.log(`memberArray: ${memberArray}, at index ${index}`);
-// })
-
-// ============buoi 3============
+// const a = "abcd  13232";
+// const b = new String("abcd 12121");
 
 // Phuong thuc cua String
 
@@ -328,7 +270,6 @@
 // console.log("a.substring():", a.substring(0, 3));
 //////  substr(startIndex, length)
 // console.log("a.substr():", a.substr(0, 4));
-
 
 ///////////////// Thay thế ///////////////////////////
 /////// replace(searchVal, replaceVal) thay thế giá trị searchVal đầu tiên nó tìm thấy
@@ -343,10 +284,10 @@
 
 ///////////////// Nối ///////////////////////////
 
-//  const firstName = "  Nguyen   ";
-//  const lastName = "  Duc   ";
+// const firstName = "  Nguyen   ";
+// const lastName = "  Duc   ";
 
-//  const fullName = firstName.concat(" ",lastName, " sieu cap vjppro");
+// const fullName = firstName.concat(" ",lastName, " sieu cap vjppro");
 
 ///////////////// Xoá khoảng trắng ///////////////////////////
 
@@ -356,9 +297,9 @@
 ////////////////// Chia tách /////////////////////
 ////// split(splitter, limit) | splitter: các kí tự dùng để chia tách, limit: giới hạn độ dài của mảng kết quả trả về
 
-//  const subjects = "HTML, CSS, Javascript, PHP";
+// const subjects = "HTML, CSS, Javascript, PHP";
 
-//  const subjectArray = subjects.split('');
+// const subjectArray = subjects.split('');
 
 // console.log("subject array: ", subjectArray);
 
@@ -374,7 +315,6 @@
 ////// array[index]: truy cập phần tử có index trong array
 ////// array.length
 ////// array.toString() && array.join() | khi mà array này bao gồm các string number
-
 
 // console.log("array.join(): ",example.join());
 
@@ -399,21 +339,20 @@
 ///////////////// Nối ///////////////////////////
 /////// array.concat()
 
-
 ///////////////// Cắt ///////////////////////////
 ////// array.splice(startIndex, deletedLength, items[]), trả về các phần tử đã xóa
-//  const example = ["HTML", "CSS", "JS", "PHP", "Golang", "C++", "Java"];
+// const example = ["HTML", "CSS", "JS", "PHP", "Golang", "C++", "Java"];
 
-// array.slice(startIndex, endIndex) | trả về mảng mới được cắt từ mảng cũ bắt đầu từ vị trí startIndex, kết thúc ở vị trí endIndex
+////// array.slice(startIndex, endIndex) | trả về mảng mới được cắt từ mảng cũ bắt đầu từ vị trí startIndex, kết thúc ở vị trí endIndex
 
-//  const newArray = example.slice(1);
+// const newArray = example.slice(1);
 
-//  console.log('====================================');
-//  console.log("array: ", example);
-//  console.log("new array: ", newArray);
-//  console.log('====================================');
+// console.log('====================================');
+// console.log("array: ", example);
+// console.log("new array: ", newArray);
+// console.log('====================================');
 
-/////////// Sắp xếp //////////
+///////////// Sắp xếp //////////
 // array.sort(callbackFn(a,b){
 // return a - b; ==> trả về array giá trị tăng dần
 // })
@@ -421,7 +360,7 @@
 // return b - a; ==> trả về array giá trị giảm dần
 // })
 
-//  const points = [3,1,5,4,3,6,8,9];
+// const points = [3,1,5,4,3,6,8,9];
 
 // const newPoints = points.sort(function(a,b){
 // 	return b - a;
@@ -435,260 +374,113 @@
 
 ////// array.forEach(callbackFn(element, index){ code xu li ele, index })
 
-//  const callbackFn = function(point, index){
-// 	 console.log(`point: ${point}, at index ${index}`);
-//  }
+// const callbackFn = function(point, index){
+// 	console.log(`point: ${point}, at index ${index}`);
+// }
 
-//  points.forEach(callbackFn)
+// points.forEach(callbackFn)
 
-//  ////// array.map(callbackFn)
+////// array.map(callbackFn)
 
-//  const triplePoints = points.map(function(point, index){
-// 	 return point * 3
-//  })
+// const triplePoints = points.map(function(point, index){
+// 	return point * 3
+// })
 
+////// array.filter(callbackFn) ===> Trả về 1 MẢNG mới mà thỏa mãn các điều kiện trong callbackFn y/cầu
 
+// const filteredPoints = points.filter(function(point){
+// 	return point >= 5;
+// })
 
-//  ////// array.filter(callbackFn) ===> Trả về 1 MẢNG mới mà thỏa mãn các điều kiện trong callbackFn y/cầu
+////// array.reduce(callbackFn, initVal)
+// const callbackFn2 = function(prevPoint, currentPoint){
+// 	return prevPoint + currentPoint;
+// }
+// const reducedPoints = points.reduce(callbackFn2,0);
 
-//  const filteredPoints = points.filter(function(point){
-// 	 return point >= 5;
-//  })
+// 1st turn
+// prevPoint = initVal ===> prevPoint += currentPoint ===> 9
 
+// 2nd
+//
 
-//  ////// array.reduce(callbackFn, initVal)
-//  const callbackFn2 = function(prevPoint, currentPoint){
-// 	 return prevPoint + currentPoint;
-//  }
-//  const reducedPoints = points.reduce(callbackFn2,0);
+// console.log('====================================');
+// console.table(points);
+// console.table(reducedPoints);
+// console.log('====================================');
 
-//  // 1st turn
-//  // prevPoint = initVal ===> prevPoint += currentPoint ===> 9
+/////// array.find(callbackFn) ===> Trả về 1 PHẦN TỬ đầu tiên mà thỏa mãn các điều kiện trong callbackFn y/cầu
 
-//  // 2nd
-//  // 
+// const foundPoint = points.find(function(point){
+// 	return point == 3;
+// })
+// console.table("found: ",foundPoint);
 
-//  console.log('====================================');
-//  console.table(points);
-//  console.table(reducedPoints);
-//  console.log('====================================');
+/////// array.indexOf(searchVal) ==> sẽ trả về -1 nếu phần tử không thuộc mảng, ngược lại, trả về index của phần tử trong mảng
 
-//  /////// array.find(callbackFn) ===> Trả về 1 PHẦN TỬ đầu tiên mà thỏa mãn các điều kiện trong callbackFn y/cầu
-
-//  const foundPoint = points.find(function(point){
-// 	 return point == 3;
-//  })
-//  console.table("found: ",foundPoint);
-
-//  /////// array.indexOf(searchVal) ==> sẽ trả về -1 nếu phần tử không thuộc mảng, ngược lại, trả về index của phần tử trong mảng
-
-//  const index = points.indexOf(10);
-//  console.log("index: ", index);
+// const index = points.indexOf(10);
+// console.log("index: ", index);
 
 ////// array.findIndex(callbackFn)
+// function splitArray(arr, n) {
+// 	const result = [];
+// 	const chunkSize = Math.ceil(arr.length / n);
 
-//===============BTVN============\
-// bai 1
-// Tính tổng các phần tử trong mảng: Viết một hàm nhận vào một mảng số nguyên và trả về tổng của các phần tử.
-
-// function tinhTong(arr) {
-// 	let sum = 0;
-// 	for (let i = 0; i < arr.length; i++) {
-// 		sum += arr[i];
+// 	for (let i = 0; i < arr.length; i += chunkSize) {
+// 		const chunk = arr.slice(i, i + chunkSize);
+// 		result.push(chunk);
 // 	}
-// 	return sum;
+
+// 	return result;
 // }
-// var arr = [3, 4, 5, 6, 7];
-// var sum = tinhTong(arr);
-// console.log(sum);
+// const originalArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// const numberOfArrays = 3;
 
-//Tìm số lớn nhất và nhỏ nhất: Viết một hàm nhận vào một mảng số nguyên và trả về số lớn nhất và nhỏ nhất.
+// const result = splitArray(originalArray, numberOfArrays);
+// console.log(Math.ceil(2.2));
+// b2.5
 
-// function timMinMax(arr) {
-// 	if (arr.length === 0) {
-// 		return null;
+// const checkPrime = function (num) {
+// 	if (num < 2) {
+// 		return false;
 // 	}
-
-// 	let min = arr[0];
-// 	let max = arr[0];
-
-// 	for (let i = 1; i < arr.length; i++) {
-// 		if (arr[i] < min) {
-// 			min = arr[i];
+// 	for (let i = 2; i <= Math.sqrt(num); i++) {
+// 		if (num % i == 0) {
+// 			return false;
 // 		}
-// 		if (arr[i] > max) {
-// 			max = arr[i];
-// 		}
+// 		return true;
 // 	}
+// };
+// const result = originalArray.every(checkPrime);
+// console.log(result);
+// const title = document.querySelector(".title");
+// const hideEl = document.querySelector("#hide");
+// const showEl = document.querySelector("#show");
+// const toggleEl = document.querySelector("#toggle");
+// const emailEl = document.querySelector("#email");
+// const parentBox = document.querySelector("#box");
 
-// 	return { min, max };
-// }
-// //Đảo ngược mảng: Viết một hàm nhận vào một mảng và trả về mảng đảo ngược.
-// function daoNguocMang(arr) {
-// 	let reversedArr = [];
-// 	for (let i = arr.length - 1; i >= 0; i--) {
-// 		reversedArr.push(arr[i]);
-// 	}
-// 	return reversedArr;
-// }
+// createElement && append/ remove vao 1 parent node
 
-// //Tìm các phần tử lặp lại: Viết một hàm nhận vào một mảng và trả về một mảng chứa các phần tử lặp lại.
-// function timPhanTuLap(arr) {
-// 	let duplicateElements = [];
-// 	let count = {};
+// const childDiv = document.createElement("div");
+// childDiv.innerText = "this is a new div";
 
-// 	for (let i = 0; i < arr.length; i++) {
-// 		let element = arr[i];
-// 		count[element] = (count[element] || 0) + 1;
-// 	}
+// const attribute = emailEl.getAttribute("value");
 
-// 	for (let key in count) {
-// 		if (count[key] > 1) {
-// 			duplicateElements.push(parseInt(key));
-// 		}
-// 	}
-
-// 	return duplicateElements;
-// }
-
-// //Tính trung bình cộng: Viết một hàm nhận vào một mảng số nguyên và trả về giá trị trung bình cộng.
-// function tinhTrungBinhCong(arr) {
-// 	if (arr.length === 0) {
-// 		return 0;
-// 	}
-
-// 	let sum = 0;
-// 	for (let i = 0; i < arr.length; i++) {
-// 		sum += arr[i];
-// 	}
-
-// 	return sum / arr.length;
-// }
-// var arr = [3, 4, 5, 6, 7];
-// // var sum = tinhTong(arr);
-// // console.log(sum);
-// var result = timMinMax(arr);
-// console.log(result.min);
-// console.log(result.max);
-// var reversedArr = daoNguocMang(arr);
-// console.log(reversedArr);
-// var duplicates = timPhanTuLap(arr);
-// console.log(duplicates);
-// var average = tinhTrungBinhCong(arr);
-// console.log(average);
-
-
-// bai2Sắp xếp mảng: Viết một hàm nhận vào một mảng số nguyên và trả về một mảng đã được sắp xếp từ thấp đến cao.
-// let arr = [5, 2, 9, 1, 3];
-// arr.sort(function(a,b) {
-// 	return a - b ; 
-//  });
-//  console.log(arr);
-
-
-//bai2.2Loại bỏ các phần tử trùng lặp: Viết một hàm nhận vào một mảng và trả về một mảng mới chỉ chứa các phần tử duy nhất.
-
-// function removeDuplicates(arr) {
-//   let uniqueArray = arr.filter((value, index) => {
-//     return arr.indexOf(value) === index;
-//   });
-//   return uniqueArray;
-// }
-
-// let array = [1, 2, 3, 3, 4, 5, 5];
-// let result = removeDuplicates(array);
-// console.log(result); 
-
-// bai 1 
-// const x = [2, 4, 5, 6];
-// let z = 0 ;
-//  for (let i = 0; i < x.length; i++) {
-// 	 z += x[i];
-//  }
-//  console.log("tong: " , z);
-
-
-
-//  Kiểm tra mảng có số nguyên tố hay không: Viết một hàm nhận vào một mảng số nguyên và trả về true nếu mảng chứa ít nhất một số nguyên tố, ngược lại trả về false.
-
-//=====================bai4========================
-
-//  const title = document.querySelectorAll(".title");
-//  console.log(title);
-
-// const input = document.getElementById("search");
-// const usernameValue = document.getElementById("usernameValue");
-// const button2 = document.getElementById("bt-menu");
-// input.onchange = function () {
-// 	usernameValue.innerText = input.value
-// }
-// console.log(input);
-
-// const button = document.getElementById("switch");
-// button.onclick = function () {
-// 	button.style.color = "red"
-// 	button.style.background = "red"
-// }
-
-// const menu = document.querySelector(".menu");
-// console.log(menu.classList);
-// button.addEventListener("click", function() {
-// 	menu.classList.add("isshow");
-// 	console.log("classList: ", menu.classList);
+// hideEl.addEventListener("click", function () {
+// 	parentBox.removeChild(childDiv);
+// });
+// showEl.addEventListener("click", function () {
+// 	parentBox.append(childDiv);
+// });
+// toggleEl.addEventListener("click", function () {
+// 	title.classList.toggle("isHidden");
+// 	console.log("classList: ", title.classList);
 // });
 
-// button2.addEventListener("click", function() {
-// 	menu.classList.remove("isshow");
-// 	console.log("classList: ", menu.classList);
-// });
-
-
-// thay doi mau nen
-
-// const button = document.getElementById("button");
-// const menu = document.getElementById("menu");
-// button.onclick = function () {
-// 	menu.style.background = "blue"
-// }
-
-// const countBtn = document.getElementById("countBtn");
-// const number = document.getElementById("number");
-
-// let i =0;
-// countBtn.onclick = function () {
-// 	i += 1;
-// 	number.innerHTML = i;
-// }
-
-//===========btvn dom================
-// const myList = document.getElementById("myList");
-// const addItemButton = document.getElementById("addItemButton");
-// function addItemToList() {
-// 	const newItem = document.createElement("li");
-// 	newItem.textContent = "Mục mới";
-// 	myList.appendChild(newItem);
-// }
-// addItemButton.addEventListener("click", addItemToList);
-
-
-
-
-//bai2
-// const myInput =document.getElementById("myInput");
-// const submitButton = document.getElementById("submitButton");
-// // let textInput = myInput.value.trim()
-//  function handleSubmit() {
-// 	if (myInput.value.trim()) {
-// 	  alert(`da nhap: ${myInput.value.trim()}`);
-// 	} else {
-// 	  alert("moi nhap!");
-// 	}
-//   }
-//   submitButton.addEventListener("click", handleSubmit);
-
-  // ====================== Buổi 5 ======================
+// ====================== Buổi 5 ======================
 // Hiển thỉ list sản phẩm ra table
-const dataFake = [
+let dataFake = [
 	{
 		id: 1,
 		name: "product A",
@@ -738,73 +530,57 @@ const dataFake = [
 		image: "https://picsum.photos/200/300.jpg",
 	},
 ];
-
-var k = '<tbody>'
-for(i = 0;i < dataFake.length; i++){
-	k+= '<tr>';
-	k+= '<td>' + dataFake[i].id + '</td>';
-
-	k+= '<td>' + dataFake[i].name + '</td>';
-	k+= '<td>' + dataFake[i].price + '</td>';
-	k+= '<td>' + dataFake[i].description + '</td>';
-	k+= '<td>' + `<img src="${dataFake[i].image}"> `+ '</td>';
-	k+= `<td> <button id="delete" onclick="deleteProduct(${dataFake[i].id})">delete</button> <button id="update">update</button>  </td>`;
-	
-	k+= '</tr>';
-}
-k+='</tbody>';
-document.getElementById('tableData').innerHTML = k;
-
-// ===========button delete
-function deleteProduct(id) {
-	let newArray = dataFake.filter(function(product) {
-		return product.id !== id;
-	})
-	console.log(newArray);
-}
-
-// ===========buttton update
-const btn_update = document.getElementById("btn-update")
-const update =document.getElementById("update");
-update.addEventListener("click", function() {
-	const newTablet = document.getElementById("btn-update");
-	newTablet.textContent = "Update"
-
-})
-
-//===========button create
-// const create = document.getElementById("create");
-//  k =document.getElementsByTagName("tbody")
-// function addProduct () {
-
-// 	// var x = ['a'];
-// 	// x.push('b', 'c');
-// 	k+= '<td>' + dataFake[i].name + '</td>';
-	
-	
-	// const newProduct = document.createElement("td");
-	// newProduct.textContent = "sản phẩm mới";
-	// tbody.appendChild(newProduct);
-// }
-// create.addEventListener("click" , addProduct);
-// const myList = document.getElementById("myList");
-// const addItemButton = document.getElementById("addItemButton");
-// function addItemToList() {
-// 	const newItem = document.createElement("li");
-// 	newItem.textContent = "Mục mới";
-// 	myList.appendChild(newItem);
-// }
-// addItemButton.addEventListener("click", addItemToList);
-
-
-// const myList = document.getElementById("myList");
-// // const addItemButton = document.getElementById("addItemButton");
-// // function addItemToList() {
-// // 	const newItem = document.createElement("li");
-// // 	newItem.textContent = "Mục mới";
-// // 	myList.appendChild(newItem);
-// // }
-// // addItemButton.addEventListener("click", addItemToList);
-
 // trong table có 2 nút xóa và update ấn xóa thì xóa phần tử đó ra khỏi mảng ấn vào cập nhật thì thêm chữ update vào sau phroduct
 // và 1 nút create ấn vào sẽ thêm 1 phần tử vào mảng với tên sản phẩn mới
+
+function render (data){
+	const html =document.getElementById('tbody');
+	html.innerHTML=""
+	data.forEach((data,index)=>{
+		html.innerHTML+= `
+			<tr>       
+			<td>${index+1}</td>
+			<td>${data.name}</td>
+			<td><img src=${data.image}/></td>
+			<td>${data.description}</td>
+			<td>
+				<button onClick='updateProduct(${data.id})'>Update</button>
+				<button onClick='deleteProduct(${data.id})'>Delete</button>
+			</td>
+			  </tr>
+			`
+		})
+}
+render(dataFake)
+const deleteProduct= (id)=>{
+	dataFake=dataFake.filter((data)=>data.id!=id)
+	render(dataFake)
+}
+const updateProduct= (id)=>{
+	dataFake.find((data)=>data.id==id).name="Product updated"
+	render(dataFake)
+}
+const createProduct= ()=>{
+	const newProduct = {
+		id:Math.random(),
+		name:"Product created",
+		price:Math.random(),
+		image:"https://picsum.photos/200/300.jpg",
+		description:"oke"
+	}
+	dataFake.push(newProduct)
+	render(dataFake)
+}
+///bài tập về nhà tưởng tự như bài trên thay vì ấn nút create thêm sản phẩm mới thì mình có 4 ô input nhập trường dữ liệu và 1 nút tạo sau đó thêm phần tử mới vào trong dataFake phải check value k bỏ trống
+
+const newProduct= ()=>{
+	const input = document.querySelector("input");
+	const log = document.getElementById("values");
+	
+	input.addEventListener("input", updateValue);
+	
+	function updateValue(e) {
+	  log.textContent = e.target.value;
+	}
+	render(dataFake)
+}
