@@ -560,24 +560,47 @@ const updateProduct= (id)=>{
 	dataFake.find((data)=>data.id==id).name="Product updated"
 	render(dataFake)
 }
-const createProduct= ()=>{
-	const newProduct = {
-		id:Math.random(),
-		name:"Product created",
-		price:Math.random(),
-		image:"https://picsum.photos/200/300.jpg",
-		description:"oke"
-	}
-	dataFake.push(newProduct)
-	render(dataFake)
-}
+// const createProduct= ()=>{
+// 	const newProduct = {
+// 		id:Math.random(),
+// 		name:"Product created",
+// 		price:Math.random(),
+// 		image:"https://picsum.photos/200/300.jpg",
+// 		description:"oke"
+// 	}
+// 	dataFake.push(newProduct)
+// 	render(dataFake)
+// }
 ///bài tập về nhà tưởng tự như bài trên thay vì ấn nút create thêm sản phẩm mới thì mình có 4 ô input nhập trường dữ liệu và 1 nút tạo sau đó thêm phần tử mới vào trong dataFake phải check value k bỏ trống
 
-	const input = document.querySelector("input");
-	const log = document.getElementById("values");
+	const createProduct= ()=>{
+		const nameInput = document.getElementById('name-input');
+		const priceInput = document.getElementById('price-input');
+		const descriptionInput = document.getElementById('description-input');
+		const imageInput = document.getElementById('image-input');
 	
-	input.addEventListener("input", updateValue);
-	
-	function updateValue(e) {
-	  log.textContent = e.target.value;
+		const nameValue = nameInput.value.trim();
+		const priceValue = priceInput.value.trim();
+		const descriptionValue = descriptionInput.value.trim();
+		const imageValue = imageInput.value.trim();
+		
+	if (nameValue !== '' && priceValue !== '' && descriptionValue !== '' && imageValue !== '') {
+		const newProduct = {
+			id:dataFake.length + 1,
+			name:nameValue,
+			price:parseFloat(priceValue),
+			image:imageValue,
+			description:descriptionValue,
+		};
+		dataFake.push(newProduct)
+		render(dataFake)
+		nameInput.value = '';
+		priceInput.value = '';
+		descriptionInput.value = '';
+		imageInput.value = '';
 	}
+	else {
+		alert('Chưa điền.');
+	}
+	}
+	
