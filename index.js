@@ -573,7 +573,6 @@ const createProduct= ()=>{
 }
 ///bài tập về nhà tưởng tự như bài trên thay vì ấn nút create thêm sản phẩm mới thì mình có 4 ô input nhập trường dữ liệu và 1 nút tạo sau đó thêm phần tử mới vào trong dataFake phải check value k bỏ trống
 
-const newProduct= ()=>{
 	const input = document.querySelector("input");
 	const log = document.getElementById("values");
 	
@@ -582,5 +581,3 @@ const newProduct= ()=>{
 	function updateValue(e) {
 	  log.textContent = e.target.value;
 	}
-	render(dataFake)
-}

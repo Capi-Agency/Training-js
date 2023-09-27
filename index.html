@@ -34,30 +34,43 @@
 
     <div id="box"></div> -->
     <button onclick="createProduct()">Create</button>
-        <table border="1px solid">
-            <thead>
+    
+    <table border="1px solid">
+        <thead>
             <tr>
                 <th>STT</th>
                 <th>Name</th>
                 <th>Image</th>
                 <th>desc</th>
                 <th>action</th>
-            <tr>
-            </thead>  
-           <tbody id="tbody">
-            <tr>       
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>Alfreds Futterkiste</td>
-                <td>Alfreds Futterkiste</td>
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <input type="text">
-                <td id="values"></td>
+                <tr>
+                </thead>  
+                <tbody id="tbody">
+                    <tr>       
+                        <td id="values"></td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Maria Anders</td>
+                        <td>Germany</td>
+                        <td>Alfreds Futterkiste</td>
+                        <td>Alfreds Futterkiste</td>
+                        <!-- <input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <p id="values"></p> -->
               </tr>
            </tbody>
+           <form>
+            <label >ID:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label >Name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <label >Price:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <label >Description:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Add project">
+          </form>
           </table>
     <script src="./index.js"></script>
 </body>
