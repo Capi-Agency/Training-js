@@ -712,6 +712,25 @@ addBtn.addEventListener("click", () => {
 render();
 
 
+const points = [
+    {
+        x: 1, y: 2
+    },
+    {
+        x: 1, y: 2
+    },
+    {
+        x: 1, y: 2
+    },
+    {
+        x: 1, y: 2
+    },
+    {
+        x: 1, y: 2
+    },
+]
+
+
 
 
 

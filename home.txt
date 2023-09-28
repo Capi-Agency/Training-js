@@ -37,3 +37,27 @@ Xử lý sự kiện:
 Tạo một ô input với một ID như "myInput".
 Tạo một nút button với ID "submitButton".
 Khi người dùng nhập thông tin vào input và nhấn nút "submitButton", hiển thị thông báo "Đã nhấn submit" trên trang.
+
+///////// Bài tập ES6 //////////
+
+///////// Arrow Functions :
+
+Viết một arrow function để tính diện tích của một hình chữ nhật dựa trên chiều dài và chiều rộng được truyền vào.
+
+Sử dụng arrow function để viết một hàm trả về danh sách các số chẵn từ 1 đến 20.
+
+///////// Spread Operators (...):
+
+Sử dụng spread operator để sao chép một mảng sourceArray vào một mảng mới targetArray và thêm một phần tử mới vào targetArray.
+const sourceArray = [ 0, 1, 2, 3 ];
+
+Sử dụng spread operator để nối hai mảng array1 và array2 thành một mảng lớn resultArray.
+
+///////// Destructuring:
+
+Cho một đối tượng person với các thuộc tính name, age, và city. Sử dụng destructuring để trích xuất và in ra thông tin này ra màn hình.
+
+Cho một mảng numbers chứa 5 số. Sử dụng destructuring để gán giá trị của số đầu tiên vào biến firstNumber, số thứ hai vào biến secondNumber, và các số còn lại vào một mảng restNumbers.
+
+** Nâng cao:
+Cho một mảng points chứa các đối tượng có thuộc tính x và y. Sử dụng destructuring để tạo một mảng mới chứa toàn bộ các giá trị x từ các đối tượng (sử dụng hàm map()).
