@@ -25,6 +25,8 @@ Tách mảng thành các mảng con nhỏ: Viết một hàm nhận vào một m
 
 Kiểm tra mảng có số nguyên tố hay không: Viết một hàm nhận vào một mảng số nguyên và trả về true nếu mảng chứa ít nhất một số nguyên tố, ngược lại trả về false.
 Bài tập dom
+
+
 Tạo danh sách:
 
 Tạo một danh sách <ul> trong HTML với một ID như "myList".

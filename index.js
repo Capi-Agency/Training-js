@@ -480,96 +480,214 @@
 
 // ====================== Buổi 5 ======================
 // Hiển thỉ list sản phẩm ra table
-let dataFake = [
-	{
-		id: 1,
-		name: "product A",
-		price: 200,
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
-		image: "https://picsum.photos/200/300.jpg",
-	},
-	{
-		id: 2,
-		name: "product B",
-		price: 200,
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
-		image: "https://picsum.photos/200/300.jpg",
-	},
-	{
-		id: 3,
-		name: "product C",
-		price: 200,
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
-		image: "https://picsum.photos/200/300.jpg",
-	},
-	{
-		id: 4,
-		name: "product D",
-		price: 200,
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
-		image: "https://picsum.photos/200/300.jpg",
-	},
-	{
-		id: 5,
-		name: "product E",
-		price: 200,
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
-		image: "https://picsum.photos/200/300.jpg",
-	},
-	{
-		id: 6,
-		name: "product F",
-		price: 200,
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
-		image: "https://picsum.photos/200/300.jpg",
-	},
-];
-// trong table có 2 nút xóa và update ấn xóa thì xóa phần tử đó ra khỏi mảng ấn vào cập nhật thì thêm chữ update vào sau phroduct
-// và 1 nút create ấn vào sẽ thêm 1 phần tử vào mảng với tên sản phẩn mới
+// let dataFake = [
+// 	{
+// 		id: 1,
+// 		name: "product A",
+// 		price: 200,
+// 		description:
+// 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+// 		image: "https://picsum.photos/200/300.jpg",
+// 	},
+// 	{
+// 		id: 2,
+// 		name: "product B",
+// 		price: 200,
+// 		description:
+// 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+// 		image: "https://picsum.photos/200/300.jpg",
+// 	},
+// 	{
+// 		id: 3,
+// 		name: "product C",
+// 		price: 200,
+// 		description:
+// 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+// 		image: "https://picsum.photos/200/300.jpg",
+// 	},
+// 	{
+// 		id: 4,
+// 		name: "product D",
+// 		price: 200,
+// 		description:
+// 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+// 		image: "https://picsum.photos/200/300.jpg",
+// 	},
+// 	{
+// 		id: 5,
+// 		name: "product E",
+// 		price: 200,
+// 		description:
+// 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+// 		image: "https://picsum.photos/200/300.jpg",
+// 	},
+// 	{
+// 		id: 6,
+// 		name: "product F",
+// 		price: 200,
+// 		description:
+// 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+// 		image: "https://picsum.photos/200/300.jpg",
+// 	},
+// ];
+// // trong table có 2 nút xóa và update ấn xóa thì xóa phần tử đó ra khỏi mảng ấn vào cập nhật thì thêm chữ update vào sau phroduct
+// // và 1 nút create ấn vào sẽ thêm 1 phần tử vào mảng với tên sản phẩn mới
 
-function render (data){
-	const html =document.getElementById('tbody');
-	html.innerHTML=""
-	data.forEach((data,index)=>{
-		html.innerHTML+= `
-			<tr>       
-			<td>${index+1}</td>
-			<td>${data.name}</td>
-			<td><img src=${data.image}/></td>
-			<td>${data.description}</td>
-			<td>
-				<button onClick='updateProduct(${data.id})'>Update</button>
-				<button onClick='deleteProduct(${data.id})'>Delete</button>
-			</td>
-			  </tr>
-			`
-		})
-}
-render(dataFake)
-const deleteProduct= (id)=>{
-	dataFake=dataFake.filter((data)=>data.id!=id)
-	render(dataFake)
-}
-const updateProduct= (id)=>{
-	dataFake.find((data)=>data.id==id).name="Product updated"
-	render(dataFake)
-}
-const createProduct= ()=>{
-	const newProduct = {
-		id:Math.random(),
-		name:"Product created",
-		price:Math.random(),
-		image:"https://picsum.photos/200/300.jpg",
-		description:"oke"
-	}
-	dataFake.push(newProduct)
-	render(dataFake)
-}
+// function render (data){
+// 	const html =document.getElementById('tbody');
+// 	html.innerHTML=""
+// 	data.forEach((data,index)=>{
+// 		html.innerHTML+= `
+// 			<tr>       
+// 			<td>${index+1}</td>
+// 			<td>${data.name}</td>
+// 			<td><img src=${data.image}/></td>
+// 			<td>${data.description}</td>
+// 			<td>
+// 				<button onClick='updateProduct(${data.id})'>Update</button>
+// 				<button onClick='deleteProduct(${data.id})'>Delete</button>
+// 			</td>
+// 			  </tr>
+// 			`
+// 		})
+// }
+// render(dataFake)
+// const deleteProduct= (id)=>{
+// 	dataFake=dataFake.filter((data)=>data.id!=id)
+// 	render(dataFake)
+// }
+// const updateProduct= (id)=>{
+// 	dataFake.find((data)=>data.id==id).name="Product updated"
+// 	render(dataFake)
+// }
+// const createProduct= ()=>{
+// 	const newProduct = {
+// 		id:Math.random(),
+// 		name:"Product created",
+// 		price:Math.random(),
+// 		image:"https://picsum.photos/200/300.jpg",
+// 		description:"oke"
+// 	}
+// 	dataFake.push(newProduct)
+// 	render(dataFake)
+// }
 ///bài tập về nhà tưởng tự như bài trên thay vì ấn nút create thêm sản phẩm mới thì mình có 4 ô input nhập trường dữ liệu và 1 nút tạo sau đó thêm phần tử mới vào trong dataFake phải check value k bỏ trống
+
+
+// ========================================== ES6  ==========================================
+
+// Arrow function
+
+
+
+
+// Template string
+
+// const arrowFunction = (param1 = 1, param2 = 5) => {
+// 	const result = `Kết quả của phép cộng ${param1} và ${param2} là ${param1 + param2} `;
+// 	console.log(result);
+// }
+ 
+// arrowFunction();
+
+// //Array Destructuring & rest param
+// let fruits = ["Banana","Coconut"];
+// let vegetables = ["Carbage","Rau cai"];
+
+// let food = [...fruits, ...vegetables];
+
+// console.log("food: ", ...fruits)
+
+
+
+// // let [a, b, ...childArray] = fruits; // Array destructuring assignment
+// console.log("fruits: ", fruits);
+
+// // let/ const [ a, b ] = array;
+
+
+// // Object destructuring assignment
+// let person = {name: "Peter", age: 28, gender: 'male'};
+
+// person = { ...person, address:"abcd" }
+
+// let { age, ...rest} = person;
+
+// console.log("age: ", age);
+// console.log("REST: ", rest);
+
+// // let/ const {key1, key2, ...rest} = objectA;
+
+
+// import sum from './app.mjs'; //import name
+
+// console.log(sum(1,2));
+
+import data from './db.json' assert {type: "json"};
+
+const tbody = document.querySelector("tbody");
+const addBtn = document.querySelector("#add-btn");
+
+let products = [...data.products];
+
+const render = () => {
+    let tbodyHTML = "";
+    products.forEach((product) => {
+        tbodyHTML += `
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <td class="px-6 py-4">
+                    ${product.name}
+                </td>
+                <td class="px-6 py-4">
+                    ${product.price}
+                </td>
+                <td class="px-6 py-4">
+                    <button
+                        type="button"
+                        class="remove-btn focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+                        data-id="${product.id}"
+                    >
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        `;
+    });
+
+    tbody.innerHTML = tbodyHTML;
+
+    const removeButtons = document.querySelectorAll(".remove-btn");
+
+    removeButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const id = button.dataset.id;
+            removeProduct(id);
+        });
+    });
+};
+
+const removeProduct = (productId) => {
+    products = products.filter(function (product) {
+        return product.id != productId;
+    });
+    render();
+};
+
+
+
+addBtn.addEventListener("click", () => {
+    let newProduct = {
+        id: products.length + 1,
+        name: `Product ${Math.floor(Math.random() * 10)}`,
+        price: 100,
+    };
+    products = [...products, newProduct];
+    render();
+});
+
+render();
+
+
+
+
 
