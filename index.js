@@ -649,6 +649,13 @@ const render = () => {
                     >
                         Delete
                     </button>
+                    <button
+                        type="button"
+                        class="update-btn focus:outline-none text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-red-900"
+                        data-id="${product.id}"
+                    >
+                        Update
+                    </button>
                 </td>
             </tr>
         `;
@@ -657,6 +664,8 @@ const render = () => {
     tbody.innerHTML = tbodyHTML;
 
     const removeButtons = document.querySelectorAll(".remove-btn");
+    const updateButtons = document.querySelectorAll(".update-btn");
+    
 
     removeButtons.forEach((button) => {
         button.addEventListener("click", () => {
@@ -664,11 +673,26 @@ const render = () => {
             removeProduct(id);
         });
     });
+    updateButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const id = button.dataset.id;
+            updateProduct(id);
+        });
+    });
 };
 
 const removeProduct = (productId) => {
     products = products.filter(function (product) {
         return product.id != productId;
+    });
+    render();
+};
+const updateProduct = (productId) => {
+    products = products.map(function (product) {
+        if(product.id == productId){
+           return product = {...product, name: product.name + " updated"};
+        }
+        return product;
     });
     render();
 };
