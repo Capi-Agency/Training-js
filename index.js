@@ -11,6 +11,12 @@ let name = 'Vuong'
 let age = 20
 let male = true
 
+export { name }
+
+const addFunction = (p1, p2) => p1 + p2;
+export default addFunction;
+
+
 // console.log(`My name is ${name}, my age is ${age}, and ${male} my gender is Male`)
 
 //Toán tử
