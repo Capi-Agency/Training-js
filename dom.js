@@ -140,7 +140,6 @@ function dataToHTML(dataFake) {
         <td class="buttonCol">
         <button class="button-delete" onclick="deleteProduct(${dataFake[i].id})">Delete</button>
         <button class="button-update" onclick="updateProduct(${dataFake[i].id})">Update</button>
-        ${updateStatus}
         </td>
         </tr>`
     }
@@ -168,17 +167,5 @@ function updateProduct(id) {
     }
 }
 
-// function addProduct(dataFake) {
-//     dataRow.push(
-//         {
-//             id: 1,
-//             name: "Product A",
-//             price: 200,
-//             description:
-//                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
-//             image: "https://picsum.photos/200/300.jpg",
-//         }
-//     )
-// }
 
 dataToHTML(dataFake)
