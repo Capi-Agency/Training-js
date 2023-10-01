@@ -54,7 +54,7 @@
 // let result = diemDatDuoc > diemTB ? "Pass roi" : "chua Pass";
 
 // ================Vòng lặp (Loop)====================
-// //For
+// // //For
 // for (let i = 2; i < 10; i++) {
 // 	for (let j = 2; j < 10; j++) {
 // 		console.log(`${i}*${j}=${i * j}`);
@@ -573,67 +573,121 @@
 // }
 ///bài tập về nhà tưởng tự như bài trên thay vì ấn nút create thêm sản phẩm mới thì mình có 4 ô input nhập trường dữ liệu và 1 nút tạo sau đó thêm phần tử mới vào trong dataFake phải check value k bỏ trống
 
-	// const createProduct= ()=>{
-	// 	const nameInput = document.getElementById('name-input');
-	// 	const priceInput = document.getElementById('price-input');
-	// 	const descriptionInput = document.getElementById('description-input');
-	// 	const imageInput = document.getElementById('image-input');
-	
-	// 	const nameValue = nameInput.value.trim();
-	// 	const priceValue = priceInput.value.trim();
-	// 	const descriptionValue = descriptionInput.value.trim();
-	// 	const imageValue = imageInput.value.trim();
-		
-	// if (nameValue !== '' && priceValue !== '' && descriptionValue !== '' && imageValue !== '') {
-	// 	const newProduct = {
-	// 		id:dataFake.length + 1,
-	// 		name:nameValue,
-	// 		price:parseFloat(priceValue),
-	// 		image:imageValue,
-	// 		description:descriptionValue,
-	// 	};
-	// 	dataFake.push(newProduct)
-	// 	render(dataFake)
-	// 	nameInput.value = '';
-	// 	priceInput.value = '';
-	// 	descriptionInput.value = '';
-	// 	imageInput.value = '';
-	// }
-	// else {
-	// 	alert('Chưa điền.');
-	// }
-	// }
-	
-	//=======================ES6==============================
+// const createProduct= ()=>{
+// 	const nameInput = document.getElementById('name-input');
+// 	const priceInput = document.getElementById('price-input');
+// 	const descriptionInput = document.getElementById('description-input');
+// 	const imageInput = document.getElementById('image-input');
 
-	// const arrowFunction = (param1 = 3, param2  = 4) => {
-	// 	 return param1*param2;
-	// }
-	// 
-	// let x = [{name:"tung"}, {age:"20"}, {address: "hanoi"}, {gender: "male"} ]
-	// let [name, age ,...rest] = x;
-	// const result = `toi la ${name} tuoi ${age}`;
-	// console.log(result);
-	// console.log("name: ", "age: ", rest);
-	//
-	// let person ={name: "tung", age: 20, address: "hanam"};
-	// let {age} = person;
-	// console.log("age: ", age);
-	//
-	//  let person = [{name:"tung"}, {age:"20"}, {address: "hanoi"} ]
-	//  person = [...person, {gender: "male"}]
-	//  let [gender] = person;
-	//  console.log("gender: ", gender);
+// 	const nameValue = nameInput.value.trim();
+// 	const priceValue = priceInput.value.trim();
+// 	const descriptionValue = descriptionInput.value.trim();
+// 	const imageValue = imageInput.value.trim();
 
-	 // 
-	//  let fruit = ["banana","coconut"];
-	//  let vegetables = ["carbage", "rau cai"];
-	// let food = [...fruit, ...vegetables];
-	// console.log("food: ", food );
+// if (nameValue !== '' && priceValue !== '' && descriptionValue !== '' && imageValue !== '') {
+// 	const newProduct = {
+// 		id:dataFake.length + 1,
+// 		name:nameValue,
+// 		price:parseFloat(priceValue),
+// 		image:imageValue,
+// 		description:descriptionValue,
+// 	};
+// 	dataFake.push(newProduct)
+// 	render(dataFake)
+// 	nameInput.value = '';
+// 	priceInput.value = '';
+// 	descriptionInput.value = '';
+// 	imageInput.value = '';
+// }
+// else {
+// 	alert('Chưa điền.');
+// }
+// }
 
-	import defaultImport, {a,b} from'./app.mjs';
-	console.log(a, b);
-	console.log(defaultImport);
+//=======================ES6==============================
 
-	//promise xem tren f8 
+// const arrowFunction = (param1 = 3, param2  = 4) => {
+// 	 return param1*param2;
+// }
+// 
+// let x = [{name:"tung"}, {age:"20"}, {address: "hanoi"}, {gender: "male"} ]
+// let [name, age ,...rest] = x;
+// const result = `toi la ${name} tuoi ${age}`;
+// console.log(result);
+// console.log("name: ", "age: ", rest);
+//
+// let person ={name: "tung", age: 20, address: "hanam"};
+// let {age} = person;
+// console.log("age: ", age);
+//
+//  let person = [{name:"tung"}, {age:"20"}, {address: "hanoi"} ]
+//  person = [...person, {gender: "male"}]
+//  let [gender] = person;
+//  console.log("gender: ", gender);
 
+// 
+//  let fruit = ["banana","coconut"];
+//  let vegetables = ["carbage", "rau cai"];
+// let food = [...fruit, ...vegetables];
+// console.log("food: ", food );
+
+// import defaultImport, {a,b} from'./app.mjs';
+// console.log(a, b);
+// console.log(defaultImport);
+
+//promise xem tren f8 
+
+
+
+//================== btvn es6=================
+///////// Arrow Functions :
+//b1
+const arrowFunction = (width = 3, height = 4) => {
+    return width * height;
+}
+arrowFunction();
+console.log(arrowFunction());
+//b2 
+const num = () => {
+    const x = [];
+    for (let i = 1; i <= 20; i++) {
+        if (i % 2 === 0) {
+            x.push(i);
+        }
+    }
+    return x;
+};
+const result = num();
+console.log(result);
+///////// Spread Operators (...):
+//b3
+
+const sourceArray = [ 0, 1, 2, 3 ];
+const targetArray = [ ...sourceArray, 4,5,6];
+console.log(targetArray);
+//b4
+let array1 = [0, 1, 2, 3];
+let array2 = [4, 5, 6, 7];
+let resultArray = [...array1, ...array2];
+console.log("resultArray: ", resultArray);
+///////// Destructuring:
+//b5 
+const person = {
+    name: 'Nguyen',
+    age: 18,
+    city: 'hanam',
+  };
+  
+  const { name, age, city } = person;
+  
+  console.log(`Tên: ${name}`);
+  console.log(`Tuổi: ${age}`);
+  console.log(`Thành phố: ${city}`);
+//bai6
+const numbers = [1, 2, 3, 4, 5];
+
+const [firstNumber, secondNumber, ...restNumbers] = numbers;
+
+console.log(`firstNumber: ${firstNumber}`);
+console.log(`secondNumber: ${secondNumber}`);
+console.log(`restNumbers: ${restNumbers}`);
