@@ -691,3 +691,43 @@ const [firstNumber, secondNumber, ...restNumbers] = numbers;
 console.log(`firstNumber: ${firstNumber}`);
 console.log(`secondNumber: ${secondNumber}`);
 console.log(`restNumbers: ${restNumbers}`);
+
+
+//=============json=========
+// function render (data){
+//     console.log(data);
+// 	const tbodyEL =document.getElementById('tbody');
+//     let html = ""
+// 	data.forEach((data,index)=>{
+// 			html +=`
+//             <tr>       
+// 			<td><img src=${data.images}></td>
+// 			  </tr>
+// 			`
+// 		})
+//         tbodyEL.innerHTML=html
+// }
+// render(data.products)
+
+function render (data){
+    console.log(data);
+	const tbodyEL =document.getElementById('tbody');
+    let html = ""
+	data.forEach((data,index)=>{
+			html +=`
+            <tr>  
+            <td>     
+			<img src=${data.images}></td>
+			  </tr>
+			`
+		})
+        tbodyEL.innerHTML=html
+}
+render(data.products)
+
+fetch('./db.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+
+import data from './db.json' assert { type: 'json' };
+console.log(products);
