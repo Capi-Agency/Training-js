@@ -2,18 +2,183 @@
     "products":[
         {
             "id":1,
-            "name": "Product 1",
-            "price": 100
+            "title":"Food Delivery App",
+            "productName":"EDEN",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-24.png",
+            "shortdescription":"Eden app, allowing users to search and order food",
+            "Working Hours":200,
+            "UXDesigners":4,
+            "UIDesigners":12,
+            "Screens":300,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-1-2.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-2-2.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-3-2.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-4-2.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-5-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-6-1.png?resize=1024%2C774&ssl=1"]
         },
         {
             "id":2,
-            "name": "Product 2",
-            "price": 100
+            "title":"Game Store App",
+            "productName":"Genesis",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-23.png",
+            "shortdescription":"",
+            "Working Hours":180,
+            "UXDesigners":4,
+            "UIDesigners":12,
+            "Screens":300,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-1-5.png?resize=1024%2C774&ssl=10","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-2-5.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-3-5.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-4-5.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-5-4.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-6-4.png?resize=1024%2C774&ssl=1"]
         },
         {
             "id":3,
-            "name": "Product 3",
-            "price": 100
+            "title":"Travel Mobile App",
+            "productName":"Zoey",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-23.png",
+            "shortdescription":"",
+            "Working Hours":180,
+            "UXDesigners":4,
+            "UIDesigners":12,
+            "Screens":300,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/01.Smart-home.png.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/02.Smart-home.png.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/03.Smart-home.png.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/06.Smart-home.png.jpg?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/07.Smart-home.png.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/08.Smart-home.png.png?resize=1024%2C774&ssl=1"]
+        },
+        {
+            "id":4,
+            "title":"Smart Home Mobile App",
+            "productName":"Sofia",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-21.png",
+            "shortdescription":"",
+            "Working Hours":180,
+            "UXDesigners":4,
+            "UIDesigners":12,
+            "Screens":300,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-1-8.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-2-8.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-3-8.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-4-8.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-6-7.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-7-2.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-8-2.png?resize=1024%2C774&ssl=1"]
+        },
+        {
+            "id":5,
+            "title":"Banking Mobile App",
+            "productName":"Ruby",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-20.png",
+            "shortdescription":"",
+            "Working Hours":180,
+            "UXDesigners":4,
+            "UIDesigners":12,
+            "Screens":300,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-1-7.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-2-7.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-2-7.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-3-7.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-4-7.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-5-6.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-6-6.png?resize=1024%2C774&ssl=1"]
+        },
+        {
+            "id":6,
+            "title":"Task Manager Mobile App",
+            "productName":"Miniac",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-19.png",
+            "shortdescription":"",
+            "Working Hours":180,
+            "UXDesigners":4,
+            "UIDesigners":12,
+            "Screens":300,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-1-4.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-2-4.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-3-4.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-4-4.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-6-4.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-7-2.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-8-2.png?resize=1024%2C774&ssl=1"]
+        },
+        {
+            "id":7,
+            "title":"Health Care Mobile App",
+            "productName":"Meredith",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-18.png",
+            "shortdescription":"",
+            "Working Hours":180,
+            "UXDesigners":4,
+            "UIDesigners":12,
+            "Screens":300,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-1-3.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-2-3.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-3-3.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-4-3.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-5-3.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-6-3.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-7-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-8-1.png?resize=1024%2C774&ssl=1"]
+        },
+        {
+            "id":8,
+            "title":"Music Mobile App",
+            "productName":"Meli Night",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-16.png",
+            "shortdescription":"",
+            "Working Hours":180,
+            "UXDesigners":4,
+            "UIDesigners":12,
+            "Screens":300,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-1-2.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-2-2.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-3-2.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-4-2.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-5-2.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-6-2.png?resize=1024%2C774&ssl=1"]
+        },
+        {
+            "id":9,
+            "title":"Car Booking Mobile App",
+            "productName":"Lydia",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-14.png",
+            "shortdescription":"",
+            "Working Hours":180,
+            "UXDesigners":4,
+            "UIDesigners":12,
+            "Screens":300,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-1-6.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-2-6.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-3-6.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-4-6.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-5-5.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-6-5.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-8-1.png?w=900&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-9.png?w=900&ssl=1"]
+        },
+        {
+            "id":10,
+            "title":"Banking App",
+            "productName":"Jewel",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-13.png",
+            "shortdescription":"",
+            "Working Hours":180,
+            "UXDesigners":4,
+            "UIDesigners":12,
+            "Screens":300,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-1-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-2-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-3-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-4-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-5-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-6-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-7.png?w=900&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Detail-8.png?w=900&ssl=1"]
+        },
+        {
+            "id":11,
+            "title":"",
+            "productName":"Capi System",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-15.png",
+            "shortdescription":"Build whatever you want without a single line of CSS/SASS code by just using our low-level utility classes and base components.",
+            "Working Hours":890,
+            "UXDesigners":4,
+            "UIDesigners":6,
+            "Screens":600,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Frame-1000002835.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Frame-1000002836.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Frame-1000002837.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Frame-1000002838.png?resize=1024%2C774&ssl=1"]
+        },
+        {
+            "id":12,
+            "title":"",
+            "productName":"Deeper Wallet",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-12.png",
+            "shortdescription":"Deeper Wallet is a modern, clean and very detailed UI kit for iOS and Android apps. We designed 240+ beautiful unique screens for your mobile app. All symbols and objects are vector based and easily editable.",
+            "Working Hours":160,
+            "UXDesigners":4,
+            "UIDesigners":5,
+            "Screens":320,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Preview-1-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Preview-2-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Preview-3-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Preview-4.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Preview-5.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Preview-6.png?resize=1024%2C774&ssl=1"]
+        },
+        {
+            "id":13,
+            "title":"",
+            "productName":"Caroline",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-10.png",
+            "shortdescription":"Booking application that allows users to search for hotels and tourist destinations around the world",
+            "Working Hours":160,
+            "UXDesigners":4,
+            "UIDesigners":5,
+            "Screens":320,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-1-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-2-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-3-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-3-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-5.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-5.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-6.png?resize=1024%2C774&ssl=1"]
+        },
+        {
+            "id":14,
+            "title":"",
+            "productName":"Amia",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2023/03/Showcase-1-9.png",
+            "shortdescription":"Social networking application that shares personal interests with special personalized functions. The application is built by outstanding color arrays, scientific and sophisticated layer arrangements",
+            "Working Hours":96,
+            "UXDesigners":6,
+            "UIDesigners":12,
+            "Screens":200,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-2.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-3.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-4.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-5.jpg?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2023/03/Showcase-8.png?resize=1024%2C774&ssl=1"]
+        },
+        {
+            "id":15,
+            "title":"",
+            "productName":"Dior Wallet",
+            "thumbnail":"https://capiagency.com/wp-content/uploads/2021/05/Showcase-1-3.png",
+            "shortdescription":"Dior is a modern, clean and very detailed UI kit for iOS and Android apps. You can use this app template to create banking apps, crypto wallets, and budget planners. We designed 60 beautiful unique screens for your mobile app, each screen designed for touch devices. All symbols and objects are vector based and easily editable. Using this UI kit you can design: corporate banking products, Individual banking, Personal wallets, and Cryptocurrency wallets each of the sections has its own unique elements, screens, and features. After purchasing this UI kit you will get Welcome screens, Dashboard, Transactions list, Payments details, Invoice pages, Balance and Accounts, Reports, Metrics, Wallet details, Card details, Profile settings, Cryptocurrency stocks, and more. We are also pleased to make your product a reality with our professional programming team.",
+            "Working Hours":96,
+            "UXDesigners":6,
+            "UIDesigners":12,
+            "Screens":200,
+            "images":["https://i0.wp.com/capiagency.com/wp-content/uploads/2021/05/Showcase-1-1.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2021/05/Showcase-2.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2021/05/Showcase-3.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2021/05/Showcase-4.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2021/05/Showcase-5.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2021/05/Showcase-6.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2021/05/Showcase-7.png?resize=1024%2C774&ssl=1","https://i0.wp.com/capiagency.com/wp-content/uploads/2021/05/Showcase-8.png?resize=1024%2C774&ssl=1"]
         }
     ]
 }
