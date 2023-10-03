@@ -1,0 +1,9 @@
+.uk-table uk-table-divider thead tr th {
+  background-color: red;
+  color: red;
+}
+
+#tableData {
+  background-color: red;
+  color: 170;
+}

@@ -709,19 +709,38 @@ console.log(`restNumbers: ${restNumbers}`);
 // }
 // render(data.products)
 
+// function render (data){
+//     console.log(data);
+// 	const tbodyEL =document.getElementById('tbody');
+//     let html = ""
+// 	data.forEach((data,index)=>{
+// 			html +=`
+//             <tr>  
+//             <td>     
+// 			<img src=${data.images}></td>
+// 			  </tr>
+// 			`
+// 		})
+//         tbodyEL.innerHTML=html
+// }
+// render(data.products)
 function render (data){
-    console.log(data);
-	const tbodyEL =document.getElementById('tbody');
-    let html = ""
+	console.log(data);
+	const tbodyEl = document.getElementById('tableData');
+	let html =""
 	data.forEach((data,index)=>{
-			html +=`
-            <tr>  
-            <td>     
-			<img src=${data.images}></td>
-			  </tr>
+		html+= `
+			<tr>       
+				<td>${index+1}</td>
+				<td>${data.title.length==0?"":data.title}</td>
+				<td>${data.productName}</td> 
+				<td><img src=${data.thumbnail}></td>
+				<td>${data.shortdescription.length==0?"":data.shortdescription}</td>
+			</tr>
 			`
 		})
-        tbodyEL.innerHTML=html
+	
+		tbodyEl.innerHTML=html
 }
 render(data.products)
 
@@ -730,4 +749,7 @@ fetch('./db.json')
     .then((json) => console.log(json));
 
 import data from './db.json' assert { type: 'json' };
-console.log(products);
+console.log(data);
+
+
+
