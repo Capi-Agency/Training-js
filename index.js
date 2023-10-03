@@ -346,21 +346,7 @@ function render (data){ //tạo hàm render dữ liệu
 				<td><img src=${data.images}></td>
 			</tr>
 			`
-		})html+= `
-		<tr>       
-			<td>${data.id}</td>
-			<td>${data.title.length==0?"":data.title}</td>
-			<td>${data.productName}</td> 
-			<td><img src=${data.thumbnail}></td>
-			<td>${data.shortdescription.length==0?"":data.shortdescription}</td>
-			<td>${data.WorkingHours}</td> 
-			<td>${data.UXDesigners}</td>
-			<td>${data.UIDesigners}</td>
-			<td>${data.Screens}</td>
-			<td>${renderImages(data.images)}</td>
-			<td><img src=${data.images}></td>
-		</tr>
-		`
+		})
 	
 		tbodyEl.innerHTML=html
 }
