@@ -733,28 +733,44 @@ function render (data){
             let html =``
             images.forEach((images)=>{
                 html+=
-                `<img src='${images}'/>`
+                `<img src=${images}/>`
             })
             return html;
         }
+        // function getRandomImage(images, path) {
+        //     path = path || 'images/'; 
+        //     var num = Math.floor(Math.random() * images.length);
+        //     var img = images[num];
+        //     var imgStr = '<img src="' + path + img + '" alt="">';
+        //     document.write(imgStr);
+        //     document.close();
+        //   }
 		html+= `
 			<tr>       
 				<td>${index+1}</td>
 				<td>${data.title.length==0?"":data.title}</td>
 				<td>${data.productName}</td> 
-				<td><img src=${data.thumbnail}></td>
-				<td>${data.shortdescription.length==0?"":data.shortdescription}</td>
+				<td><img src='${data.thumbnail}'/></td>
+                <td class="img-tablet">${ renderImages(data.images)}</td>
 			</tr>
 			`
 		})
+        // html+= `
+		// <tr>       
+		// 	<td>${data.id}</td>
+		// 	<td>${data.title.length==0?"":data.title}</td>
+		// 	<td>${data.productName}</td> 
+		// 	<td>${renderImages(data.images)}</td>
+		// 	<td><img src=${data.images}></td>
+		// </tr>
 	
 		tbodyEl.innerHTML=html
 }
 render(data.products)
 
-fetch('./db.json')
-    .then((response) => response.json())
-    .then((json) => console.log(json));
+// fetch('./db.json')
+//     .then((response) => response.json())
+//     .then((json) => console.log(json));
 
 import data from './db.json' assert { type: 'json' };
 console.log(data);

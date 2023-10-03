@@ -1,12 +1,13 @@
-.uk-table uk-table-divider {
-    thead {
-        tr {
-            th {
-               
-            }
-        }
-    }
-}
+
 #tableData {
-   
+    tr {
+        .img-tablet:not(:first-child){
+            display: none;
+          }
+        td {
+            border: 1px solid red;
+           max-height: 10px;
+           width: 10px;
+        } 
+    }
 }
