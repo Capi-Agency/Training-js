@@ -207,86 +207,163 @@
 // })
 
 
-const dataFake = [
-	{
-		id: 1,
-		name: "product A",
-		price: 200,
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
-		image: "https://picsum.photos/200/300.jpg",
-	},
-	{
-		id: 2,
-		name: "product B",
-		price: 200,
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
-		image: "https://picsum.photos/200/300.jpg",
-	},
-	{
-		id: 3,
-		name: "product C",
-		price: 200,
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
-		image: "https://picsum.photos/200/300.jpg",
-	},
-	{
-		id: 4,
-		name: "product D",
-		price: 200,
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
-		image: "https://picsum.photos/200/300.jpg",
-	},
-	{
-		id: 5,
-		name: "product E",
-		price: 200,
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
-		image: "https://picsum.photos/200/300.jpg",
-	},
-	{
-		id: 6,
-		name: "product F",
-		price: 200,
-		description:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
-		image: "https://picsum.photos/200/300.jpg",
-	},
-];
+// const dataFake = [
+// 	{
+// 		id: 1,
+// 		name: "product A",
+// 		price: 200,
+// 		description:
+// 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+// 		image: "https://picsum.photos/200/300.jpg",
+// 	},
+// 	{
+// 		id: 2,
+// 		name: "product B",
+// 		price: 200,
+// 		description:
+// 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+// 		image: "https://picsum.photos/200/300.jpg",
+// 	},
+// 	{
+// 		id: 3,
+// 		name: "product C",
+// 		price: 200,
+// 		description:
+// 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+// 		image: "https://picsum.photos/200/300.jpg",
+// 	},
+// 	{
+// 		id: 4,
+// 		name: "product D",
+// 		price: 200,
+// 		description:
+// 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+// 		image: "https://picsum.photos/200/300.jpg",
+// 	},
+// 	{
+// 		id: 5,
+// 		name: "product E",
+// 		price: 200,
+// 		description:
+// 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+// 		image: "https://picsum.photos/200/300.jpg",
+// 	},
+// 	{
+// 		id: 6,
+// 		name: "product F",
+// 		price: 200,
+// 		description:
+// 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem praesentium facere rerum perferendis nobis. Est odio cumque praesentium quasi, eum esse mollitia illo molestiae",
+// 		image: "https://picsum.photos/200/300.jpg",
+// 	},
+// ];
 
-var data = '<tbody>'
-for(i = 0;i < dataFake.length; i++){
-   data+= '<tr>';
-   data+= '<td>' + dataFake[i].id + '</td>';
-   data+= '<td>' + dataFake[i].name + '</td>';
-   data+= '<td>' + dataFake[i].price + '</td>';
-   data+= '<td>' + dataFake[i].description + '</td>';
-   data+= '<td>' +`<img src="${dataFake[i].image}">` + '</td>';
-   data+= `<td> <button id="update">Update</button>   <button id="delete" onclick='deleteProduct(${dataFake[i].id})'>Delete</button> </td>`;
-   data+= '</tr>';
-}
-data+='</tbody>';
-document.getElementById('tableData').innerHTML = data;
+// var data = '<tbody>'
+// for(i = 0;i < dataFake.length; i++){
+//    data+= '<tr>';
+//    data+= '<td>' + dataFake[i].id + '</td>';
+//    data+= '<td>' + dataFake[i].name + '</td>';
+//    data+= '<td>' + dataFake[i].price + '</td>';
+//    data+= '<td>' + dataFake[i].description + '</td>';
+//    data+= '<td>' +`<img src="${dataFake[i].image}">` + '</td>';
+//    data+= `<td> <button id="update">Update</button>   <button id="delete" onclick='deleteProduct(${dataFake[i].id})'>Delete</button> </td>`;
+//    data+= '</tr>';
+// }
+// data+='</tbody>';
+// document.getElementById('tableData').innerHTML = data;
 
 
 
  
-const updateTb = document.getElementById("update");
-const deleteTb = document.getElementById("delete");
-const createTb = document.getElementById("create")
-updateTb.addEventListener("click", function(){
+// const updateTb = document.getElementById("update");
+// const deleteTb = document.getElementById("delete");
+// const createTb = document.getElementById("create")
+// updateTb.addEventListener("click", function(){
    
-})
+// })
 
-function deleteProduct(id){
-  let newArray =dataFake.filter(function(product){
-    return product.id !== id;
-  })
-  console.log(newArray);
+// function deleteProduct(id){
+//   let newArray =dataFake.filter(function(product){
+//     return product.id !== id;
+//   })
+//   console.log(newArray);
+// }va
+
+// var productAPI = "./db.json"
+
+
+// function start(){
+// 	getProducts(renderProducts)
+// }
+
+// start();
+
+// //functions
+// function getProducts(){
+// 	fetch(productAPI)
+// 		.then(function(response){
+// 			return response.json();
+// 		})
+// 		.then(callBack)
+// }
+
+// function renderProducts(){
+// 	var listProduct =document.querySelector()
+// }
+
+import data from './db.json' assert { type: 'json' }; //Lấy dữ liệu từ file json về
+console.log(data); //Kiểm tra xem đã lấy được data chưa
+
+
+
+function render (data){ //tạo hàm render dữ liệu
+	
+	const tbodyEl = document.getElementById('tableData'); //gán cho tbodyEl phần tử có id tableData trong html
+	let html ="" //gán cho html 1 thẻ rỗng
+	data.forEach((data,index)=>{ //Dùng vòng lặp forEach để duyệt qua từng phần tử trong mảng data. Mỗi phần tử được gán cho biến data, và index là chỉ mục của phần tử đó trong mảng.
+		/////// hàm in cả mảng ảnh ///////
+		function renderImages (images){ //hàm hiển thị các ảnh từ images
+			let html =`` // tạo chuỗi đa dòng rỗng
+			images.forEach((image)=>{
+				html+=
+			 	`<img src='${image}'/>`
+			})
+			return html;
+		}
+		
+		html+= `
+			<tr>       
+				<td>${data.id}</td>
+				<td>${data.title.length==0?"":data.title}</td>
+				<td>${data.productName}</td> 
+				<td><img src=${data.thumbnail}></td>
+				<td>${data.shortdescription.length==0?"":data.shortdescription}</td>
+				<td>${data.WorkingHours}</td> 
+				<td>${data.UXDesigners}</td>
+				<td>${data.UIDesigners}</td>
+				<td>${data.Screens}</td>
+				<td>${renderImages(data.images)}</td>
+				<td><img src=${data.images}></td>
+			</tr>
+			`
+		})html+= `
+		<tr>       
+			<td>${data.id}</td>
+			<td>${data.title.length==0?"":data.title}</td>
+			<td>${data.productName}</td> 
+			<td><img src=${data.thumbnail}></td>
+			<td>${data.shortdescription.length==0?"":data.shortdescription}</td>
+			<td>${data.WorkingHours}</td> 
+			<td>${data.UXDesigners}</td>
+			<td>${data.UIDesigners}</td>
+			<td>${data.Screens}</td>
+			<td>${renderImages(data.images)}</td>
+			<td><img src=${data.images}></td>
+		</tr>
+		`
+	
+		tbodyEl.innerHTML=html
 }
+render(data.products)
 
 
