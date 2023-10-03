@@ -729,6 +729,14 @@ function render (data){
 	const tbodyEl = document.getElementById('tableData');
 	let html =""
 	data.forEach((data,index)=>{
+        function renderImages(images) {
+            let html =``
+            images.forEach((images)=>{
+                html+=
+                `<img src='${images}'/>`
+            })
+            return html;
+        }
 		html+= `
 			<tr>       
 				<td>${index+1}</td>
