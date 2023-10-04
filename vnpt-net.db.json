@@ -1,198 +1,498 @@
 {
 	"heat": [
-		{ "id": 1, "unticode": "DLC", "name": "Đắk Lắk", "percent": 98.45, "point": 5 },
-		{ "id": 2, "unticode": "HGI", "name": "Đắk Lắk", "percent": 98.45, "point": 5 },
-		{ "id": 3, "unticode": "HDG", "name": "Hải Dương", "percent": 98.45, "point": 5 },
-		{ "id": 4, "unticode": "BNH", "name": "Bình Dương", "percent": 98.45, "point": 5 },
-		{ "id": 5, "unticode": "DLC", "name": "Bắc Ninh", "percent": 98.45, "point": 5 },
-		{ "id": 6, "unticode": "QTI", "name": "Quảng Trị", "percent": 98.45, "point": 5 },
-		{ "id": 7, "unticode": "HUE", "name": "Thừa Thiên Huế", "percent": 98.45, "point": 5 },
-		{ "id": 8, "unticode": "DLC", "name": "Đắk Lắk", "percent": 98.45, "point": 5 },
-		{ "id": 9, "unticode": "DLC", "name": "Đắk Lắk", "percent": 98.45, "point": 5 },
-		{ "id": 10, "unticode": "DLC", "name": "Đắk Lắk", "percent": 98.45, "point": 5 }
+		{
+			"id": 1,
+			"unticode": "DLC",
+			"name": "Đắk Lắk",
+			"percent": 98.45,
+			"point": 5
+		},
+		{
+			"id": 2,
+			"unticode": "HGI",
+			"name": "Đắk Lắk",
+			"percent": 98.45,
+			"point": 5
+		},
+		{
+			"id": 3,
+			"unticode": "HDG",
+			"name": "Hải Dương",
+			"percent": 98.45,
+			"point": 5
+		},
+		{
+			"id": 4,
+			"unticode": "BNH",
+			"name": "Bình Dương",
+			"percent": 98.45,
+			"point": 5
+		},
+		{
+			"id": 5,
+			"unticode": "DLC",
+			"name": "Bắc Ninh",
+			"percent": 98.45,
+			"point": 5
+		},
+		{
+			"id": 6,
+			"unticode": "QTI",
+			"name": "Quảng Trị",
+			"percent": 98.45,
+			"point": 5
+		},
+		{
+			"id": 7,
+			"unticode": "HUE",
+			"name": "Thừa Thiên Huế",
+			"percent": 98.45,
+			"point": 5
+		},
+		{
+			"id": 8,
+			"unticode": "DLC",
+			"name": "Đắk Lắk",
+			"percent": 98.45,
+			"point": 5
+		},
+		{
+			"id": 9,
+			"unticode": "DLC",
+			"name": "Đắk Lắk",
+			"percent": 98.45,
+			"point": 5
+		},
+		{
+			"id": 10,
+			"unticode": "DLC",
+			"name": "Đắk Lắk",
+			"percent": 98.45,
+			"point": 5
+		}
 	],
 	"AggregateQos": [
 		{
 			"id": 1,
 			"code": "",
-			"conscious": "TỔNG",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "TỔNG",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 2,
 			"code": "MED",
-			"conscious": "VNPT MEDIA",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "VNPT MEDIA",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 3,
 			"code": "VNPT",
-			"conscious": "VNPT NET",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "VNPT NET",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 4,
 			"code": "NET",
-			"conscious": "Bình Phước",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "Bình Phước",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 5,
 			"code": "NET",
-			"conscious": "An Giang",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "An Giang",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 6,
 			"code": "NET",
-			"conscious": "Bình Dương",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "Bình Dương",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 7,
 			"code": "NET",
-			"conscious": "Bình Định",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "Bình Định",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 8,
 			"code": "NET",
-			"conscious": "Bắc Ninh",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "Bắc Ninh",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 9,
 			"code": "NET",
-			"conscious": "Bạc Liêu",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "Bạc Liêu",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 10,
 			"code": "NET",
-			"conscious": "Bắc Giang",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "Bắc Giang",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		}
 	],
 	"AggregateQoE": [
 		{
 			"id": 1,
 			"code": "",
-			"conscious": "TỔNG",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "TỔNG",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 2,
 			"code": "MED",
-			"conscious": "VNPT MEDIA",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "VNPT MEDIA",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 3,
 			"code": "VNPT",
-			"conscious": "VNPT NET",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "VNPT NET",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 4,
 			"code": "NET",
-			"conscious": "Bình Phước",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "Bình Phước",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 5,
 			"code": "NET",
-			"conscious": "An Giang",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "An Giang",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 6,
 			"code": "NET",
-			"conscious": "Bình Dương",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "Bình Dương",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 7,
 			"code": "NET",
-			"conscious": "Bình Định",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "Bình Định",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 8,
 			"code": "NET",
-			"conscious": "Bắc Ninh",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "Bắc Ninh",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 9,
 			"code": "NET",
-			"conscious": "Bạc Liêu",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "Bạc Liêu",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		},
 		{
 			"id": 10,
 			"code": "NET",
-			"conscious": "Bắc Giang",
-			"Total": { "point": 4, "percent": 98.45 },
-			"MBBQos": { "point": 4, "percent": 98.45 },
-			"FBBQos": { "point": 3, "percent": 98.45 },
-			"MYTVQos": { "point": 2, "percent": 98.45 }
+			"province": "Bắc Giang",
+			"Total": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"MBBQos": {
+				"point": 4,
+				"percent": 98.45
+			},
+			"FBBQos": {
+				"point": 3,
+				"percent": 98.45
+			},
+			"MYTVQos": {
+				"point": 2,
+				"percent": 98.45
+			}
 		}
 	],
 	"AggregateFBBQos_standardized_data": [
@@ -874,16 +1174,86 @@
 		}
 	],
 	"Station_number": [
-		{ "id": 1, "code": "", "unti": "Trung bình", "2G": 5, "3G": 4, "4G": 3 },
-		{ "id": 2, "code": "VNPT", "unti": "VNPT NET", "2G": 5, "3G": 4, "4G": 3 },
-		{ "id": 3, "code": "VNPT", "unti": "VNPT NET", "2G": 5, "3G": 4, "4G": 3 },
-		{ "id": 4, "code": "VNPT", "unti": "VNPT NET", "2G": 5, "3G": 4, "4G": 3 },
-		{ "id": 5, "code": "AGG", "unti": "An Giang", "2G": 5, "3G": 4, "4G": 3 },
-		{ "id": 6, "code": "AGG", "unti": "An Giang", "2G": 5, "3G": 4, "4G": 3 },
-		{ "id": 7, "code": "AGG", "unti": "An Giang", "2G": 5, "3G": 4, "4G": 3 },
-		{ "id": 8, "code": "AGG", "unti": "An Giang", "2G": 5, "3G": 4, "4G": 3 },
-		{ "id": 9, "code": "AGG", "unti": "An Giang", "2G": 5, "3G": 4, "4G": 3 },
-		{ "id": 10, "code": "AGG", "unti": "An Giang", "2G": 5, "3G": 4, "4G": 3 }
+		{
+			"id": 1,
+			"code": "",
+			"unti": "Trung bình",
+			"2G": 5,
+			"3G": 4,
+			"4G": 3
+		},
+		{
+			"id": 2,
+			"code": "VNPT",
+			"unti": "VNPT NET",
+			"2G": 5,
+			"3G": 4,
+			"4G": 3
+		},
+		{
+			"id": 3,
+			"code": "VNPT",
+			"unti": "VNPT NET",
+			"2G": 5,
+			"3G": 4,
+			"4G": 3
+		},
+		{
+			"id": 4,
+			"code": "VNPT",
+			"unti": "VNPT NET",
+			"2G": 5,
+			"3G": 4,
+			"4G": 3
+		},
+		{
+			"id": 5,
+			"code": "AGG",
+			"unti": "An Giang",
+			"2G": 5,
+			"3G": 4,
+			"4G": 3
+		},
+		{
+			"id": 6,
+			"code": "AGG",
+			"unti": "An Giang",
+			"2G": 5,
+			"3G": 4,
+			"4G": 3
+		},
+		{
+			"id": 7,
+			"code": "AGG",
+			"unti": "An Giang",
+			"2G": 5,
+			"3G": 4,
+			"4G": 3
+		},
+		{
+			"id": 8,
+			"code": "AGG",
+			"unti": "An Giang",
+			"2G": 5,
+			"3G": 4,
+			"4G": 3
+		},
+		{
+			"id": 9,
+			"code": "AGG",
+			"unti": "An Giang",
+			"2G": 5,
+			"3G": 4,
+			"4G": 3
+		},
+		{
+			"id": 10,
+			"code": "AGG",
+			"unti": "An Giang",
+			"2G": 5,
+			"3G": 4,
+			"4G": 3
+		}
 	],
 	"AggregateFBBQoE": [
 		{
@@ -1508,5 +1878,347 @@
 				"quality": 0
 			}
 		}
-	]
+	],
+	"AggregateMyTVQoE": [
+		{
+			"id": 1,
+			"code": "AGG_APU",
+			"province": "An Phú",
+			"MyTVQos_point": 98.5,
+			"MyTVQos_percent": 98.5,
+			"lossrate": 98.5,
+			"speechless": 98.5,
+			"deviated": 98.5,
+			"bandwidth": 96.89,
+			"time": 1200,
+			"Image_sample_rate": 120,
+			"Audio_sample_rate": 120,
+			"Deviation_sample_rate": 120,
+			"bandwidth_sample_rate": 120,
+			"time_sample_rate": 120,
+			"TLDV MyTV": 120,
+			"KPSC MyTV": 120
+		},
+		{
+			"id": 2,
+			"code": "AGG_APU",
+			"province": "An Phú",
+			"MyTVQos_point": 98.5,
+			"MyTVQos_percent": 98.5,
+			"lossrate": 98.5,
+			"speechless": 98.5,
+			"deviated": 98.5,
+			"bandwidth": 96.89,
+			"time": 1200,
+			"Image_sample_rate": 120,
+			"Audio_sample_rate": 120,
+			"Deviation_sample_rate": 120,
+			"bandwidth_sample_rate": 120,
+			"time_sample_rate": 120,
+			"TLDV MyTV": 120,
+			"KPSC MyTV": 120
+		},
+		{
+			"id": 3,
+			"code": "AGG_APU",
+			"province": "An Phú",
+			"MyTVQos_point": 98.5,
+			"MyTVQos_percent": 98.5,
+			"lossrate": 98.5,
+			"speechless": 98.5,
+			"deviated": 98.5,
+			"bandwidth": 96.89,
+			"time": 1200,
+			"Image_sample_rate": 120,
+			"Audio_sample_rate": 120,
+			"Deviation_sample_rate": 120,
+			"bandwidth_sample_rate": 120,
+			"time_sample_rate": 120,
+			"TLDV MyTV": 120,
+			"KPSC MyTV": 120
+		},
+		{
+			"id": 4,
+			"code": "AGG_APU",
+			"province": "An Phú",
+			"MyTVQos_point": 98.5,
+			"MyTVQos_percent": 98.5,
+			"lossrate": 98.5,
+			"speechless": 98.5,
+			"deviated": 98.5,
+			"bandwidth": 96.89,
+			"time": 1200,
+			"Image_sample_rate": 120,
+			"Audio_sample_rate": 120,
+			"Deviation_sample_rate": 120,
+			"bandwidth_sample_rate": 120,
+			"time_sample_rate": 120,
+			"TLDV MyTV": 120,
+			"KPSC MyTV": 120
+		},
+		{
+			"id": 5,
+			"code": "AGG_APU",
+			"province": "An Phú",
+			"MyTVQos_point": 98.5,
+			"MyTVQos_percent": 98.5,
+			"lossrate": 98.5,
+			"speechless": 98.5,
+			"deviated": 98.5,
+			"bandwidth": 96.89,
+			"time": 1200,
+			"Image_sample_rate": 120,
+			"Audio_sample_rate": 120,
+			"Deviation_sample_rate": 120,
+			"bandwidth_sample_rate": 120,
+			"time_sample_rate": 120,
+			"TLDV MyTV": 120,
+			"KPSC MyTV": 120
+		},
+		{
+			"id": 6,
+			"code": "AGG_APU",
+			"province": "An Phú",
+			"MyTVQos_point": 98.5,
+			"MyTVQos_percent": 98.5,
+			"lossrate": 98.5,
+			"speechless": 98.5,
+			"deviated": 98.5,
+			"bandwidth": 96.89,
+			"time": 1200,
+			"Image_sample_rate": 120,
+			"Audio_sample_rate": 120,
+			"Deviation_sample_rate": 120,
+			"bandwidth_sample_rate": 120,
+			"time_sample_rate": 120,
+			"TLDV MyTV": 120,
+			"KPSC MyTV": 120
+		},
+		{
+			"id": 7,
+			"code": "AGG_APU",
+			"province": "An Phú",
+			"MyTVQos_point": 98.5,
+			"MyTVQos_percent": 98.5,
+			"lossrate": 98.5,
+			"speechless": 98.5,
+			"deviated": 98.5,
+			"bandwidth": 96.89,
+			"time": 1200,
+			"Image_sample_rate": 120,
+			"Audio_sample_rate": 120,
+			"Deviation_sample_rate": 120,
+			"bandwidth_sample_rate": 120,
+			"time_sample_rate": 120,
+			"TLDV MyTV": 120,
+			"KPSC MyTV": 120
+		},
+		{
+			"id": 8,
+			"code": "AGG_APU",
+			"province": "An Phú",
+			"MyTVQos_point": 98.5,
+			"MyTVQos_percent": 98.5,
+			"lossrate": 98.5,
+			"speechless": 98.5,
+			"deviated": 98.5,
+			"bandwidth": 96.89,
+			"time": 1200,
+			"Image_sample_rate": 120,
+			"Audio_sample_rate": 120,
+			"Deviation_sample_rate": 120,
+			"bandwidth_sample_rate": 120,
+			"time_sample_rate": 120,
+			"TLDV MyTV": 120,
+			"KPSC MyTV": 120
+		},
+		{
+			"id": 9,
+			"code": "AGG_APU",
+			"province": "An Phú",
+			"MyTVQos_point": 98.5,
+			"MyTVQos_percent": 98.5,
+			"lossrate": 98.5,
+			"speechless": 98.5,
+			"deviated": 98.5,
+			"bandwidth": 96.89,
+			"time": 1200,
+			"Image_sample_rate": 120,
+			"Audio_sample_rate": 120,
+			"Deviation_sample_rate": 120,
+			"bandwidth_sample_rate": 120,
+			"time_sample_rate": 120,
+			"TLDV MyTV": 120,
+			"KPSC MyTV": 120
+		},
+		{
+			"id": 10,
+			"code": "AGG_APU",
+			"province": "An Phú",
+			"MyTVQos_point": 98.5,
+			"MyTVQos_percent": 98.5,
+			"lossrate": 98.5,
+			"speechless": 98.5,
+			"deviated": 98.5,
+			"bandwidth": 96.89,
+			"time": 1200,
+			"Image_sample_rate": 120,
+			"Audio_sample_rate": 120,
+			"Deviation_sample_rate": 120,
+			"bandwidth_sample_rate": 120,
+			"time_sample_rate": 120,
+			"TLDV MyTV": 120,
+			"KPSC MyTV": 120
+		},
+		{
+			"id": 11,
+			"code": "AGG_APU",
+			"province": "An Phú",
+			"MyTVQos_point": 98.5,
+			"MyTVQos_percent": 98.5,
+			"lossrate": 98.5,
+			"speechless": 98.5,
+			"deviated": 98.5,
+			"bandwidth": 96.89,
+			"time": 1200,
+			"Image_sample_rate": 120,
+			"Audio_sample_rate": 120,
+			"Deviation_sample_rate": 120,
+			"bandwidth_sample_rate": 120,
+			"time_sample_rate": 120,
+			"TLDV MyTV": 120,
+			"KPSC MyTV": 120
+		},
+		{
+			"id": 12,
+			"code": "AGG_APU",
+			"province": "An Phú",
+			"MyTVQos_point": 98.5,
+			"MyTVQos_percent": 98.5,
+			"lossrate": 98.5,
+			"speechless": 98.5,
+			"deviated": 98.5,
+			"bandwidth": 96.89,
+			"time": 1200,
+			"Image_sample_rate": 120,
+			"Audio_sample_rate": 120,
+			"Deviation_sample_rate": 120,
+			"bandwidth_sample_rate": 120,
+			"time_sample_rate": 120,
+			"TLDV MyTV": 120,
+			"KPSC MyTV": 120
+		}
+	],
+	"KPI": [
+		{
+			"id": 1,
+			"team": "FBB QoE",
+			"name": " FBB QoE - Trễ quốc tế - Trung vị",
+			"description": "UXI13",
+			"code": "KPH129",
+			"unti": "Ms",
+			"status": 1,
+			"source": "DHSXKD"
+		},
+		{
+			"id": 2,
+			"team": "FBB QoE",
+			"name": " FBB QoE - Trễ quốc tế - Trung vị",
+			"description": "UXI13",
+			"code": "KPH129",
+			"unti": "Ms",
+			"status": 1,
+			"source": "DHSXKD"
+		},
+		{
+			"id": 3,
+			"team": "FBB QoE",
+			"name": " FBB QoE - Trễ quốc tế - Trung vị",
+			"description": "UXI13",
+			"code": "KPH129",
+			"unti": "Ms",
+			"status": 1,
+			"source": "DHSXKD"
+		},
+		{
+			"id": 4,
+			"team": "FBB QoE",
+			"name": " FBB QoE - Trễ quốc tế - Trung vị",
+			"description": "UXI13",
+			"code": "KPH129",
+			"unti": "Ms",
+			"status": 1,
+			"source": "DHSXKD"
+		},
+		{
+			"id": 5,
+			"team": "FBB QoE",
+			"name": " FBB QoE - Trễ quốc tế - Trung vị",
+			"description": "UXI13",
+			"code": "KPH129",
+			"unti": "Ms",
+			"status": 1,
+			"source": "DHSXKD"
+		},
+		{
+			"id": 6,
+			"team": "FBB QoE",
+			"name": " FBB QoE - Trễ quốc tế - Trung vị",
+			"description": "UXI13",
+			"code": "KPH129",
+			"unti": "Ms",
+			"status": 1,
+			"source": "DHSXKD"
+		},
+		{
+			"id": 7,
+			"team": "FBB QoE",
+			"name": " FBB QoE - Trễ quốc tế - Trung vị",
+			"description": "UXI13",
+			"code": "KPH129",
+			"unti": "Ms",
+			"status": 1,
+			"source": "DHSXKD"
+		},
+		{
+			"id": 8,
+			"team": "FBB QoE",
+			"name": " FBB QoE - Trễ quốc tế - Trung vị",
+			"description": "UXI13",
+			"code": "KPH129",
+			"unti": "Ms",
+			"status": 1,
+			"source": "DHSXKD"
+		},
+		{
+			"id": 9,
+			"team": "FBB QoE",
+			"name": " FBB QoE - Trễ quốc tế - Trung vị",
+			"description": "UXI13",
+			"code": "KPH129",
+			"unti": "Ms",
+			"status": 1,
+			"source": "DHSXKD"
+		},
+		{
+			"id": 10,
+			"team": "FBB QoE",
+			"name": " FBB QoE - Trễ quốc tế - Trung vị",
+			"description": "UXI13",
+			"code": "KPH129",
+			"unti": "Ms",
+			"status": 1,
+			"source": "DHSXKD"
+		},
+		{
+			"id": 11,
+			"team": "FBB QoE",
+			"name": " FBB QoE - Trễ quốc tế - Trung vị",
+			"description": "UXI13",
+			"code": "KPH129",
+			"unti": "%",
+			"status": 1,
+			"source": "DHSXKD"
+		}
+	]  
 }
