@@ -1,5 +1,5 @@
 #tableData tr .img-tablet:not(:first-child) {
-  display: none;
+  color: red;
 }
 #tableData tr td {
   border: 1px solid red;
