@@ -352,7 +352,7 @@
 // console.log("new array: ", newArray);
 // console.log('====================================');
 
-///////////// Sắp xếp //////////
+///////////// Sắp xếp //////////////
 // array.sort(callbackFn(a,b){
 // return a - b; ==> trả về array giá trị tăng dần
 // })
@@ -724,6 +724,7 @@ console.log(`restNumbers: ${restNumbers}`);
 //         tbodyEL.innerHTML=html
 // }
 // render(data.products)
+
 function render (data){
 	console.log(data);
 	const tbodyEl = document.getElementById('tableData');
@@ -733,7 +734,7 @@ function render (data){
             let html =``
             images.forEach((images)=>{
                 html+=
-                `<img src=${images}/>`
+                `<img class="img-tablet" src=${images}/>`
             })
             return html;
         }
@@ -751,26 +752,15 @@ function render (data){
 				<td>${data.title.length==0?"":data.title}</td>
 				<td>${data.productName}</td> 
 				<td><img src='${data.thumbnail}'/></td>
-                <td class="img-tablet">${ renderImages(data.images)}</td>
+                <td class='images'>${ renderImages(data.images)}</td>
 			</tr>
 			`
 		})
-        // html+= `
-		// <tr>       
-		// 	<td>${data.id}</td>
-		// 	<td>${data.title.length==0?"":data.title}</td>
-		// 	<td>${data.productName}</td> 
-		// 	<td>${renderImages(data.images)}</td>
-		// 	<td><img src=${data.images}></td>
-		// </tr>
+     
 	
 		tbodyEl.innerHTML=html
 }
 render(data.products)
-
-// fetch('./db.json')
-//     .then((response) => response.json())
-//     .then((json) => console.log(json));
 
 import data from './db.json' assert { type: 'json' };
 console.log(data);
