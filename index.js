@@ -19,7 +19,7 @@
 //         console.log("Toi la " + this.name + " toi "+ this.age+ " toi cao " + this.height + "cm" + " so do 3 vong " + this.v1 +", "+ this.v2 +", "+ this.v2)
 //     }
 
-	
+
 // }
 
 
@@ -203,7 +203,7 @@
 //     else{
 //         alert(`Da nhan noi dung: ${input.value}`)
 //     }
-    
+
 // })
 
 
@@ -274,12 +274,12 @@
 
 
 
- 
+
 // const updateTb = document.getElementById("update");
 // const deleteTb = document.getElementById("delete");
 // const createTb = document.getElementById("create")
 // updateTb.addEventListener("click", function(){
-   
+
 // })
 
 // function deleteProduct(id){
@@ -311,45 +311,94 @@
 // 	var listProduct =document.querySelector()
 // }
 
+////////////////////////es6//////////////////////////////
+/////// Arrow function :
+//b1
+// const arrowFunction = (w = 3, h = 4) => {
+// 	return w * h;
+// }
+// arrowFunction();
+// console.log(arrowFunction());
+// //b2
+// const num () => {
+// 	const x = [];
+// 	for (let i = 1; i <= 20; i++) {
+// 		if (i % 2 == 0) {
+// 			x.push(i);
+// 		}
+// 	}
+// }
+// //b3 
+// const sourceArray = [0, 1, 2, 3];
+// const targetArray = [...sourceArray, 4, 5, 6];
+// console.log(targetArray);
+
+// //b4
+// let array1 = [0, 1, 2, 3];
+// let array2 = [4, 5, 6, 7];
+// let resultArray = [...array1, ...array2];
+// console.log("resultArray: ", resultArray);
+
+//b5
+// const person = {
+// 	name: 'Nguyen',
+// 	age: 18,
+// 	city: 'hanam',
+// };
+
+// const { name, age, city } = person;
+
+// console.log(`Tên: ${name}`);
+// console.log(`Tuổi: ${age}`);
+// console.log(`Thành phố: ${city}`);
+
+// //b6
+// const numbers = [1, 2, 3, 4, 5];
+
+// const [firstNumber, secondNumber, ...restNumbers] = numbers;
+
+// console.log(`firstNumber: ${firstNumber}`);
+// console.log(`secondNumber: ${secondNumber}`);
+// console.log(`restNumbers: ${restNumbers}`);
+
+
 import data from './db.json' assert { type: 'json' }; //Lấy dữ liệu từ file json về
 console.log(data); //Kiểm tra xem đã lấy được data chưa
 
 
 
-function render (data){ //tạo hàm render dữ liệu
-	
+function render(data) { //tạo hàm render dữ liệu
+
 	const tbodyEl = document.getElementById('tableData'); //gán cho tbodyEl phần tử có id tableData trong html
-	let html ="" //gán cho html 1 thẻ rỗng
-	data.forEach((data,index)=>{ //Dùng vòng lặp forEach để duyệt qua từng phần tử trong mảng data. Mỗi phần tử được gán cho biến data, và index là chỉ mục của phần tử đó trong mảng.
+	let html = "" //gán cho html 1 thẻ rỗng
+	data.forEach((data, index) => { //Dùng vòng lặp forEach để duyệt qua từng phần tử trong mảng data. Mỗi phần tử được gán cho biến data, và index là chỉ mục của phần tử đó trong mảng.
 		/////// hàm in cả mảng ảnh ///////
-		function renderImages (images){ //hàm hiển thị các ảnh từ images
-			let html =`` // tạo chuỗi đa dòng rỗng
-			images.forEach((image)=>{
-				html+=
-			 	`<img src='${image}'/>`
+		function renderImages(images) { //hàm hiển thị các ảnh từ images
+			let html = `` // tạo chuỗi đa dòng rỗng ` `
+			images.forEach((image) => {
+				html +=
+					`<img class="img-tablet" src='${image}'/>`
 			})
 			return html;
 		}
-		
-		html+= `
+
+		html += `
 			<tr>       
 				<td>${data.id}</td>
-				<td>${data.title.length==0?"":data.title}</td>
+				<td>${data.title.length == 0 ? "" : data.title}</td>
 				<td>${data.productName}</td> 
 				<td><img src=${data.thumbnail}></td>
-				<td>${data.shortdescription.length==0?"":data.shortdescription}</td>
+				<td>${data.shortdescription.length == 0 ? "" : data.shortdescription}</td>
 				<td>${data.WorkingHours}</td> 
 				<td>${data.UXDesigners}</td>
 				<td>${data.UIDesigners}</td>
 				<td>${data.Screens}</td>
-				<td>${renderImages(data.images)}</td>
-				<td><img src=${data.images}></td>
+				<td class='images'> src=${renderImages(data.images)}</td>
+			
 			</tr>
 			`
-		})
-	
-		tbodyEl.innerHTML=html
+	})
+
+	tbodyEl.innerHTML = html
 }
 render(data.products)
-
-

@@ -1,0 +1,23 @@
+h1 {
+  color: red;
+}
+
+#tableData tr .images {
+  width: 200px;
+  height: 200px;
+}
+#tableData tr .img-tablet {
+  max-width: fit-content;
+  height: 200px;
+  display: none;
+}
+#tableData tr .img-tablet:nth-child(1) {
+  display: block;
+}
+#tableData tr th, #tableData tr td {
+  border: 1px solid red;
+  max-height: 10px;
+  width: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
