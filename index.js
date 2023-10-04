@@ -393,8 +393,8 @@ function render(data) { //tạo hàm render dữ liệu
 				<td>${data.UXDesigners}</td>
 				<td>${data.UIDesigners}</td>
 				<td>${data.Screens}</td>
-				<td class='images'> src=${renderImages(data.images)}</td>
-			
+				<td class='images'> ${renderImages(data.images)}</td>
+				<td> <img src =${data.images}></td>
 			</tr>
 			`
 	})
