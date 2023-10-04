@@ -1,0 +1,1512 @@
+{
+	"heat": [
+		{ "id": 1, "unticode": "DLC", "name": "Đắk Lắk", "percent": 98.45, "point": 5 },
+		{ "id": 2, "unticode": "HGI", "name": "Đắk Lắk", "percent": 98.45, "point": 5 },
+		{ "id": 3, "unticode": "HDG", "name": "Hải Dương", "percent": 98.45, "point": 5 },
+		{ "id": 4, "unticode": "BNH", "name": "Bình Dương", "percent": 98.45, "point": 5 },
+		{ "id": 5, "unticode": "DLC", "name": "Bắc Ninh", "percent": 98.45, "point": 5 },
+		{ "id": 6, "unticode": "QTI", "name": "Quảng Trị", "percent": 98.45, "point": 5 },
+		{ "id": 7, "unticode": "HUE", "name": "Thừa Thiên Huế", "percent": 98.45, "point": 5 },
+		{ "id": 8, "unticode": "DLC", "name": "Đắk Lắk", "percent": 98.45, "point": 5 },
+		{ "id": 9, "unticode": "DLC", "name": "Đắk Lắk", "percent": 98.45, "point": 5 },
+		{ "id": 10, "unticode": "DLC", "name": "Đắk Lắk", "percent": 98.45, "point": 5 }
+	],
+	"AggregateQos": [
+		{
+			"id": 1,
+			"code": "",
+			"conscious": "TỔNG",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 2,
+			"code": "MED",
+			"conscious": "VNPT MEDIA",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 3,
+			"code": "VNPT",
+			"conscious": "VNPT NET",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 4,
+			"code": "NET",
+			"conscious": "Bình Phước",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 5,
+			"code": "NET",
+			"conscious": "An Giang",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 6,
+			"code": "NET",
+			"conscious": "Bình Dương",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 7,
+			"code": "NET",
+			"conscious": "Bình Định",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 8,
+			"code": "NET",
+			"conscious": "Bắc Ninh",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 9,
+			"code": "NET",
+			"conscious": "Bạc Liêu",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 10,
+			"code": "NET",
+			"conscious": "Bắc Giang",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		}
+	],
+	"AggregateQoE": [
+		{
+			"id": 1,
+			"code": "",
+			"conscious": "TỔNG",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 2,
+			"code": "MED",
+			"conscious": "VNPT MEDIA",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 3,
+			"code": "VNPT",
+			"conscious": "VNPT NET",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 4,
+			"code": "NET",
+			"conscious": "Bình Phước",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 5,
+			"code": "NET",
+			"conscious": "An Giang",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 6,
+			"code": "NET",
+			"conscious": "Bình Dương",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 7,
+			"code": "NET",
+			"conscious": "Bình Định",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 8,
+			"code": "NET",
+			"conscious": "Bắc Ninh",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 9,
+			"code": "NET",
+			"conscious": "Bạc Liêu",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		},
+		{
+			"id": 10,
+			"code": "NET",
+			"conscious": "Bắc Giang",
+			"Total": { "point": 4, "percent": 98.45 },
+			"MBBQos": { "point": 4, "percent": 98.45 },
+			"FBBQos": { "point": 3, "percent": 98.45 },
+			"MYTVQos": { "point": 2, "percent": 98.45 }
+		}
+	],
+	"AggregateFBBQos_standardized_data": [
+		{
+			"id": 1,
+			"code": "AGG_APU",
+			"unit": "An Phú",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 2,
+			"code": "AGG_APU",
+			"unit": "An Giang",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 3,
+			"code": "AGG_APU",
+			"unit": "Bình Dương",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 4,
+			"code": "AGG_APU",
+			"unit": "Bình Định",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 5,
+			"code": "AGG_APU",
+			"unit": "Bắc Ninh",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 6,
+			"code": "AGG_APU",
+			"unit": "Bắc Kạn",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 7,
+			"code": "AGG_APU",
+			"unit": "Bạc Liêu",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 8,
+			"code": "AGG_APU",
+			"unit": "An Phú",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 9,
+			"code": "AGG_APU",
+			"unit": "An Phú",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 10,
+			"code": "AGG_APU",
+			"unit": "An Phú",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		}
+	],
+	"AggregateFBBQos_SQL_point": [
+		{
+			"id": 1,
+			"code": "AGG_APU",
+			"unit": "An Phú",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 2,
+			"code": "AGG_APU",
+			"unit": "An Giang",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 3,
+			"code": "AGG_APU",
+			"unit": "Bình Dương",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 4,
+			"code": "AGG_APU",
+			"unit": "Bình Định",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 5,
+			"code": "AGG_APU",
+			"unit": "Bắc Ninh",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 6,
+			"code": "AGG_APU",
+			"unit": "Bắc Kạn",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 7,
+			"code": "AGG_APU",
+			"unit": "Bạc Liêu",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 8,
+			"code": "AGG_APU",
+			"unit": "An Phú",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 9,
+			"code": "AGG_APU",
+			"unit": "An Phú",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 10,
+			"code": "AGG_APU",
+			"unit": "An Phú",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		}
+	],
+	"AggregateFBBQos_SQL_input": [
+		{
+			"id": 1,
+			"code": "AGG_APU",
+			"unit": "An Phú",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 2,
+			"code": "AGG_APU",
+			"unit": "An Giang",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 3,
+			"code": "AGG_APU",
+			"unit": "Bình Dương",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 4,
+			"code": "AGG_APU",
+			"unit": "Bình Định",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 5,
+			"code": "AGG_APU",
+			"unit": "Bắc Ninh",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 6,
+			"code": "AGG_APU",
+			"unit": "Bắc Kạn",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 7,
+			"code": "AGG_APU",
+			"unit": "Bạc Liêu",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 8,
+			"code": "AGG_APU",
+			"unit": "An Phú",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 9,
+			"code": "AGG_APU",
+			"unit": "An Phú",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		},
+		{
+			"id": 10,
+			"code": "AGG_APU",
+			"unit": "An Phú",
+			"FBBQosPercent": 97.4567,
+			"FBBQosPoint": 4,
+			"GPON": 94.676,
+			"BRCD": 100,
+			"MANE": 100,
+			"VN2": 100,
+			"INTERNETINTERNET": 100,
+			"CDN": 100
+		}
+	],
+	"AggregateMBBQos_standardized_data": [
+		{
+			"id": 1,
+			"unti": "",
+			"code": "",
+			"SQI_1_Resource_Availability": {
+				"2G_Cell_Availability": 97.000084345,
+				"3G Cell Occupancy": 97.000084345,
+				"4G_RB_Utilization": 97.000084345
+			},
+			"SQI_2_Accessibility": {
+				"2G_Call_Setup": 97.000084345,
+				"3G_HSPA_Accessibility": 97.000084345,
+				"ERABSS_Rate": 97.000084345
+			},
+			"SQI_3_Retainability": {
+				"2G_Call_Completion_Rate": 97.000084345,
+				"3G_Call_Completion_Rate": 97.000084345,
+				"4G_E-UTRAN_Retainability": 97.000084345
+			},
+			"SQI_4 Service_Integrity": {
+				"3G_CQI": 97.000084345,
+				"4G _QI": 97.000084345
+			},
+			"SQI_5_Quality_of_Coverage ": {
+				"3G-Quality_of_Converage": 97.000084345,
+				"4G-Quality_of_Converage": 97.000084345
+			}
+		},
+		{
+			"id": 2,
+			"unti": "VNPT NET",
+			"code": "NET",
+			"SQI_1_Resource_Availability": {
+				"2G_Cell_Availability": 97.000084345,
+				"3G Cell Occupancy": 97.000084345,
+				"4G_RB_Utilization": 97.000084345
+			},
+			"SQI_2_Accessibility": {
+				"2G_Call_Setup": 97.000084345,
+				"3G_HSPA_Accessibility": 97.000084345,
+				"ERABSS_Rate": 97.000084345
+			},
+			"SQI_3_Retainability": {
+				"2G_Call_Completion_Rate": 97.000084345,
+				"3G_Call_Completion_Rate": 97.000084345,
+				"4G_E-UTRAN_Retainability": 97.000084345
+			},
+			"SQI_4 Service_Integrity": {
+				"3G_CQI": 97.000084345,
+				"4G _QI": 97.000084345
+			},
+			"SQI_5_Quality_of_Coverage ": {
+				"3G-Quality_of_Converage": 97.000084345,
+				"4G-Quality_of_Converage": 97.000084345
+			}
+		},
+		{
+			"id": 3,
+			"unti": "An Giang",
+			"code": "AGG",
+			"SQI_1_Resource_Availability": {
+				"2G_Cell_Availability": 97.000084345,
+				"3G Cell Occupancy": 97.000084345,
+				"4G_RB_Utilization": 97.000084345
+			},
+			"SQI_2_Accessibility": {
+				"2G_Call_Setup": 97.000084345,
+				"3G_HSPA_Accessibility": 97.000084345,
+				"ERABSS_Rate": 97.000084345
+			},
+			"SQI_3_Retainability": {
+				"2G_Call_Completion_Rate": 97.000084345,
+				"3G_Call_Completion_Rate": 97.000084345,
+				"4G_E-UTRAN_Retainability": 97.000084345
+			},
+			"SQI_4 Service_Integrity": {
+				"3G_CQI": 97.000084345,
+				"4G _QI": 97.000084345
+			},
+			"SQI_5_Quality_of_Coverage ": {
+				"3G-Quality_of_Converage": 97.000084345,
+				"4G-Quality_of_Converage": 97.000084345
+			}
+		},
+		{
+			"id": 4,
+			"unti": "Bình Dương",
+			"code": "BDG",
+			"SQI_1_Resource_Availability": {
+				"2G_Cell_Availability": 97.000084345,
+				"3G Cell Occupancy": 97.000084345,
+				"4G_RB_Utilization": 97.000084345
+			},
+			"SQI_2_Accessibility": {
+				"2G_Call_Setup": 97.000084345,
+				"3G_HSPA_Accessibility": 97.000084345,
+				"ERABSS_Rate": 97.000084345
+			},
+			"SQI_3_Retainability": {
+				"2G_Call_Completion_Rate": 97.000084345,
+				"3G_Call_Completion_Rate": 97.000084345,
+				"4G_E-UTRAN_Retainability": 97.000084345
+			},
+			"SQI_4 Service_Integrity": {
+				"3G_CQI": 97.000084345,
+				"4G _QI": 97.000084345
+			},
+			"SQI_5_Quality_of_Coverage ": {
+				"3G-Quality_of_Converage": 97.000084345,
+				"4G-Quality_of_Converage": 97.000084345
+			}
+		},
+		{
+			"id": 5,
+			"unti": "Bình Phước",
+			"code": "BDG",
+			"SQI_1_Resource_Availability": {
+				"2G_Cell_Availability": 97.000084345,
+				"3G Cell Occupancy": 97.000084345,
+				"4G_RB_Utilization": 97.000084345
+			},
+			"SQI_2_Accessibility": {
+				"2G_Call_Setup": 97.000084345,
+				"3G_HSPA_Accessibility": 97.000084345,
+				"ERABSS_Rate": 97.000084345
+			},
+			"SQI_3_Retainability": {
+				"2G_Call_Completion_Rate": 97.000084345,
+				"3G_Call_Completion_Rate": 97.000084345,
+				"4G_E-UTRAN_Retainability": 97.000084345
+			},
+			"SQI_4 Service_Integrity": {
+				"3G_CQI": 97.000084345,
+				"4G _QI": 97.000084345
+			},
+			"SQI_5_Quality_of_Coverage ": {
+				"3G-Quality_of_Converage": 97.000084345,
+				"4G-Quality_of_Converage": 97.000084345
+			}
+		},
+		{
+			"id": 6,
+			"unti": "Bình Thuận",
+			"code": "BTN",
+			"SQI_1_Resource_Availability": {
+				"2G_Cell_Availability": 97.000084345,
+				"3G Cell Occupancy": 97.000084345,
+				"4G_RB_Utilization": 97.000084345
+			},
+			"SQI_2_Accessibility": {
+				"2G_Call_Setup": 97.000084345,
+				"3G_HSPA_Accessibility": 97.000084345,
+				"ERABSS_Rate": 97.000084345
+			},
+			"SQI_3_Retainability": {
+				"2G_Call_Completion_Rate": 97.000084345,
+				"3G_Call_Completion_Rate": 97.000084345,
+				"4G_E-UTRAN_Retainability": 97.000084345
+			},
+			"SQI_4 Service_Integrity": {
+				"3G_CQI": 97.000084345,
+				"4G _QI": 97.000084345
+			},
+			"SQI_5_Quality_of_Coverage ": {
+				"3G-Quality_of_Converage": 97.000084345,
+				"4G-Quality_of_Converage": 97.000084345
+			}
+		},
+		{
+			"id": 7,
+			"unti": "Bình Định",
+			"code": "BDN",
+			"SQI_1_Resource_Availability": {
+				"2G_Cell_Availability": 97.000084345,
+				"3G Cell Occupancy": 97.000084345,
+				"4G_RB_Utilization": 97.000084345
+			},
+			"SQI_2_Accessibility": {
+				"2G_Call_Setup": 97.000084345,
+				"3G_HSPA_Accessibility": 97.000084345,
+				"ERABSS_Rate": 97.000084345
+			},
+			"SQI_3_Retainability": {
+				"2G_Call_Completion_Rate": 97.000084345,
+				"3G_Call_Completion_Rate": 97.000084345,
+				"4G_E-UTRAN_Retainability": 97.000084345
+			},
+			"SQI_4 Service_Integrity": {
+				"3G_CQI": 97.000084345,
+				"4G _QI": 97.000084345
+			},
+			"SQI_5_Quality_of_Coverage ": {
+				"3G-Quality_of_Converage": 97.000084345,
+				"4G-Quality_of_Converage": 97.000084345
+			}
+		},
+		{
+			"id": 8,
+			"unti": "Bắc Kạn",
+			"code": "BKN",
+			"SQI_1_Resource_Availability": {
+				"2G_Cell_Availability": 97.000084345,
+				"3G Cell Occupancy": 97.000084345,
+				"4G_RB_Utilization": 97.000084345
+			},
+			"SQI_2_Accessibility": {
+				"2G_Call_Setup": 97.000084345,
+				"3G_HSPA_Accessibility": 97.000084345,
+				"ERABSS_Rate": 97.000084345
+			},
+			"SQI_3_Retainability": {
+				"2G_Call_Completion_Rate": 97.000084345,
+				"3G_Call_Completion_Rate": 97.000084345,
+				"4G_E-UTRAN_Retainability": 97.000084345
+			},
+			"SQI_4 Service_Integrity": {
+				"3G_CQI": 97.000084345,
+				"4G _QI": 97.000084345
+			},
+			"SQI_5_Quality_of_Coverage ": {
+				"3G-Quality_of_Converage": 97.000084345,
+				"4G-Quality_of_Converage": 97.000084345
+			}
+		},
+		{
+			"id": 9,
+			"unti": "Bắc Kạn",
+			"code": "BKN",
+			"SQI_1_Resource_Availability": {
+				"2G_Cell_Availability": 97.000084345,
+				"3G Cell Occupancy": 97.000084345,
+				"4G_RB_Utilization": 97.000084345
+			},
+			"SQI_2_Accessibility": {
+				"2G_Call_Setup": 97.000084345,
+				"3G_HSPA_Accessibility": 97.000084345,
+				"ERABSS_Rate": 97.000084345
+			},
+			"SQI_3_Retainability": {
+				"2G_Call_Completion_Rate": 97.000084345,
+				"3G_Call_Completion_Rate": 97.000084345,
+				"4G_E-UTRAN_Retainability": 97.000084345
+			},
+			"SQI_4 Service_Integrity": {
+				"3G_CQI": 97.000084345,
+				"4G _QI": 97.000084345
+			},
+			"SQI_5_Quality_of_Coverage ": {
+				"3G-Quality_of_Converage": 97.000084345,
+				"4G-Quality_of_Converage": 97.000084345
+			}
+		},
+		{
+			"id": 10,
+			"unti": "Bắc Kạn",
+			"code": "BKN",
+			"SQI_1_Resource_Availability": {
+				"2G_Cell_Availability": 97.000084345,
+				"3G Cell Occupancy": 97.000084345,
+				"4G_RB_Utilization": 97.000084345
+			},
+			"SQI_2_Accessibility": {
+				"2G_Call_Setup": 97.000084345,
+				"3G_HSPA_Accessibility": 97.000084345,
+				"ERABSS_Rate": 97.000084345
+			},
+			"SQI_3_Retainability": {
+				"2G_Call_Completion_Rate": 97.000084345,
+				"3G_Call_Completion_Rate": 97.000084345,
+				"4G_E-UTRAN_Retainability": 97.000084345
+			},
+			"SQI_4 Service_Integrity": {
+				"3G_CQI": 97.000084345,
+				"4G _QI": 97.000084345
+			},
+			"SQI_5_Quality_of_Coverage ": {
+				"3G-Quality_of_Converage": 97.000084345,
+				"4G-Quality_of_Converage": 97.000084345
+			}
+		}
+	],
+	"Station_number": [
+		{ "id": 1, "code": "", "unti": "Trung bình", "2G": 5, "3G": 4, "4G": 3 },
+		{ "id": 2, "code": "VNPT", "unti": "VNPT NET", "2G": 5, "3G": 4, "4G": 3 },
+		{ "id": 3, "code": "VNPT", "unti": "VNPT NET", "2G": 5, "3G": 4, "4G": 3 },
+		{ "id": 4, "code": "VNPT", "unti": "VNPT NET", "2G": 5, "3G": 4, "4G": 3 },
+		{ "id": 5, "code": "AGG", "unti": "An Giang", "2G": 5, "3G": 4, "4G": 3 },
+		{ "id": 6, "code": "AGG", "unti": "An Giang", "2G": 5, "3G": 4, "4G": 3 },
+		{ "id": 7, "code": "AGG", "unti": "An Giang", "2G": 5, "3G": 4, "4G": 3 },
+		{ "id": 8, "code": "AGG", "unti": "An Giang", "2G": 5, "3G": 4, "4G": 3 },
+		{ "id": 9, "code": "AGG", "unti": "An Giang", "2G": 5, "3G": 4, "4G": 3 },
+		{ "id": 10, "code": "AGG", "unti": "An Giang", "2G": 5, "3G": 4, "4G": 3 }
+	],
+	"AggregateFBBQoE": [
+		{
+			"id": 1,
+			"code": "AGG",
+			"unti": "An Giang",
+			"QoE_percent": 100,
+			"QoE_point": 4.95,
+			"download": 100,
+			"upload": 100,
+			"delay": 50,
+			"delay_local": 98.811554155,
+			"jitter": 545616,
+			"lost_package": 120,
+			"delay_international": 98.811554155,
+			"lost_package_international": 1200,
+			"TLDV": 120,
+			"KPSC": 120,
+			"TLDV_SERVICE": 120,
+			"TLDV_SERVICE_PRIVATE": 120,
+			"KPSC_SERVICE": 120,
+			"KPSC_SERVICE_PRIVATE": 120
+		},
+		{
+			"id": 2,
+			"code": "AGG",
+			"unti": "An Giang",
+			"QoE_percent": 100,
+			"QoE_point": 4.95,
+			"download": 100,
+			"upload": 100,
+			"delay": 50,
+			"delay_local": 98.811554155,
+			"jitter": 545616,
+			"lost_package": 120,
+			"delay_international": 98.811554155,
+			"lost_package_international": 1200,
+			"TLDV": 120,
+			"KPSC": 120,
+			"TLDV_SERVICE": 120,
+			"TLDV_SERVICE_PRIVATE": 120,
+			"KPSC_SERVICE": 120,
+			"KPSC_SERVICE_PRIVATE": 120
+		},
+		{
+			"id": 3,
+			"code": "AGG",
+			"unti": "An Giang",
+			"QoE_percent": 100,
+			"QoE_point": 4.95,
+			"download": 100,
+			"upload": 100,
+			"delay": 50,
+			"delay_local": 98.811554155,
+			"jitter": 545616,
+			"lost_package": 120,
+			"delay_international": 98.811554155,
+			"lost_package_international": 1200,
+			"TLDV": 120,
+			"KPSC": 120,
+			"TLDV_SERVICE": 120,
+			"TLDV_SERVICE_PRIVATE": 120,
+			"KPSC_SERVICE": 120,
+			"KPSC_SERVICE_PRIVATE": 120
+		},
+		{
+			"id": 4,
+			"code": "AGG",
+			"unti": "An Giang",
+			"QoE_percent": 100,
+			"QoE_point": 4.95,
+			"download": 100,
+			"upload": 100,
+			"delay": 50,
+			"delay_local": 98.811554155,
+			"jitter": 545616,
+			"lost_package": 120,
+			"delay_international": 98.811554155,
+			"lost_package_international": 1200,
+			"TLDV": 120,
+			"KPSC": 120,
+			"TLDV_SERVICE": 120,
+			"TLDV_SERVICE_PRIVATE": 120,
+			"KPSC_SERVICE": 120,
+			"KPSC_SERVICE_PRIVATE": 120
+		},
+		{
+			"id": 5,
+			"code": "AGG",
+			"unti": "An Giang",
+			"QoE_percent": 100,
+			"QoE_point": 4.95,
+			"download": 100,
+			"upload": 100,
+			"delay": 50,
+			"delay_local": 98.811554155,
+			"jitter": 545616,
+			"lost_package": 120,
+			"delay_international": 98.811554155,
+			"lost_package_international": 1200,
+			"TLDV": 120,
+			"KPSC": 120,
+			"TLDV_SERVICE": 120,
+			"TLDV_SERVICE_PRIVATE": 120,
+			"KPSC_SERVICE": 120,
+			"KPSC_SERVICE_PRIVATE": 120
+		},
+		{
+			"id": 6,
+			"code": "AGG",
+			"unti": "An Giang",
+			"QoE_percent": 100,
+			"QoE_point": 4.95,
+			"download": 100,
+			"upload": 100,
+			"delay": 50,
+			"delay_local": 98.811554155,
+			"jitter": 545616,
+			"lost_package": 120,
+			"delay_international": 98.811554155,
+			"lost_package_international": 1200,
+			"TLDV": 120,
+			"KPSC": 120,
+			"TLDV_SERVICE": 120,
+			"TLDV_SERVICE_PRIVATE": 120,
+			"KPSC_SERVICE": 120,
+			"KPSC_SERVICE_PRIVATE": 120
+		},
+		{
+			"id": 7,
+			"code": "AGG",
+			"unti": "An Giang",
+			"QoE_percent": 100,
+			"QoE_point": 4.95,
+			"download": 100,
+			"upload": 100,
+			"delay": 50,
+			"delay_local": 98.811554155,
+			"jitter": 545616,
+			"lost_package": 120,
+			"delay_international": 98.811554155,
+			"lost_package_international": 1200,
+			"TLDV": 120,
+			"KPSC": 120,
+			"TLDV_SERVICE": 120,
+			"TLDV_SERVICE_PRIVATE": 120,
+			"KPSC_SERVICE": 120,
+			"KPSC_SERVICE_PRIVATE": 120
+		},
+		{
+			"id": 8,
+			"code": "AGG",
+			"unti": "An Giang",
+			"QoE_percent": 100,
+			"QoE_point": 4.95,
+			"download": 100,
+			"upload": 100,
+			"delay": 50,
+			"delay_local": 98.811554155,
+			"jitter": 545616,
+			"lost_package": 120,
+			"delay_international": 98.811554155,
+			"lost_package_international": 1200,
+			"TLDV": 120,
+			"KPSC": 120,
+			"TLDV_SERVICE": 120,
+			"TLDV_SERVICE_PRIVATE": 120,
+			"KPSC_SERVICE": 120,
+			"KPSC_SERVICE_PRIVATE": 120
+		},
+		{
+			"id": 9,
+			"code": "AGG",
+			"unti": "An Giang",
+			"QoE_percent": 100,
+			"QoE_point": 4.95,
+			"download": 100,
+			"upload": 100,
+			"delay": 50,
+			"delay_local": 98.811554155,
+			"jitter": 545616,
+			"lost_package": 120,
+			"delay_international": 98.811554155,
+			"lost_package_international": 1200,
+			"TLDV": 120,
+			"KPSC": 120,
+			"TLDV_SERVICE": 120,
+			"TLDV_SERVICE_PRIVATE": 120,
+			"KPSC_SERVICE": 120,
+			"KPSC_SERVICE_PRIVATE": 120
+		},
+		{
+			"id": 10,
+			"code": "AGG",
+			"unti": "An Giang",
+			"QoE_percent": 100,
+			"QoE_point": 4.95,
+			"download": 100,
+			"upload": 100,
+			"delay": 50,
+			"delay_local": 98.811554155,
+			"jitter": 545616,
+			"lost_package": 120,
+			"delay_international": 98.811554155,
+			"lost_package_international": 1200,
+			"TLDV": 120,
+			"KPSC": 120,
+			"TLDV_SERVICE": 120,
+			"TLDV_SERVICE_PRIVATE": 120,
+			"KPSC_SERVICE": 120,
+			"KPSC_SERVICE_PRIVATE": 120
+		}
+	],
+	"AggregateFBBQoS": [
+		{
+			"id": 1,
+			"Mac": "107D1A1CF7CF",
+			"name": "BDG.mYtv.OTT.003_CHECK",
+			"Time": {
+				"start_date": "11/09/2023 05:00:23",
+				"end_date": "11/09/2023 05:00:23",
+				"minute": 20,
+				"status": "FINISHED",
+				"late": ""
+			},
+			"information": {
+				"name": "VTV3 HD OTT",
+				"type": "OTT",
+				"package": "HD",
+				"DSCP": "AF41",
+				"CDN": "123.29.71.162"
+			},
+			"lossrate": {
+				"loss": 20,
+				"played": 0,
+				"result": "PASSED",
+				"quality": 0
+			},
+			"deviated": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"bandwidth": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"interruption_time": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"skip": {
+				"result": "PASSED",
+				"quality": 0
+			}
+		},
+		{
+			"id": 2,
+			"Mac": "107D1A1CF7CF",
+			"name": "BDG.mYtv.OTT.003_CHECK",
+			"Time": {
+				"start_date": "11/09/2023 05:00:23",
+				"end_date": "11/09/2023 05:00:23",
+				"minute": 20,
+				"status": "FINISHED",
+				"late": ""
+			},
+			"information": {
+				"name": "VTV3 HD OTT",
+				"type": "OTT",
+				"package": "HD",
+				"DSCP": "AF41",
+				"CDN": "123.29.71.162"
+			},
+			"lossrate": {
+				"loss": 20,
+				"played": 0,
+				"result": "PASSED",
+				"quality": 0
+			},
+			"deviated": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"bandwidth": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"interruption_time": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"skip": {
+				"result": "PASSED",
+				"quality": 0
+			}
+		},
+		{
+			"id": 3,
+			"Mac": "107D1A1CF7CF",
+			"name": "BDG.mYtv.OTT.003_CHECK",
+			"Time": {
+				"start_date": "11/09/2023 05:00:23",
+				"end_date": "11/09/2023 05:00:23",
+				"minute": 20,
+				"status": "FINISHED",
+				"late": ""
+			},
+			"information": {
+				"name": "VTV3 HD OTT",
+				"type": "OTT",
+				"package": "HD",
+				"DSCP": "AF41",
+				"CDN": "123.29.71.162"
+			},
+			"lossrate": {
+				"loss": 20,
+				"played": 0,
+				"result": "PASSED",
+				"quality": 0
+			},
+			"deviated": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"bandwidth": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"interruption_time": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"skip": {
+				"result": "PASSED",
+				"quality": 0
+			}
+		},
+		{
+			"id": 4,
+			"Mac": "107D1A1CF7CF",
+			"name": "BDG.mYtv.OTT.003_CHECK",
+			"Time": {
+				"start_date": "11/09/2023 05:00:23",
+				"end_date": "11/09/2023 05:00:23",
+				"minute": 20,
+				"status": "FINISHED",
+				"late": ""
+			},
+			"information": {
+				"name": "VTV3 HD OTT",
+				"type": "OTT",
+				"package": "HD",
+				"DSCP": "AF41",
+				"CDN": "123.29.71.162"
+			},
+			"lossrate": {
+				"loss": 20,
+				"played": 0,
+				"result": "PASSED",
+				"quality": 0
+			},
+			"deviated": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"bandwidth": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"interruption_time": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"skip": {
+				"result": "PASSED",
+				"quality": 0
+			}
+		},
+		{
+			"id": 5,
+			"Mac": "107D1A1CF7CF",
+			"name": "BDG.mYtv.OTT.003_CHECK",
+			"Time": {
+				"start_date": "11/09/2023 05:00:23",
+				"end_date": "11/09/2023 05:00:23",
+				"minute": 20,
+				"status": "FINISHED",
+				"late": ""
+			},
+			"information": {
+				"name": "VTV3 HD OTT",
+				"type": "OTT",
+				"package": "HD",
+				"DSCP": "AF41",
+				"CDN": "123.29.71.162"
+			},
+			"lossrate": {
+				"loss": 20,
+				"played": 0,
+				"result": "PASSED",
+				"quality": 0
+			},
+			"deviated": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"bandwidth": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"interruption_time": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"skip": {
+				"result": "PASSED",
+				"quality": 0
+			}
+		},
+		{
+			"id": 6,
+			"Mac": "107D1A1CF7CF",
+			"name": "BDG.mYtv.OTT.003_CHECK",
+			"Time": {
+				"start_date": "11/09/2023 05:00:23",
+				"end_date": "11/09/2023 05:00:23",
+				"minute": 20,
+				"status": "FINISHED",
+				"late": ""
+			},
+			"information": {
+				"name": "VTV3 HD OTT",
+				"type": "OTT",
+				"package": "HD",
+				"DSCP": "AF41",
+				"CDN": "123.29.71.162"
+			},
+			"lossrate": {
+				"loss": 20,
+				"played": 0,
+				"result": "PASSED",
+				"quality": 0
+			},
+			"deviated": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"bandwidth": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"interruption_time": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"skip": {
+				"result": "PASSED",
+				"quality": 0
+			}
+		},
+		{
+			"id": 7,
+			"Mac": "107D1A1CF7CF",
+			"name": "BDG.mYtv.OTT.003_CHECK",
+			"Time": {
+				"start_date": "11/09/2023 05:00:23",
+				"end_date": "11/09/2023 05:00:23",
+				"minute": 20,
+				"status": "FINISHED",
+				"late": ""
+			},
+			"information": {
+				"name": "VTV3 HD OTT",
+				"type": "OTT",
+				"package": "HD",
+				"DSCP": "AF41",
+				"CDN": "123.29.71.162"
+			},
+			"lossrate": {
+				"loss": 20,
+				"played": 0,
+				"result": "PASSED",
+				"quality": 0
+			},
+			"deviated": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"bandwidth": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"interruption_time": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"skip": {
+				"result": "PASSED",
+				"quality": 0
+			}
+		},
+		{
+			"id": 8,
+			"Mac": "107D1A1CF7CF",
+			"name": "BDG.mYtv.OTT.003_CHECK",
+			"Time": {
+				"start_date": "11/09/2023 05:00:23",
+				"end_date": "11/09/2023 05:00:23",
+				"minute": 20,
+				"status": "FINISHED",
+				"late": ""
+			},
+			"information": {
+				"name": "VTV3 HD OTT",
+				"type": "OTT",
+				"package": "HD",
+				"DSCP": "AF41",
+				"CDN": "123.29.71.162"
+			},
+			"lossrate": {
+				"loss": 20,
+				"played": 0,
+				"result": "PASSED",
+				"quality": 0
+			},
+			"deviated": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"bandwidth": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"interruption_time": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"skip": {
+				"result": "PASSED",
+				"quality": 0
+			}
+		},
+		{
+			"id": 9,
+			"Mac": "107D1A1CF7CF",
+			"name": "BDG.mYtv.OTT.003_CHECK",
+			"Time": {
+				"start_date": "11/09/2023 05:00:23",
+				"end_date": "11/09/2023 05:00:23",
+				"minute": 20,
+				"status": "FINISHED",
+				"late": ""
+			},
+			"information": {
+				"name": "VTV3 HD OTT",
+				"type": "OTT",
+				"package": "HD",
+				"DSCP": "AF41",
+				"CDN": "123.29.71.162"
+			},
+			"lossrate": {
+				"loss": 20,
+				"played": 0,
+				"result": "PASSED",
+				"quality": 0
+			},
+			"deviated": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"bandwidth": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"interruption_time": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"skip": {
+				"result": "PASSED",
+				"quality": 0
+			}
+		},
+		{
+			"id": 10,
+			"Mac": "107D1A1CF7CF",
+			"name": "BDG.mYtv.OTT.003_CHECK",
+			"Time": {
+				"start_date": "11/09/2023 05:00:23",
+				"end_date": "11/09/2023 05:00:23",
+				"minute": 20,
+				"status": "FINISHED",
+				"late": ""
+			},
+			"information": {
+				"name": "VTV3 HD OTT",
+				"type": "OTT",
+				"package": "HD",
+				"DSCP": "AF41",
+				"CDN": "123.29.71.162"
+			},
+			"lossrate": {
+				"loss": 20,
+				"played": 0,
+				"result": "FAILED",
+				"quality": 0
+			},
+			"deviated": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"bandwidth": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"interruption_time": {
+				"result": "PASSED",
+				"quality": 0
+			},
+			"skip": {
+				"result": "PASSED",
+				"quality": 0
+			}
+		}
+	]
+}
