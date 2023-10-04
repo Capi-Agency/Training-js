@@ -1,66 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira Code', monospace;
-
-    /* outline: 1px dotted red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+  outline: 1px dotted red;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
-    margin: 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 24px;
 }
 
-button {
-    all: unset;
-    cursor: pointer;
-    padding: 4px 12px;
-    text-align: center;
-    color: white;
-}
-
-.button-update {
-    background-color: rgb(30, 178, 0);
-}
-
-.button-delete {
-    background-color: rgb(167, 0, 0);
-}
-
-/* .hide {
-    display: none;
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-li {
-    list-style-type: '👉';
-    padding-inline-start: 1ch;
-} */
-
-.descriptionCol {
-    max-width: 200px;
-}
-
-.imageCol {
-    width: 400px;
-
-    img {
-        width: 100%;
-        object-fit: cover;
-        height: 24vh;
-    }
-}
-
-.buttonCol {
-    width: 200px;
-}
+.imageColContainer {
+  max-width: 1000px;
+}/*# sourceMappingURL=style.css.map */

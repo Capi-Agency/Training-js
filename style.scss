@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+
+    outline: 1px dotted red;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 24px;
+}
+.imageColContainer {
+    max-width: 1000px;
+}
